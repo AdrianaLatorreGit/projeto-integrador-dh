@@ -7,7 +7,7 @@ app.use(express.json());
 // Definindo porta que a requisição vai ficar ouvindo
 const port = 3000;
 
-// acessar a rota http://localhost:3000
+// acessar a rota http://localhost:3000 e resposta em json
 app.get("/", (request, response) => {
     return response.json({ mensagem: "Olá turma" });
 });

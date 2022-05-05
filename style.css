@@ -42,31 +42,29 @@
     line-height: 150%;
 }
 
-.article h1{
+.article h1 {
     margin-bottom: 20px;
-    color:#19364b
+    color: #19364b;
 }
 
-.article p{
+.article p {
     margin-bottom: 20px;
-    color:#19364b
+    color: #19364b;
 }
 
-.article a{
-
-    display:flex;
+.article a {
+    display: flex;
 
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 
     text-decoration: none;
-    background-color:#19364b;
+    background-color: #19364b;
     color: #fff;
 
     width: 90px;
-    height:30px;
+    height: 30px;
 }
-
 
 /* body {
     background: url("img/fundo.jpg") repeat-x;

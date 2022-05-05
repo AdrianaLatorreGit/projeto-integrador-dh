@@ -1,4 +1,74 @@
-body {
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button button {
+    display: inline-flex;
+    margin: 0 3px;
+    margin-right: 15px;
+
+    color: #55e5c5;
+    background-color: #19364b;
+
+    width: 104px;
+    height: 37px;
+    border-radius: 15px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.button button p {
+    font-size: 16px;
+}
+
+.logo {
+    margin: 25px;
+    padding-left: 50px;
+}
+
+.planos {
+    display: flex;
+    gap: 30px;
+    line-height: 150%;
+}
+
+.article h1{
+    margin-bottom: 20px;
+    color:#19364b
+}
+
+.article p{
+    margin-bottom: 20px;
+    color:#19364b
+}
+
+.article a{
+
+    display:flex;
+
+    align-items: center;
+    justify-content:center;
+
+    text-decoration: none;
+    background-color:#19364b;
+    color: #fff;
+
+    width: 90px;
+    height:30px;
+}
+
+
+/* body {
     background: url("img/fundo.jpg") repeat-x;
     font-family: ArialRoundedMTBold;
     margin: 0px;
@@ -49,4 +119,4 @@ div#banner a img {
 div#section {
     width: 1170px;
     margin: 0 auto;
-}
+} */

@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+:root {
+
+    --primary-color: hsla(205, 51%, 20%, 1);
+    --second-color: hsla(167, 73%, 62%, 1);
+    
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -13,35 +21,36 @@
 
 .button button {
     display: inline-flex;
-    margin: 0 3px;
-    margin-right: 15px;
+    margin: 0 0.3rem;
+    margin-right: 1.5rem;
 
-    color: #55e5c5;
-    background-color: #19364b;
+    color: var(--second-color);
+    background-color: var(--primary-color);
 
-    width: 104px;
-    height: 37px;
-    border-radius: 15px;
+    width: 10.4rem;
+    height: 3.7rem;
+    border-radius: 1.5rem;
 
     align-items: center;
     justify-content: center;
 }
 
 .button button p {
-    font-size: 16px;
+   font-size: 1.6rem;
 }
 
 .logo {
-    margin: 25px;
-    padding-left: 50px;
+    margin: 2.5rem;
+    padding-left: 5rem;
 }
 
 .planos {
     display: flex;
-    gap: 30px;
+    gap: 3rem;
     line-height: 150%;
 }
 
+<<<<<<< HEAD
 .article h1 {
     margin-bottom: 20px;
     color: #19364b;
@@ -50,6 +59,16 @@
 .article p {
     margin-bottom: 20px;
     color: #19364b;
+=======
+.article h1{
+    margin-bottom: 2rem;
+    color:var(--primary-color);
+}
+
+.article p{
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+>>>>>>> 50edecd00d8c67618f10cad91731cb2d875e2f79
 }
 
 .article a {
@@ -59,11 +78,19 @@
     justify-content: center;
 
     text-decoration: none;
+<<<<<<< HEAD
     background-color: #19364b;
     color: #fff;
 
     width: 90px;
     height: 30px;
+=======
+    background-color:var(--primary-color);
+    color: #fff;
+
+    width: 9rem;
+    height:3rem;
+>>>>>>> 50edecd00d8c67618f10cad91731cb2d875e2f79
 }
 
 /* body {

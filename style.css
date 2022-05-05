@@ -50,16 +50,6 @@
     line-height: 150%;
 }
 
-<<<<<<< HEAD
-.article h1 {
-    margin-bottom: 20px;
-    color: #19364b;
-}
-
-.article p {
-    margin-bottom: 20px;
-    color: #19364b;
-=======
 .article h1{
     margin-bottom: 2rem;
     color:var(--primary-color);
@@ -68,7 +58,6 @@
 .article p{
     margin-bottom: 2rem;
     color: var(--primary-color);
->>>>>>> 50edecd00d8c67618f10cad91731cb2d875e2f79
 }
 
 .article a {
@@ -78,19 +67,11 @@
     justify-content: center;
 
     text-decoration: none;
-<<<<<<< HEAD
-    background-color: #19364b;
-    color: #fff;
-
-    width: 90px;
-    height: 30px;
-=======
     background-color:var(--primary-color);
     color: #fff;
 
     width: 9rem;
     height:3rem;
->>>>>>> 50edecd00d8c67618f10cad91731cb2d875e2f79
 }
 
 /* body {

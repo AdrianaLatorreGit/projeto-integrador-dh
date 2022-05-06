@@ -13,16 +13,50 @@
     font-size: 62.5%; /* 1rem = 10px */
 }
 
-.container {
-    display: flex;
+.container{
+    width: 37.5rem;
+    margin-inline: auto;
+    /* para todos seguirem o mesmo padding da lateral */
+    padding-inline: 2.4rem;
+}
+.menu{
+    display:flex;
     justify-content: space-between;
+}
+
+.navigation{
+display: flex;
+align-items: center;
+
+}
+
+.logo{
+
+    display:flex;
     align-items: center;
 }
 
+.menu .logo p{
+    color: var(--second-color);
+    font-family: 'DM Sans', 'Outfit', sans-serif;
+    
+    font-size: 1.8rem;
+
+    text-transform: uppercase;
+}
+
+img{
+    max-width: 100%;
+}
+
+.menu .logo img{
+    width:12rem
+
+}
+
 .button button {
-    display: inline-flex;
-    margin: 0 0.3rem;
-    margin-right: 1.5rem;
+    display: flex;
+    
 
     color: var(--second-color);
     background-color: var(--primary-color);
@@ -35,16 +69,16 @@
     justify-content: center;
 }
 
+
+
+
 .button button p {
    font-size: 1.6rem;
 }
 
-.logo {
-    margin: 2.5rem;
-    padding-left: 5rem;
-}
 
-.planos {
+
+/* .planos {
     display: flex;
     gap: 3rem;
     line-height: 150%;
@@ -72,7 +106,7 @@
 
     width: 9rem;
     height:3rem;
-}
+} */
 
 /* body {
     background: url("img/fundo.jpg") repeat-x;

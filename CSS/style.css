@@ -27,9 +27,10 @@
 
 /* >>>HEADER<<< */
 
-header{
-   background-image: linear-gradient(to bottom, hsla(205, 51%, 20%, 1), white);
-   height: 25rem;
+.gradiente {
+   background-image: linear-gradient(to bottom, hsl(205, 51%, 20%), white) ;
+   
+ 
       
 }
 
@@ -58,6 +59,13 @@ align-items: center;
     margin-top: 2rem;
 }
 
+.navigation button{
+    cursor: pointer;
+    border: none;
+    background: none;
+    
+}
+
 .menu .logo p{
     color: var(--second-color);
     font-family: 'DM Sans', 'Outfit', sans-serif;
@@ -72,20 +80,7 @@ align-items: center;
 
 }
 
-.button button {
-    display: flex;
-    
 
-    color: var(--second-color);
-    background-color: var(--primary-color);
-
-    width: 10.4rem;
-    height: 3.7rem;
-    border-radius: 1.5rem;
-
-    align-items: center;
-    justify-content: center;
-}
 
 .button button p {
    font-size: 1.6rem;
@@ -95,14 +90,12 @@ align-items: center;
 
 
 .banner img{
-    display: flex;
-    justify-content: center;
-    top:18%;
-    max-width: 100%;
-
     
-    
+     display: flex;
+     justify-content: center;
+     max-width: 100%;
 }
+
 
 
 .plano{
@@ -111,27 +104,70 @@ align-items: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
-
-    margin-bottom: 3rem;
+    justify-content: center;
+    margin: 0 auto;
     padding: 1rem;
+    margin-bottom: 1rem;
 
     border: 1px solid var(--primary-color);
+    box-shadow: 1px 1px 2px  var(--primary-color);
+
+    width: 15rem;
+    
+}
+.botao p{
+    margin-top: 1rem;
+    color: white;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    
+    
+    border: none;
+    background: var(--primary-color);
+    border-radius: 2rem;
+    width: 8rem;
     
 }
 
-
-
 .plano img{
-    width: 50%;
+    width: 80%;
 }
 
+.plano h1{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
 .plano p{
     margin-bottom: 1rem;
-    font-size: 1.8rem;
+    font-size: 1rem;
 }
 
 .plano a{
     font-size: 1.5rem;
     text-decoration: none;
     color: var(--primary-color);
+}
+
+footer{
+    display: flex;
+    background-color: var(--primary-color);
+    height: 20rem;
+
+}
+
+footer h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+footer p{
+    color: white;
+    margin-bottom: 2rem;
+}
+
+footer a {
+    margin-right: 2rem;
 }

@@ -16,7 +16,7 @@
 
 /* >>>GERAL<<< */
 .container{
-    width: 37.5rem;
+    /* width: 37.5rem; */
     margin-inline: auto;
     /* para todos seguirem o mesmo padding da lateral */
     padding-inline: 2.4rem;
@@ -94,6 +94,10 @@ align-items: center;
      display: flex;
      justify-content: center;
      max-width: 100%;
+     opacity: 15%;
+     position:fixed;
+     z-index: -1;
+     margin-top: 50px;
 }
 
 
@@ -109,8 +113,8 @@ align-items: center;
     padding: 1rem;
     margin-bottom: 1rem;
 
-    border: 1px solid var(--primary-color);
-    box-shadow: 1px 1px 2px  var(--primary-color);
+    /* border: 1px solid var(--primary-color); */
+    /* box-shadow: 1px 1px 2px  var(--primary-color); */
 
     width: 15rem;
     

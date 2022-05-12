@@ -277,6 +277,8 @@ footer a {
   justify-content: center;
     height: 25rem;
     margin-left: 5rem;
+
+    margin-left: 10rem;
     
 }
 
@@ -284,60 +286,6 @@ footer a {
   margin-bottom: 30rem;
 } */
 
-.slider li {
-  position: absolute;
-
-  list-style: none;
-}
-
-.slider img {
-  margin: auto;
-
-  height: 25rem;
-  width: 100%;
-  margin-bottom: 2rem;
-  vertical-align: top;
-}
-
-.slider input {
-  display: none;
-}
-
-.slider label {
-  display: flex;
-  position: absolute;
-
-  background-color: gray;
-  cursor: pointer;
-
-  bottom: 1rem;
-
-  height: 1rem;
-  width: 1rem;
-  z-index: 10;
-  opacity: 0.5;
-}
-
-.slider li:nth-child(1) label {
-  left: 6rem;
-}
-
-.slider li:nth-child(2) label {
-  left: 9rem;
-}
-
-.slider li:nth-child(3) label {
-  left: 17rem;
-}
-
-.slider img {
-  opacity: 0;
-  visibility: hidden;
-}
 
 
-.slider  li input:checked ~ img{
-  opacity: 1;
-  visibility: visible;
-  z-index: 10;
-}
+

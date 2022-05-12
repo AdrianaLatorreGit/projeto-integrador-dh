@@ -175,3 +175,80 @@ footer p{
 footer a {
     margin-right: 2rem;
 }
+
+/* >>>SLIDER<<< */
+
+.slider {
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+    /* height: 100%;
+    width: 100%; */
+    /* padding: 0 auto;
+    margin: 0 auto; */
+    margin-top: 2rem;
+    margin-bottom: 30rem;
+    
+  }
+  
+  .slider li {
+    position:absolute;
+  
+    list-style: none;
+  }
+  
+  .slider img {
+    margin: auto;
+  
+    height: 25rem;
+    width: 100%; 
+  
+    vertical-align:top;
+  }
+  
+  .slider input {
+    display: none;
+  }
+  
+  .slider label {
+    display: flex;
+    position: absolute;
+  
+    background-color: gray;
+    cursor: pointer;
+    
+    bottom: 1rem;
+    
+    height: 1rem;
+    width: 1rem;
+    z-index: 10;
+    opacity: 0.5;
+      
+   }
+  
+   .slider li:nth-child(1) label {
+     left: 9rem;
+    }
+  
+    .slider li:nth-child(2) label {
+      left: 12rem;
+     }
+  
+     .slider li:nth-child(3) label {
+      left: 12.5rem;
+     }
+  
+  
+  .slider img {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+    
+  }
+  

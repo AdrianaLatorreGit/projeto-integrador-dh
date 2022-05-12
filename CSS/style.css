@@ -252,3 +252,26 @@ footer a {
     
   }
   
+
+  /* >>>APARELHOS<<< */
+
+
+.aparelhos{
+    display: flex;
+    flex-direction: column;
+}
+
+.aparelhos h1{
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 3rem;
+}
+
+.aparelhos img{
+    align-items: center;
+  justify-content: center;
+    height: 25rem;
+    margin-left: 5rem;
+    
+}
+

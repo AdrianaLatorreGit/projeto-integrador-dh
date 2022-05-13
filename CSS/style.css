@@ -13,13 +13,10 @@
     font-size: 62.5%; /* 1rem = 10px */
 }
 
-
 /* =====HEADER===== */
 
 .wrapper {
-  
-
-  display: grid;
+    display: grid;
 }
 
 .container {
@@ -29,45 +26,38 @@
     justify-content: center;
 }
 
-section.menu{
-  display: flex;
-  justify-content: space-between;
+section.menu {
+    display: flex;
+    justify-content: space-between;
 }
 
-
 .gradiente {
-    background-image: linear-gradient(to bottom, hsl(205, 51%, 20%), white);  
-    
+    background-image: linear-gradient(to bottom, hsl(205, 51%, 20%), white);
 }
 
 .menu {
     display: flex;
-    
-    
 }
 
 .logo {
     display: flex;
     align-items: center;
-    
+
     margin-top: 2rem;
     margin-left: 2rem;
 }
 
-div.button{
-  display: flex;
+div.button {
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
-   margin-right: 3rem;
-    
+    margin-right: 3rem;
 }
 
-button {   
-    font-family: 'DM Sans', 'Outfit', sans-serif;
+button {
+    font-family: "DM Sans", "Outfit", sans-serif;
     font-size: 1.8rem;
-
-    
 
     width: 15rem;
 
@@ -80,84 +70,103 @@ button {
 
     height: 3rem;
     margin-left: 1rem;
-
-    
-
-    
 }
 
 .logo p {
-  color: var(--second-color);
-  font-family: 'DM Sans', 'Outfit', sans-serif;
+    color: var(--second-color);
+    font-family: "DM Sans", "Outfit", sans-serif;
 
-  font-size: 1.8rem;
+    font-size: 1.8rem;
 
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 /* ==========MAIN========== */
 
 .banner img {
-  display: flex;
-  justify-content: center;
-  max-width: 100%;
-  
-  margin:auto;
-  
-  z-index: -1;
-  
-  
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+
+    margin: auto;
+
+    z-index: -1;
 }
 
-/* >>>APARELHOS<<< */ */
-
-.aparelhos{
+/* >>>APARELHOS<<< */
+*/ .aparelhos {
     display: flex;
     flex-direction: column;
     margin-top: 60rem;
-    
 }
 
-.aparelhos h1{
+.aparelhos h1 {
     color: var(--primary-color);
     text-align: center;
     font-size: 3rem;
 }
 
-.aparelhos img{
+.aparelhos img {
     align-items: center;
-  justify-content: center;
+    justify-content: center;
     height: 25rem;
     margin-left: 5rem;
 
     margin-left: 10rem;
-    
-    
 }
 
 /* ===========FOOTER======== */
 
 footer {
-  display: flex;
-  background-color: var(--primary-color);
-  height: 20rem;
+    display: flex;
+    background-color: var(--primary-color);
+    height: 20rem;
 }
 
 footer h1 {
-  color: white;
-  font-size: 5rem;
-  margin: 2rem 0;
+    color: white;
+    font-size: 5rem;
+    margin: 2rem 0;
 }
 
 footer p {
-  color: white;
-  margin-bottom: 2rem;
+    color: white;
+    margin-bottom: 2rem;
 }
 
 footer a {
-  margin-right: 2rem;
+    margin-right: 2rem;
 }
 
+/* =======SOBRE NOS============== */
+
+.integrantes {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    margin: 4rem;
+    color: var(--primary-color);
+
+    font-size: 3rem;
+}
+
+.integrantes img {
+    height: 40rem;
+    margin-left: 2rem;
+}
+
+.integrantes p {
+    font-size: 2rem;
+
+    margin-right: 4rem;
+    margin-left: 5rem;
+    margin-bottom: 10rem;
+
+    padding: 2rem;
+    border: 1px solid var(--primary-color);
+}
 
 /* ==========================================MOBILE============================================= */
 

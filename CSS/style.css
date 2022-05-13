@@ -13,17 +13,31 @@
   font-size: 62.5%; /* 1rem = 10px */
 }
 
+
+
+
+
+
+
+
+
+
+
+/* ==========================================MOBILE============================================= */
+
+
+
 /* >>>GERAL<<< */
-.container {
-  /* width: 37.5rem; */
+/* .container {
+  width: 37.5rem; 
   margin-inline: auto;
-  /* para todos seguirem o mesmo padding da lateral */
+   para todos seguirem o mesmo padding da lateral 
   padding-inline: 2.4rem;
-}
+} */
 
 /* >>>HEADER<<< */
 
-.gradiente {
+/* .gradiente {
   background-image: linear-gradient(to bottom, hsl(205, 51%, 20%), white);
 }
 
@@ -90,7 +104,7 @@ button {
 
 /* >>>MAIN<<< */
 
-.banner img {
+/* .banner img {
   display: flex;
   justify-content: center;
   max-width: 100%;
@@ -108,12 +122,12 @@ button {
   justify-content: center;
   margin: 0 auto;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; */
 
   /* border: 1px solid var(--primary-color); */
   /* box-shadow: 1px 1px 2px  var(--primary-color); */
 
-  width: 15rem;
+  /* width: 15rem;
 }
 
 #planos h1 {
@@ -125,11 +139,11 @@ button {
 
   margin-top: 3rem;
   margin-bottom: -2rem;
-}
+} */
 
 
 
-.botao p {
+/* .botao p {
   margin-top: 1rem;
   color: white;
 }
@@ -151,9 +165,9 @@ button {
 #planos h1 {
   font-size: 3rem;
   color: var(--primary-color);
-}
+} */
 
-#planos h3 {
+/* #planos h3 {
   font-size: 2rem;
   color: var(--primary-color);
   margin-top: 10rem;
@@ -191,20 +205,20 @@ footer p {
 
 footer a {
   margin-right: 2rem;
-}
+} */
 
 /* >>>SLIDER<<< */
 
-.slider {
+/* .slider {
   display: flex;
   position: relative;
-  justify-content: center;
+  justify-content: center; */
 
   /* height: 100%;
     width: 100%; */
   /* padding: 0 auto;
     margin: 0 auto; */
-    margin-top: 2rem;
+    /* margin-top: 2rem;
     margin-bottom: 30rem;
     
   }
@@ -214,8 +228,8 @@ footer a {
   
     list-style: none;
   }
-  
-  .slider img {
+   */
+  /* .slider img {
 
     
     margin: auto;
@@ -277,13 +291,13 @@ footer a {
     visibility: visible;
     z-index: 10;
     
-  }
+  } */
   
 
   /* >>>APARELHOS<<< */
 
 
-.aparelhos{
+/* .aparelhos{
     display: flex;
     flex-direction: column;
     margin-top: 60rem;
@@ -306,7 +320,7 @@ footer a {
     
     
 }
-
+ */
 
 
 

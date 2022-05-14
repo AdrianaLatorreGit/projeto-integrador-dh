@@ -20,10 +20,8 @@
 }
 
 .container {
-    width: 100%;
-    /* display: flex; */
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;  
+    
 }
 
 section.menu {
@@ -87,17 +85,19 @@ button {
     display: flex;
     justify-content: center;
     max-width: 100%;
-
-    margin: auto;
+    
+    margin: 0 auto;
 
     z-index: -1;
 }
 
 /* >>>APARELHOS<<< */
-*/ .aparelhos {
+.aparelhos {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    margin-top: 60rem;
+        
 }
 
 .aparelhos h1 {
@@ -107,13 +107,10 @@ button {
 }
 
 .aparelhos img {
-    align-items: center;
-    justify-content: center;
-    height: 25rem;
-    margin-left: 5rem;
-
-    margin-left: 10rem;
+  height: 27rem;  
 }
+
+
 
 /* ===========FOOTER======== */
 
@@ -137,6 +134,7 @@ footer p {
 footer a {
     margin-right: 2rem;
 }
+
 
 /* =======SOBRE NOS============== */
 

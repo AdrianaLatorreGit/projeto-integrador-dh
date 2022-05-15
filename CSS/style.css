@@ -178,8 +178,6 @@ footer a {
        
 }
 
-
-
 #integrante img {
     height: 25rem;
     margin: 0.5rem 0.5rem;
@@ -212,7 +210,9 @@ footer a {
     
 }
 
-
+.integrantes5 img{
+  width: 25rem;
+}
 
 
 

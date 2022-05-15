@@ -237,6 +237,17 @@ footer a {
 }
 
 
+ #integrante .socialMedia a img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.socialMedia{
+  display: flex;
+  
+  background-color: var(--primary-color);
+  
+}
 
 
 /* ==========================================MOBILE============================================= */

@@ -52,14 +52,14 @@ div.button {
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
-    margin-right: 3rem;
+   
 }
 
 button {
     font-family: "DM Sans", "Outfit", sans-serif;
     font-size: 1.8rem;
 
-    width: 15rem;
+    width: 9rem;
 
     background: var(--primary-color);
     color: var(--second-color);
@@ -86,12 +86,37 @@ button {
 .banner img {
     display: flex;
     justify-content: center;
-    max-width: 100%;
+    max-width: 100vw;
 
     margin: 0 auto;
 
     z-index: -1;
+
+
 }
+
+
+.tag{
+display: flex;
+align-items: center;
+justify-content: center;
+
+flex-direction: column;
+
+
+
+}
+
+.saibamais h4{
+  font-size: 5rem;
+}
+
+.saibamais p{
+  font-size: 2rem;
+
+}
+
+
 
 /* >>>APARELHOS<<< */
 .aparelhos {

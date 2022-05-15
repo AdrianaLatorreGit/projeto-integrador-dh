@@ -20,7 +20,9 @@
 }
 
 .container {
-    max-width: 102.4rem;
+
+    max-width: 1280px;
+    width:128rem;
     margin: 0 auto;
     
     
@@ -34,11 +36,12 @@ section.menu {
 .gradiente {
     background-image: linear-gradient(to bottom, hsl(205, 51%, 20%), white);
 
-    /* width:100vw; */
+   
 }
 
 .menu {
     display: flex;
+    
     
 }
 

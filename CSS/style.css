@@ -20,12 +20,8 @@
 }
 
 .container {
-
-    max-width: 1280px;
-    width:128rem;
+    max-width: 102.4rem;
     margin: 0 auto;
-    
-    
 }
 
 section.menu {
@@ -35,14 +31,10 @@ section.menu {
 
 .gradiente {
     background-image: linear-gradient(to bottom, hsl(205, 51%, 20%), white);
-
-   
 }
 
 .menu {
     display: flex;
-    
-    
 }
 
 .logo {
@@ -58,7 +50,7 @@ div.button {
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
-   
+    margin-right: 2rem;
 }
 
 button {
@@ -96,61 +88,51 @@ button {
 
     margin: 0 auto;
 
-    position:absolute;
+    position: absolute;
 
-    top:10rem;
+    top: 10rem;
     z-index: -10;
 }
 
-.saibamais{
-  display: flex;
-  
-  margin-top: 58rem;
-  
- 
+.saibamais {
+    display: flex;
+
+    margin-top: 58rem;
 }
 
+.tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.tag{
-display: flex;
-align-items: center;
-justify-content: center;
+    flex-direction: column;
 
-flex-direction: column;
-
-margin-left: 2rem;
-text-align: left;
-
-
+    margin-left: 2rem;
+    text-align: left;
 }
 
-.saibamais h4{
-  font-size: 3rem;
-  font-weight: 100;
-
-  
-  
+.saibamais h4 {
+    font-size: 3rem;
+    font-weight: 100;
 }
 
-.saibamais p{
-  font-size: 2rem;
-  font-weight: 100;
+.saibamais p {
+    font-size: 2rem;
+    font-weight: 100;
 
-  margin-top: 3rem;
+    margin-top: 3rem;
 }
 
-button.saibaMais{
-  background-color: var(--primary-color);
-  color: white;
+button.saibaMais {
+    background-color: var(--primary-color);
+    color: white;
 
-  margin-top: 3rem;
-  
-  width:15rem;
+    margin-top: 3rem;
 
-  height: 3rem;
+    width: 15rem;
+
+    height: 3rem;
 }
-
-
 
 /* >>>APARELHOS<<< */
 .aparelhos {
@@ -158,9 +140,8 @@ button.saibaMais{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
     margin-top: 10rem;
-        
 }
 
 .aparelhos h1 {
@@ -198,41 +179,39 @@ footer a {
 
 /* =======SOBRE NOS============== */
 
-.title{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
-.title h1{
-  font-weight: 600;
-  font-size: 4rem;
-  
-  color: var(--primary-color);
-  
+.title h1 {
+    font-weight: 600;
+    font-size: 4rem;
+
+    color: var(--primary-color);
 }
 
-.title h4{
-  font-weight: 100;
-  font-size: 1.5rem;
-  margin-top: 0.3rem;
-  margin-bottom: 0.3rem;
+.title h4 {
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
 
-  color: rgb(161, 160, 160);
+    color: rgb(161, 160, 160);
 }
 
 .title p {
-  font-size: 1.3rem;
-  font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 #integrante {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-       
 }
 
 #integrante img {
@@ -240,16 +219,16 @@ footer a {
     margin: 0.5rem 0.5rem;
 }
 
-#integrante p{
-  display: flex;
-  text-align: center;
-  margin-top: 0.5rem;
-  margin-left: 0.5rem;
-  font-size: 0.1rem;
-  background-color: var(--primary-color);
-  width: 25rem;  
- 
-  border: 1px solid var(--primary-color);
+#integrante p {
+    display: flex;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 0.1rem;
+    background-color: var(--primary-color);
+    width: 25rem;
+
+    border: 1px solid var(--primary-color);
 }
 
 #integrante p:hover {
@@ -259,7 +238,7 @@ footer a {
 
     margin-top: 0.5rem;
     font-size: 2rem;
-    width: 25rem;  
+    width: 25rem;
     height: 28.5rem;
     padding: 2rem;
     margin-left: 0.5rem;
@@ -267,30 +246,25 @@ footer a {
     background-color: white;
     visibility: visible;
     border: 1px solid var(--primary-color);
-    
 }
 
-.integrantes5 img{
-  width: 25rem;
+.integrantes5 img {
+    width: 25rem;
 }
 
-
- #integrante .socialMedia a img {
-  margin: 0;
-  width: 2rem;
-  height: 2rem;
-  background-color: var(--primary-color);
-
+#integrante .socialMedia a img {
+    margin: 0;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--primary-color);
 }
 
-.socialMedia{
-  display: flex;
-  justify-content: center;
-  background-color: var(--primary-color);
-  margin: 0 0.5rem;
-  
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    margin: 0 0.5rem;
 }
-
 
 /* ==========================================MOBILE============================================= */
 

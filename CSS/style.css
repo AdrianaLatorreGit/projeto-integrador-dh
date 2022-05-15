@@ -204,14 +204,16 @@ footer a {
     height: 25rem;
     margin: 0.5rem 0.5rem;
 }
+
 #integrante p{
   display: flex;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-left: 0.5rem;
   font-size: 0.1rem;
   background-color: var(--primary-color);
   width: 25rem;  
+ 
   border: 1px solid var(--primary-color);
 }
 
@@ -223,6 +225,7 @@ footer a {
     margin-top: 0.5rem;
     font-size: 2rem;
     width: 25rem;  
+    height: 28.5rem;
     padding: 2rem;
     margin-left: 0.5rem;
 
@@ -238,14 +241,18 @@ footer a {
 
 
  #integrante .socialMedia a img {
+  margin: 0;
   width: 2rem;
   height: 2rem;
+  background-color: var(--primary-color);
+
 }
 
 .socialMedia{
   display: flex;
-  
+  justify-content: center;
   background-color: var(--primary-color);
+  margin: 0 0.5rem;
   
 }
 

@@ -20,8 +20,7 @@
 }
 
 .container {
-    margin: 0 auto;  
-    
+    margin: 0 auto;
 }
 
 section.menu {
@@ -85,7 +84,7 @@ button {
     display: flex;
     justify-content: center;
     max-width: 100%;
-    
+
     margin: 0 auto;
 
     z-index: -1;
@@ -97,7 +96,6 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-        
 }
 
 .aparelhos h1 {
@@ -107,10 +105,8 @@ button {
 }
 
 .aparelhos img {
-  height: 27rem;  
+    height: 27rem;
 }
-
-
 
 /* ===========FOOTER======== */
 
@@ -134,7 +130,6 @@ footer p {
 footer a {
     margin-right: 2rem;
 }
-
 
 /* =======SOBRE NOS============== */
 

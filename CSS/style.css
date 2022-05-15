@@ -37,6 +37,7 @@ section.menu {
 
 .menu {
     display: flex;
+    
 }
 
 .logo {
@@ -90,9 +91,18 @@ button {
 
     margin: 0 auto;
 
-    z-index: -1;
+    position:absolute;
 
+    top:10rem;
+    z-index: -10;
+}
 
+.saibamais{
+  display: flex;
+  
+  margin-top: 58rem;
+  
+ 
 }
 
 
@@ -103,17 +113,36 @@ justify-content: center;
 
 flex-direction: column;
 
+margin-left: 2rem;
+text-align: left;
 
 
 }
 
 .saibamais h4{
-  font-size: 5rem;
+  font-size: 3rem;
+  font-weight: 100;
+
+  
+  
 }
 
 .saibamais p{
   font-size: 2rem;
+  font-weight: 100;
 
+  margin-top: 3rem;
+}
+
+button.saibaMais{
+  background-color: var(--primary-color);
+  color: white;
+
+  margin-top: 3rem;
+  
+  width:15rem;
+
+  height: 3rem;
 }
 
 
@@ -125,6 +154,7 @@ flex-direction: column;
     align-items: center;
     flex-direction: column;
     
+    margin-top: 10rem;
         
 }
 

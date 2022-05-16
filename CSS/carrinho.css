@@ -1,0 +1,265 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* <<<VARIAVEIS>>> */
+:root {
+    --primary-color: hsl(205, 50%, 20%);
+    --second-color: hsla(167, 73%, 62%, 1);
+
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+/* =====HEADER===== */
+
+.wrapper {
+    display: grid;
+}
+
+.container {
+    margin: 0 auto;  
+    
+}
+
+section.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gradiente {
+    background-color: var(--primary-color);
+}
+
+.menu {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+div.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-right: 3rem;
+}
+
+button {
+    font-family: "DM Sans", "Outfit", sans-serif;
+    font-size: 1.8rem;
+
+    width: 15rem;
+
+    background: var(--primary-color);
+    color: white;
+
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+
+    height: 3rem;
+    margin-left: 1rem;
+}
+
+.logo p {
+    color: var(--second-color);
+    font-family: "DM Sans", "Outfit", sans-serif;
+
+    font-size: 1.8rem;
+
+    text-transform: uppercase;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.mainCarrinho{
+    /* border: solid black 10px; */
+    background-image: linear-gradient(to bottom, #05A8B1 , #184055);;
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    
+}
+.blocoPrincipal{
+    /* border: solid purple 5px; */
+
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+}
+
+.produtoNoCarrinho1{
+    /* border: solid yellow 5px; */
+    width: 90%;
+    height: 33%;
+    position: relative;
+    top: 80px;
+    background-color: white;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulosCard{
+    display:flex;
+    justify-content: space-around;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+.aparelho1carrinho{
+    height: 220px;
+    width: 235px;
+    
+}
+
+.valoresCard{
+    display:flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    position: relative;
+    top: -125px;
+}
+
+.descricaoProdutoCarrinho{
+    font-size: 1.8rem;
+    position: relative;
+    top: 60px;
+    font-weight: 200;
+    
+}
+.coluna1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.coluna2{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.coluna3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.coluna4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.valoresCarrinho{
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 70px;
+    font-size: 2rem;
+}
+
+.linha1{
+    height: 200px;
+    border-right: 1px solid black;
+    
+}
+.linha2{
+    height: 200px;
+    border-right: 1px solid black;
+    
+}
+.linha3{
+    height: 200px;
+    border-right: 1px solid black;
+    
+}
+
+.linha4{
+    height: 200px;
+    border-right: 1px solid black;
+    
+}
+.linhasQueSeparam{
+    width: 900px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: -210px;
+    left: 170px;
+}
+
+.blocoAside{
+    /* border: solid darkorange 5px; */
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cardPagamento{
+    /* border: solid 3px red; */
+    height: 85%; 
+    width:  85%; 
+    margin-top: 50px ;
+    border-radius: 30px;
+    background-color: rgba(126, 154, 165,0.8);
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.resumoPedido{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 50px ;
+    font-weight: bold;
+   }
+
+   .pedidoValores{
+       font-size: 1.7rem;
+       text-align: center;
+       margin-top: 100px;
+   }
+   .pedidoValores1{
+       font-size: 1.7rem;
+       text-align: center;
+       margin-top: 100px;
+   }
+
+   .valorFinal{
+    font-size: 4rem;
+    text-align: end;
+    margin-top: 80px;
+    margin-right: 40px;
+   }
+
+   .parcelamento{
+    font-size: 1.4rem;
+    text-align: end;
+    margin-top: 5px;
+    margin-right: 30px;
+    font-weight: 500;
+    
+   }
+
+   .finalizaPedido{
+       background-color: #2CCBC4;
+       margin: 50px 0 0 75px
+   }
+
+   .blocoAside button{
+       height: 60px;
+       width: 200px;
+       font-size: 3rem;
+   }

@@ -117,6 +117,7 @@ button {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
+    
 }
 
 .aparelho1carrinho{
@@ -132,7 +133,7 @@ button {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
     position: relative;
-    top: -125px;
+    
 }
 
 .descricaoProdutoCarrinho{
@@ -146,16 +147,22 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-right: 1px solid black;
+    padding: 15px;
 }
 .coluna2{
  display: flex;
  flex-direction: column;
  align-items: center;
+ border-right: 1px solid black;
+    padding: 30px;
 }
 .coluna3{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-right: 1px solid black;
+    padding: 15px;
 }
 .coluna4{
     display: flex;
@@ -170,35 +177,6 @@ button {
     font-size: 2rem;
 }
 
-.linha1{
-    height: 200px;
-    border-right: 1px solid black;
-    
-}
-.linha2{
-    height: 200px;
-    border-right: 1px solid black;
-    
-}
-.linha3{
-    height: 200px;
-    border-right: 1px solid black;
-    
-}
-
-.linha4{
-    height: 200px;
-    border-right: 1px solid black;
-    
-}
-.linhasQueSeparam{
-    width: 900px;
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    top: -210px;
-    left: 170px;
-}
 
 .blocoAside{
     /* border: solid darkorange 5px; */
@@ -262,4 +240,8 @@ button {
        height: 75px;
        width: 215px;
        font-size: 3rem;
+   }
+
+   #colunas{
+       width: 25%
    }

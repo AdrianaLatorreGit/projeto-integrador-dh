@@ -44,30 +44,6 @@ nav{
     display:none;
     cursor: pointer;
 }
-@media (max-width:999px){
-    .corpo {
-        overflow-x: hidden;
-    }
-    .nav-list{
-        position: absolute;
-        top: 9vh;
-        right: 0;
-        width: 100vw;
-        height: 92vh;
-        background-color: var(--primary-color);
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-    }
-    .nav-list li{
-        margin-left: 0;
-        opacity: 0;
-    }
-    .mobile-menu{
-        display: block;
-    }
-}
 .nav-list.active{
     transform: translateX(0);
 }
@@ -148,4 +124,50 @@ button .fa{
 .carrinho{
     height: 10vh;
     margin-top:1vh;
+}
+@media (max-width:999px){
+    .corpo {
+        overflow-x: hidden;
+    }
+    .nav-list{
+        position: absolute;
+        top: 9vh;
+        right: 0;
+        width: 100vw;
+        height: 92vh;
+        background-color: var(--primary-color);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+    }
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .iphone13{
+        height:50%;
+    }
+    .col{
+        display: flex;
+        justify-content: center;
+    }
+    .preview{
+        height:60%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .slider{
+        position:absolute;
+        top: 20vh;
+        left: 4vh;
+    }
+    .content{
+        position: absolute;
+        top: 70vh;
+        left: 12vh;
+    }
 }

@@ -23,6 +23,10 @@
 .logo{
     height: 10vh;
 }
+.navbar{
+    width: 100%;
+    max-width: 1280px;
+}
 nav{
     display: flex;
     justify-content: space-around;
@@ -47,42 +51,7 @@ nav{
 .nav-list.active{
     transform: translateX(0);
 }
-.produto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    letter-spacing: 2px;
-    margin-top: 5vh;
-}
-.hero{
-    width: 100%;
-}
-.row{
-    width:90%;
-    height: 100vh;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.col{
-    flex-basis: 45%;
-}
-.slider{
-    height: 80vh;
-    display: flex;
-}
-.product img{
-    height: 19vh;
-    margin-bottom: 9px;
-    cursor: pointer;
-}
-.preview img{
-    height: 100%;
-    margin-left: 20vh;
-}
-p{
+brand p{
     margin-bottom: 10vh;
 }
 .brand{
@@ -93,7 +62,7 @@ p{
     padding: 2px 5px; 
     font-size: 4vh;
 }
-h2{
+brand h2{
     font-size: 7vh;
     color: rgb(184, 227, 233);
     margin-bottom: 4vh;
@@ -125,6 +94,23 @@ button .fa{
     height: 10vh;
     margin-top:1vh;
 }
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.celular{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.content{
+    margin-left: 10vh;
+}
+.teste{
+    margin-top: 5vh;
+    width: 30%;
+}
 @media (max-width:999px){
     .corpo {
         overflow-x: hidden;
@@ -141,6 +127,12 @@ button .fa{
         justify-content: space-around;
         transform: translateX(100%);
     }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     .nav-list li{
         margin-left: 0;
         opacity: 0;
@@ -148,26 +140,25 @@ button .fa{
     .mobile-menu{
         display: block;
     }
-    .iphone13{
-        height:50%;
-    }
     .col{
         display: flex;
         justify-content: center;
     }
-    .preview{
-        height:60%;
-        display: flex;
-        justify-content: flex-start;
+}
+@media (max-width: 420px){
+    h2{
+        font-size: 4vh;
+        position: relative;
+        left:-8vh;
+        margin-top: 2vh;
     }
-    .slider{
-        position:absolute;
-        top: 20vh;
-        left: 4vh;
+    .price{
+        font-size: 6vh;
+        position: relative;
+        left:-5vh;
+        top: -2rem;    
     }
-    .content{
-        position: absolute;
-        top: 70vh;
-        left: 12vh;
+    section{
+        flex-direction: column;
     }
 }

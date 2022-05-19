@@ -139,25 +139,14 @@ section{
     .mobile-menu{
         display: block;
     }
-    .col{
+}
+@media (max-width: 422px){
+    .content{
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
-    }
-    @media (max-width: 420px){
-        h2{
-            font-size: 4vh;
-            position: relative;
-            left:-8vh;
-            margin-top: 2vh;
-        }
-        .price{
-            font-size: 6vh;
-            position: relative;
-            left:-5vh;
-            top: -2rem;    
-        }
-        section{
-            flex-direction: column;
-        }
+        width: 100%;
+        margin: 0
     }
 }

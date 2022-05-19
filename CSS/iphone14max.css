@@ -7,7 +7,6 @@
 :root {
     --primary-color: hsl(205, 50%, 20%);
     --second-color: hsla(167, 73%, 62%, 1);
-
     font-size: 62.5%; 
 }
 .li{
@@ -144,21 +143,21 @@ section{
         display: flex;
         justify-content: center;
     }
-}
-@media (max-width: 420px){
-    h2{
-        font-size: 4vh;
-        position: relative;
-        left:-8vh;
-        margin-top: 2vh;
-    }
-    .price{
-        font-size: 6vh;
-        position: relative;
-        left:-5vh;
-        top: -2rem;    
-    }
-    section{
-        flex-direction: column;
+    @media (max-width: 420px){
+        h2{
+            font-size: 4vh;
+            position: relative;
+            left:-8vh;
+            margin-top: 2vh;
+        }
+        .price{
+            font-size: 6vh;
+            position: relative;
+            left:-5vh;
+            top: -2rem;    
+        }
+        section{
+            flex-direction: column;
+        }
     }
 }

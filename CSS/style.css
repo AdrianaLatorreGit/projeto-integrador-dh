@@ -1,103 +1,98 @@
 /* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* <<<VARIAVEIS>>> */
 :root {
-  --primary-color: hsl(205, 50%, 20%);
-  --second-color: hsla(167, 73%, 62%, 1);
-  --third-color: hsl(183, 96%, 36%);
+    --primary-color: hsl(205, 50%, 20%);
+    --second-color: hsla(167, 73%, 62%, 1);
+    --third-color: hsl(183, 96%, 36%);
 
-  font-size: 62.5%; /* 1rem = 10px */
+    font-size: 62.5%; /* 1rem = 10px */
 }
-
-
 
 /* =====HEADER===== */
 
-
 .wrapper {
-  display: flex;
+    display: flex;
 }
 
 .container {
-  max-width: 102.4rem; 
-   margin: 0 auto;
+    max-width: 102.4rem;
+    margin: 0 auto;
 }
 
 section.menu {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .gradiente {
-  /* background-image: linear-gradient(to bottom, hsl(205, 51%, 20%), white); */
-  /* height: 100vh;
+    /* background-image: linear-gradient(to bottom, hsl(205, 51%, 20%), white); */
+    /* height: 100vh;
   width: 100vw; */
-  background: linear-gradient(-45deg, white,#04acb6,#55e5c5,#19364b);
-  background-size: 400% 400%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  animation: backgroundTransition 8s ease-in-out infinite;
-  
+    background: linear-gradient(-45deg, white, #04acb6, #55e5c5, #19364b);
+    background-size: 400% 400%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: backgroundTransition 8s ease-in-out infinite;
 }
 
 @keyframes backgroundTransition {
-  0% {
-    background-position: 0% 80%;
-  }
-  50% {
-    background-position: 80% 100%;
-  }
-  100% {
-    background-position: 0% 90%;
-  }
+    0% {
+        background-position: 0% 80%;
+    }
+    50% {
+        background-position: 80% 100%;
+    }
+    100% {
+        background-position: 0% 90%;
+    }
 }
 .menu {
-  display: flex;
-  /* justify-content: space-between; */
+    display: flex;
+    /* justify-content: space-between; */
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 
-  margin-top: 1rem;
-  
-  margin-bottom: 1rem;
+    margin-top: 1rem;
+
+    margin-bottom: 1rem;
 }
 
 .button {
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  text-align: end;
-  /* margin-top: 1rem; */
-  /* margin-right: 2rem; */
-margin-left: 7rem;
-  text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    /* margin-top: 1rem; */
+    /* margin-right: 2rem; */
+    margin-left: 7rem;
+    text-decoration: none;
 }
 
-.button a{
-  display: flex;
-  margin: 0 2rem;
-  text-decoration: none;
-  font-size: 1.5rem;
-  text-align: center;
-  color: var(--primary-color);
-  text-transform: uppercase;
-  font-weight: bold;
-  
+.button a {
+    display: flex;
+    margin: 0 2rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
 }
-.button a:hover{
-  font-size: 2rem;
-  text-decoration: underline;
-  
+.button a:hover {
+    font-size: 2rem;
+    text-decoration: underline;
+    transition: 300ms;
 }
 
 /* button {
@@ -118,265 +113,257 @@ margin-left: 7rem;
 } */
 
 .logo p {
-  color: var(--second-color);
-  font-family: "DM Sans", "Outfit", sans-serif;
+    color: var(--second-color);
+    font-family: "DM Sans", "Outfit", sans-serif;
 
-  font-size: 1.8rem;
+    font-size: 1.8rem;
 
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
-
-
 
 /* ==========MAIN========== */
 
-
 .banner img {
-  display: flex;
-  justify-content: center;
-  max-width: 100vw;
-  
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
 
-  margin: 0 auto;
+    margin: 0 auto;
 
-  position: relative;
-  
-  
- 
-  z-index: -10;
+    position: relative;
+
+    z-index: -10;
 }
 
 .saibamais {
-  display: flex;
-  position: relative;
-  /* border: 1px solid red; */
-  top: -10rem;
-  
+    display: flex;
+    position: relative;
+    /* border: 1px solid red; */
+    top: -10rem;
 }
 
 .saibamais .tag {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  
-  /* border: 1px solid blue; */
-  
-  margin: 0 auto;
-} 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    /* border: 1px solid blue; */
+
+    margin: 0 auto;
+}
 
 .saibamais h4 {
-  font-size: 3rem;
- 
-  font-weight: 100;
+    font-size: 3rem;
+
+    font-weight: 100;
 }
 
 .saibamais p {
-  font-size: 2rem;
-  font-weight: 100;
+    font-size: 2rem;
+    font-weight: 100;
 
-  margin-top: 3rem;
-} 
+    margin-top: 3rem;
+}
 
 button.saibaMais {
-  background-color: var(--primary-color);
-  color: white;
+    background-color: var(--primary-color);
+    color: white;
 
-  margin-top: 3rem;
+    margin-top: 3rem;
 
-  width: 15rem;
+    width: 15rem;
 
-  height: 3rem;
+    height: 3rem;
 }
 
 /* >>>APARELHOS<<< */
 .aparelhos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-  margin-top: 10rem;
+    margin-top: 10rem;
 }
 
 .aparelhos h1 {
-  color: var(--primary-color);
-  text-align: center;
-  font-size: 3rem;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 3rem;
 }
 
 .aparelhos img {
-  height: 27rem;
+    height: 27rem;
 }
 
 /* ===========FOOTER======== */
 
 footer {
-  display: flex;
-  background-color: var(--primary-color);
-  height: 20rem;
+    display: flex;
+    background-color: var(--primary-color);
+    height: 20rem;
 }
 
 footer h1 {
-  color: white;
-  font-size: 5rem;
-  margin: 2rem 0;
+    color: white;
+    font-size: 5rem;
+    margin: 2rem 0;
 }
 
 footer p {
-  color: white;
-  margin-bottom: 2rem;
+    color: white;
+    margin-bottom: 2rem;
 }
 
 footer a {
-  margin-right: 2rem;
+    margin-right: 2rem;
 }
 
 /* =======SOBRE NOS============== */
-.container{
-  max-width: 102.4rem;
- margin: 0 auto;
+.container {
+    max-width: 102.4rem;
+    margin: 0 auto;
 }
 
 .title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
 .title h1 {
-  font-weight: 600;
-  font-size: 4rem;
+    font-weight: 600;
+    font-size: 4rem;
 
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .title h4 {
-  font-weight: 100;
-  font-size: 1.5rem;
-  margin-top: 0.3rem;
-  margin-bottom: 0.3rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
 
-  color: rgb(161, 160, 160);
+    color: rgb(161, 160, 160);
 }
 
 .title p {
-  font-size: 1.3rem;
-  font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 #integrante {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #integrante img {
-  height: 25rem;
-  margin: 0.5rem 0.5rem;
+    height: 25rem;
+    margin: 0.5rem 0.5rem;
 }
 
 #integrante p {
-  display: flex;
-  text-align: center;
-  margin-top: 0.5rem;
-  margin-left: 0.5rem;
-  font-size: 0.1rem;
-  background-color: var(--primary-color);
-  width: 25rem;
+    display: flex;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 0.1rem;
+    background-color: var(--primary-color);
+    width: 25rem;
 
-  border: 1px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
 
 #integrante p:hover {
-  display: flex;
-  justify-content: center;
-  position: absolute;
+    display: flex;
+    justify-content: center;
+    position: absolute;
 
-  margin-top: 0.5rem;
-  font-size: 2rem;
-  width: 25rem;
-  height: 28.5rem;
-  padding: 2rem;
-  margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    width: 25rem;
+    height: 28.5rem;
+    padding: 2rem;
+    margin-left: 0.5rem;
 
-  background-color: white;
-  visibility: visible;
-  border: 1px solid var(--primary-color);
+    background-color: white;
+    visibility: visible;
+    border: 1px solid var(--primary-color);
 }
 
 .integrantes5 img {
-  width: 25rem;
+    width: 25rem;
 }
 
 #integrante .socialMedia a img {
-  margin: 0;
-  width: 2rem;
-  height: 2rem;
-  background-color: var(--primary-color);
+    margin: 0;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--primary-color);
 }
 
 .socialMedia {
-  display: flex;
-  justify-content: center;
-  background-color: var(--primary-color);
-  margin: 0 0.5rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    margin: 0 0.5rem;
 }
 
-#about{
-  background-color: var(--second-color);
-  margin-top: 2rem;
+#about {
+    background-color: var(--second-color);
+    margin-top: 2rem;
 }
 
-.sobreNos{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.sobreNos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.sobreNos h1{
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-size: 2rem;
+.sobreNos h1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
 
-  color: var(--primary-color);
-  
+    color: var(--primary-color);
 }
 
 .sobreNos p {
-  margin-bottom: 2rem;
-  font-size: 1.2rem;
-  color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: var(--primary-color);
 }
 
-#assinatura{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+#assinatura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.assine h1{
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  font-size: 2.5rem;
+.assine h1 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 2.5rem;
 
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
-.assine button{
-  margin: 0;
-  color: white;
-  background-color: var(--primary-color);
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  width: 6rem;
-  height: 2rem;
+.assine button {
+    margin: 0;
+    color: white;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    width: 6rem;
+    height: 2rem;
 }
 
 /* ==========================================MOBILE============================================= */

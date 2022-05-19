@@ -218,6 +218,8 @@ button  {
 
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     height: 50rem; 
     width:  30rem; 
     margin-top: 5rem ;
@@ -284,4 +286,5 @@ button  {
     
    
    }
+   
    

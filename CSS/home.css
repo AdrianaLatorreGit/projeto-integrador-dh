@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=DM+Sans:wght@400;700&family=Macondo&family=Outfit:wght@200;300;400&family=Poppins:wght@300&family=Roboto+Slab:wght@100&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* <<<VARIAVEIS>>> */
+:root {
+  --primary-color: hsl(205, 50%, 20%);
+  --second-color: hsla(167, 73%, 62%, 1);
+  --third-color: hsl(183, 96%, 36%);
+
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 102.4rem;
+  margin: 0 auto;
+}
+
+/* <<<HEADER>>> */
+
+header {
+  background-color: var(--primary-color);
+  
+}
+
+#header{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.logo p {
+  color: var(--second-color);
+  font-size: 2rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.6rem;
+  font-size: 1.5rem;
+}
+
+.menu a img {
+  width: 2.5rem;
+  
+}
+
+/* <<<CARROSSEL>>>  */
+
+.slider {
+  display: block;
+  position: relative;
+
+  height: 100%;
+  width: 100%;
+
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.slider li {
+  position: absolute;
+
+  list-style: none;
+}
+
+.slider img {
+  margin: auto;
+
+  vertical-align: top;
+
+  height: 60rem;
+  width: 100%;
+}
+
+.slider input{
+  display: none;
+}
+
+.slider label{
+  display: block;
+  position: absolute;
+  justify-content: center;
+  background-color: var(--primary-color);
+  cursor: pointer;
+
+  bottom: 1rem;
+
+  height: 2rem;
+  width: 2rem;
+  z-index: 10;
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+.slider li:nth-child(1) label {
+  left: 36rem;
+ }
+
+ .slider li:nth-child(2) label {
+   left: 39rem;
+  }
+
+  .slider li:nth-child(3) label {
+   left: 42rem;
+  }
+
+  .slider li:nth-child(4) label {
+   left: 45rem;
+  }
+
+
+  .slider img {
+    opacity: 0;
+    visibility: hidden;
+  } 
+  
+   .slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+    
+  }

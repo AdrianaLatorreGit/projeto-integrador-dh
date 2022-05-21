@@ -33,10 +33,22 @@ main {
   justify-content: center;
   justify-content: space-around;
   align-items: center;
-  color: var(--second-color)
+  color: var(--second-color);
+  
 
 }
-
+.imagemdefundo{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--second-color);
+  background-image: url(../img/logo/fundo-site-atomo2baixa_copia_1.svg);
+  background-repeat:no-repeat ;
+  background-position: center;
+  
+}
 #loginCadastro {
 
   /* border: solid 5px black; */
@@ -45,6 +57,7 @@ main {
   padding: 3rem;
   border-radius: 3REM;
   background-color: hsl(205, 50%, 20%, 0.5) ;
+  
 
 }
 
@@ -54,7 +67,7 @@ h3{
   text-align: center;
 
 }
- input{
+ .login input{
 
    display: block;
    margin-top: 2rem;
@@ -62,13 +75,13 @@ h3{
    width: 55rem;   
    background-color: rgba(0, 0, 0, 0);
    border:transparent;
-   border-bottom: var(--second-color) solid 0.5rem;
+   border-bottom: var(--second-color) solid 0.2rem;   
    margin-left: 2rem;
    font-weight: 400;
    
- }
+  }
 
-label{
+.login label{
 
   display: block;
   margin-top: 12rem;
@@ -84,7 +97,7 @@ label{
   
 }
 
-input[type=submit]{
+.login input[type=submit]{
   background-color: var(--primary-color);
   border-radius: 2rem;
   border: none;
@@ -109,11 +122,39 @@ a{
   
 }
 
-textarea:focus, input:focus{
+ .login  textarea:focus, .login input:focus{
 
-  font-weight: 500;
+  font-weight: 550;
   font-size: 2.5rem;
   outline: none;
-
+  
 }
 
+
+/* CARD DA PARTE DE CADASTRO */
+
+
+.cadastro label{
+  font-size: 1.7rem;
+  display: inline-block;
+}
+
+
+
+.cadastro input{
+ height: 2.5rem;
+ 
+  
+}
+
+.cadastro input:focus{
+  outline: none;
+}
+
+.nomecadastro{
+  width: 30%;
+}
+
+.sobrenomecadastro{
+  width: 40%;
+}

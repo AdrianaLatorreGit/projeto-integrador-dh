@@ -137,13 +137,16 @@ a{
 .cadastro label{
   font-size: 1.7rem;
   display: inline-block;
+  
+  
 }
 
 
 
 .cadastro input{
  height: 2.5rem;
- 
+ display: inline-block;
+ margin: 1.5rem auto;
   
 }
 
@@ -151,10 +154,65 @@ a{
   outline: none;
 }
 
-.nomecadastro{
-  width: 30%;
+#headcadastro{
+  margin-bottom: 4rem;
+}
+/* ajuste de tamanho do form de cadastro */
+
+
+#nome{
+  width: 35%;
 }
 
-.sobrenomecadastro{
+#sobrenome{
   width: 40%;
+}
+
+#rg{
+  width: 20%;
+}
+
+#rua{
+  width: 60%;
+}
+
+#num{
+  width:15%;
+}
+
+#complemento{
+  width: 40% ;
+}
+
+#cidade{
+  width: 50%;
+  margin-right: 2rem;
+}
+
+#estado{
+  margin-right: 10rem;
+  height: 2.2rem;
+  width: 5rem;
+}
+#cep{
+  margin-right: 40rem;
+}
+#email{
+ width: 60%;
+ margin-right: 15rem
+}
+
+#cadastrar{
+  display: block;
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+  border: none;
+  color: var(--second-color);
+  width: 40rem;
+  font-size: 2.5rem;  
+  color: white;
+  cursor: pointer;
+  margin: 10REM auto; 
+  height: 4REM;
+  
 }

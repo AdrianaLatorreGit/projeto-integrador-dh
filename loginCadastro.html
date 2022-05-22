@@ -26,16 +26,16 @@
         </div>
   
         <div class="cadastro" id="loginCadastro">
-          <h3>Cadastro</h3>
+          <h3 id="headcadastro">Cadastro</h3>
           <form action="" method="">
             <label for="nome">Nome:</label>
             <input type="text" name="nome" id="nome" required  class="control"/>
   
             <label for="">Sobrenome:</label>
-            <input type="text" required class="control" id="sobrenomecadastro" />
+            <input type="text" required class="control" id="sobrenome" />
   
             <label for="">R.G.:</label>
-            <input type="text" required />
+            <input type="text" required id="rg"/>
   
             <label for="">CPF:</label>
             <input type="text" required />
@@ -44,13 +44,62 @@
             <input type="text" />
   
             <label for="">Endereço:</label>
-            <input type="text" class="logradouro" required />
+            <input type="text" class="logradouro" id="rua" required />
   
             <label for=""> Número:</label>
-            <input type="text" class="num" required />
+            <input type="text" id="num" required />
   
             <label for="">Complemento:</label>
-            <input type="text" />
+            <input type="text" id="complemento" />
+
+            <label for="">Bairro:</label>
+            <input type="text">
+
+            <label for=""> Cidade:</label>
+            <input type="text" id="cidade">
+
+            <label for="estado"> Estado:</label>
+            <select name="estado" id="estado">
+              <option value="Acre">AC</option>
+              <option value="Alagoas">AL</option>
+              <option value="Amapa">AP</option>
+              <option value="Amazonas">AM</option>
+              <option value="Bahia">BA</option>
+              <option value="Ceara">CE</option>
+              <option value="DistritoFederal">DF</option>
+              <option value="EspiritoSanto">ES</option>
+              <option value="Goias">GO</option>
+              <option value="Maranhao">MA</option>
+              <option value="MatoGrosso">MT</option>
+              <option value="MatoGrossoDoSul">MS</option>
+              <option value="MinasGerais">MG</option>
+              <option value="Para">PA</option>
+              <option value="Paraiba">PB</option>
+              <option value="Parana">PR</option>
+              <option value="Pernambuco">PE</option>
+              <option value="Piaui">PI</option>
+              <option value="RioDeJaneiro">RJ</option>
+              <option value="RioGrandeDoNorte">RN</option>
+              <option value="RioGrandeDoSul">RS</option>
+              <option value="Ronsonia">RO</option>
+              <option value="Roraima">RR</option>
+              <option value="SantaCatarina">SC</option>
+              <option value="SaoPaulo">SP</option>
+              <option value="Sergipe">SE</option>
+              <option value="Tocantins">TO</option>
+            </select>
+
+            <label for="cep">CEP:</label>
+            <input type="text" name="cep" id="cep">
+
+            <label for="email">e-mail:</label>
+            <input type="email" id="email">
+
+            <label for="senha">Senha:</label>
+            <input type="password">
+
+            <input type="submit" name="" id="cadastrar" value="CADASTRAR">
+
   
           </form>
         </div>

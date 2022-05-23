@@ -118,3 +118,97 @@ header {
 
   /* <<<PLANOS>> */
 
+#planos {
+    display: flex;
+    justify-content: center;
+    
+    background-color: var(--second-color);
+    
+    height: 40rem;
+}
+
+.sub-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.sub-title h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.sub-title p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+
+}
+#planos img{
+    width: 12rem;
+    margin-bottom: 2rem;
+}
+
+.alfa, .beta, .omega{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    background-color: white;
+
+    width: 25rem;
+    height: 35rem;
+    margin-left: 2rem;
+    border-radius: 2rem;
+    margin-top: 2.5rem;
+}
+
+#planos h2{
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+#planos p {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+
+}
+
+#planos a {
+    color: var(--primary-color);
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    margin-bottom: 2rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    height:7rem;
+  
+}
+
+#socialMedia a {
+    display: inline-flex;
+    
+    align-items: center;
+    text-align: center;
+
+    margin-left: 1rem;
+    
+    
+}

@@ -116,42 +116,6 @@ header {
     }
 }
 
-/* .slider {
-  display: block;
-  position: relative;
-
-  height: 100%;
-  width: 100%;
-
-  margin: auto;
-  margin-top: 2rem;
-}
-
-.slider li {
-  position: absolute;
-
-  list-style: none;
-}
-
-.slider img {
-  margin: auto;
-
-  vertical-align: top;
-
-  height: 60rem;
-  width: 100%;
-}
-
-.slider input{
-  display: none;
-}
-
-.slider label{
-  display: block;
-  position: absolute;
-  justify-content: center;
-}
-
   /* <<<PLANOS>> */
 
   #planos {

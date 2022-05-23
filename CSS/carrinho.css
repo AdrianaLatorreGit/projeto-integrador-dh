@@ -13,7 +13,6 @@
     font-size: 62.5%; /* 1rem = 10px */
 }
 
-
 /* =====HEADER===== */
 
 .wrapper {
@@ -21,11 +20,8 @@
     flex-wrap: wrap;
 }
 
-
-
 .container {
-    margin: 0 auto;  
-    
+    margin: 0 auto;
 }
 
 section.menu {
@@ -57,7 +53,7 @@ section.menu {
     margin-right: 3rem;
 } */
 
-button  {
+button {
     font-family: "DM Sans", "Outfit", sans-serif;
     font-size: 1rem;
 
@@ -72,19 +68,15 @@ button  {
 
     height: 3rem;
     /* margin-left: 1rem; */
-
-
-    
 }
 
-.blocoAside button{
+.blocoAside button {
     flex-wrap: wrap;
     height: 7rem;
     width: 15rem;
     font-size: 3rem;
 
     margin: 3rem;
-    
 }
 
 .logo p {
@@ -98,193 +90,197 @@ button  {
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-.mainCarrinho{
+.mainCarrinho {
     /* border: solid black 10px; */
-    background-image: linear-gradient(to bottom, #05A8B1 , #184055);;
-
-
+    background-image: linear-gradient(to bottom, #05a8b1, #184055);
 
     height: 100vh;
     width: 100vw;
     display: flex;
-    
 }
-.blocoPrincipal{
+.blocoPrincipal {
     /* border: solid purple 5px; */
 
     width: 75vw;
     display: flex;
     justify-content: center;
-
 }
 
-.produtoNoCarrinho1{
+.produtoNoCarrinho1 {
     /* border: solid yellow 5px; */
     width: 80rem;
-    height: 24rem;
+    height: 23rem;
     position: relative;
     top: 8rem;
     background-color: white;
+
+    margin-left: 3rem;
     /* padding-left: 4rem; */
     display: flex;
     flex-direction: column;
-
 }
 
-.titulosCard{
-    display:flex;
+.titulosCard {
+    display: flex;
     justify-content: space-around;
     font-size: 3rem;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-   
-    /* border:1px solid red; */
-    position: relative;
-   
+
+    margin-top: 0.5rem;
+
+    /* position: relative; */
 }
 
-
-
-.aparelho1carrinho{
+.aparelho1carrinho {
     height: 22rem;
     width: 23.5rem;
-    
 }
 
-.valoresCard{
+/* .valoresCard{
     display:flex;
     justify-content: space-around;
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 0.2rem;
     position: relative;
+    border:1px solid black
     
-}
+} */
 
-.descricaoProdutoCarrinho{
+.descricaoProdutoCarrinho {
     font-size: 1.8rem;
     position: relative;
     top: 0.6rem;
     font-weight: 200;
-    
 }
-.coluna1{
+.coluna1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-right: 1px solid black;
+
+    top: 4rem;
+
     /* padding: 1.5rem; */
 }
-.coluna2{
- display: flex;
- flex-direction: column;
- align-items: center;
- border-right: 1px solid black;
+.coluna2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid black;
     /* padding: 3rem; */
 }
-.coluna3{
+.coluna3 {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-right: 1px solid black;
+
+    top: 2rem;
+
     /* padding: 1.5rem; */
 }
-.coluna4{
+.coluna4 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.valoresCarrinho{
+.valoresCarrinho {
     font-weight: 200;
-    
+
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     top: 7rem;
     font-size: 2rem;
+
+    top: 8rem;
 }
 
+p {
+    margin-top: 2rem;
+    font-size: 2.3rem;
+}
 
-
-.blocoAside{
+.blocoAside {
     /* border: solid darkorange 5px; */
     width: 25vw;
     display: flex;
     justify-content: center;
-    
+
+    margin-right: 3rem;
 }
 
-.cardPagamento{
+.cardPagamento {
     /* border: solid 3px red; */
 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 50rem; 
-    width:  30rem; 
-    margin-top: 5rem ;
+    height: 50rem;
+    width: 30rem;
+    margin-top: 5rem;
     border-radius: 3rem;
-    background-color: rgba(126, 154, 165,0.8);
-   
-    
+    background-color: rgba(126, 154, 165, 0.8);
+
     font-family: Arial, Helvetica, sans-serif;
 
     margin: 3rem;
 }
 
-.resumoPedido{
-    font-size: 3rem;
+.resumoPedido {
+    font-size: 2.5rem;
     text-align: center;
-    margin-top: 5rem ;
+    margin-top: 5rem;
     font-weight: bold;
-   }
+    /* border:1px solid red; */
+}
 
-   .pedidoValores{
-       
-       font-size: 1.7rem;
-       text-align: center;
-       margin-top: 2rem;
-   }
-   .pedidoValores1{
-       display: flex;
-       font-size: 1.7rem;
-       text-align: center;
-       flex-direction: column;
-       margin-top: 2rem;
-   }
+.pedidoValores {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.pedidoValores1 {
+    display: flex;
+    font-size: 1.7rem;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
 
-   .valorFinal{
-    font-size: 2rem;
+.valorFinal{
+    font-size: 2.5rem;
     text-align: end;
-    margin-top:3rem;
-    margin-right: 4rem;
-   }
+    margin-top: 3rem;
+   text-align: center;
+    /* border:1px solid blue; */
+}
 
-   .parcelamento{
+.parcelamento {
     font-size: 1.5rem;
     text-align: end;
-    margin-top:2rem;
+    margin-top: 2rem;
     margin-right: 3rem;
     font-weight: 500;
-    
-   }
 
-   .finalizaPedido{
-       
-       background-color: #2CCBC4;
-       /* margin: 7rem 0 0 8.5rem; */
-       width:2rem;
-       height: 2rem;
-   }
+    text-align: center;
+    margin-left: 3rem;
+    /* border:1px solid blue; */
+}
 
-  
+button.finalizaPedido {
+    background-color: #2ccbc4;
+    width: 17rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
 
-   #colunas{
-       width: 25%;
-       /* border:1px solid blue; */
-       font-size: 3rem;
-    
-   
-   }
-   
-   
+#colunas {
+    width: 25%;
+    /* border:1px solid blue; */
+    font-size: 3rem;
+}
+
+/* ==========MOBILE======== */

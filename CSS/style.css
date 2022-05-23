@@ -82,17 +82,20 @@ section.menu {
 .button a {
     display: flex;
     margin: 0 2rem;
+    
     text-decoration: none;
     font-size: 1.5rem;
     text-align: center;
     color: var(--primary-color);
     text-transform: uppercase;
     font-weight: bold;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
 .button a:hover {
     font-size: 2rem;
     text-decoration: underline;
-    transition: 300ms;
+    transition: 500ms;
 }
 
 /* button {
@@ -123,6 +126,9 @@ section.menu {
 
 /* ==========MAIN========== */
 
+
+
+
 .banner img {
     display: flex;
     justify-content: center;
@@ -135,32 +141,27 @@ section.menu {
     z-index: -10;
 }
 
-.saibamais {
+#saibamais {
     display: flex;
     position: relative;
     /* border: 1px solid red; */
     top: -10rem;
 }
 
-.saibamais .tag {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-
-    /* border: 1px solid blue; */
-
-    margin: 0 auto;
+ .tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.saibamais h4 {
+#saibamais h4 {
     font-size: 3rem;
 
     font-weight: 100;
 }
 
-.saibamais p {
+#saibamais p {
     font-size: 2rem;
     font-weight: 100;
 

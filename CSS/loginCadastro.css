@@ -1,0 +1,218 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* <<<VARIAVEIS>>> */
+:root {
+  --primary-color: hsl(205, 50%, 20%);
+  --second-color: hsla(167, 73%, 62%, 1);
+  --third-color: hsl(183, 96%, 36%);
+
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 102.4rem;
+  margin: 0 auto;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+main {
+
+  background-image: linear-gradient(to bottom, #1a394e, #04a8b1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--second-color);
+  
+
+}
+.imagemdefundo{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--second-color);
+  background-image: url(../img/logo/fundo-site-atomo2baixa_copia_1.svg);
+  background-repeat:no-repeat ;
+  background-position: center;
+  
+}
+#loginCadastro {
+
+  /* border: solid 5px black; */
+  height: 90%;
+  width: 40%;
+  padding: 3rem;
+  border-radius: 3REM;
+  background-color: hsl(205, 50%, 20%, 0.5) ;
+  
+
+}
+
+h3{
+
+  font-size: 2.5rem;
+  text-align: center;
+
+}
+ .login input{
+
+   display: block;
+   margin-top: 2rem;
+   height: 4rem;
+   width: 55rem;   
+   background-color: rgba(0, 0, 0, 0);
+   border:transparent;
+   border-bottom: var(--second-color) solid 0.2rem;   
+   margin-left: 2rem;
+   font-weight: 400;
+   
+  }
+
+.login label{
+
+  display: block;
+  margin-top: 12rem;
+  font-size: 3rem;
+  margin-left: 2rem;
+
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+
+  
+}
+
+.login input[type=submit]{
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+  border: none;
+  color: var(--second-color);
+  width: 40rem;
+  font-size: 2.5rem;  
+  color: white;
+  cursor: pointer;
+  margin: 15rem auto; 
+  
+
+}
+
+
+
+a{
+  float: right;
+  color: var(--second-color);
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  
+}
+
+ .login  textarea:focus, .login input:focus{
+
+  font-weight: 550;
+  font-size: 2.5rem;
+  outline: none;
+  
+}
+
+
+/* CARD DA PARTE DE CADASTRO */
+
+
+.cadastro label{
+  font-size: 1.7rem;
+  display: inline-block;
+  
+  
+}
+
+
+
+.cadastro input{
+ height: 2.5rem;
+ display: inline-block;
+ margin: 1.5rem auto;
+  
+}
+
+.cadastro input:focus{
+  outline: none;
+}
+
+#headcadastro{
+  margin-bottom: 4rem;
+}
+/* ajuste de tamanho do form de cadastro */
+
+
+#nome{
+  width: 35%;
+}
+
+#sobrenome{
+  width: 40%;
+}
+
+#rg{
+  width: 20%;
+}
+
+#rua{
+  width: 60%;
+}
+
+#num{
+  width:15%;
+}
+
+#complemento{
+  width: 40% ;
+}
+
+#cidade{
+  width: 50%;
+  margin-right: 2rem;
+}
+
+#estado{
+  margin-right: 10rem;
+  height: 2.2rem;
+  width: 5rem;
+}
+#cep{
+  margin-right: 40rem;
+}
+#email{
+ width: 60%;
+ margin-right: 15rem
+}
+
+#cadastrar{
+  display: block;
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+  border: none;
+  color: var(--second-color);
+  width: 40rem;
+  font-size: 2.5rem;  
+  color: white;
+  cursor: pointer;
+  margin: 10REM auto; 
+  height: 4REM;
+  
+}

@@ -249,11 +249,11 @@ p {
     margin-top: 2rem;
 }
 
-.valorFinal{
+.valorFinal {
     font-size: 2.5rem;
     text-align: end;
     margin-top: 3rem;
-   text-align: center;
+    text-align: center;
     /* border:1px solid blue; */
 }
 
@@ -284,3 +284,5 @@ button.finalizaPedido {
 }
 
 /* ==========MOBILE======== */
+
+

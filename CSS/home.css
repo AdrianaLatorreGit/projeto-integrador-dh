@@ -243,17 +243,16 @@ body.menu-expended .close-menu {
  .wrapper{
 
     visibility: hidden;
+    border:1px solid red;
+    background-color:var(--primary-color)
  }
 
- .nav #navigation{
+
+
+ nav #navigation{
      visibility:hidden;
+     
  }
-
-/* .nav #navigation{
-    display:flex;
-visibility: hidden;
-z-index: -3;
-} */
 
 
 
@@ -324,6 +323,7 @@ z-index: -3;
     .menu .button {
         background: #ffffff;
         border-radius: 4rem;
+        
     
         font-weight: 700;
         font-size: 1.8rem;
@@ -365,11 +365,20 @@ z-index: -3;
         visibility: hidden;
     }
 
-    /* .wrapper{
 
-        visibility: visible;
-     } */
 
+ .wrapper{
+
+    /* visibility: hidden; */
+    
+    background-color:var(--primary-color)
+ }
   
+ a{
+
+    visibility:hidden;
+
+ }
+ 
    
 }

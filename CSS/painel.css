@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=DM+Sans:wght@400;700&family=Macondo&family=Outfit:wght@200;300;400&family=Poppins:wght@300&family=Roboto+Slab:wght@100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* <<<VARIAVEIS>>> */
+:root {
+  --primary-color: hsl(205, 50%, 20%);
+  --second-color: hsla(167, 73%, 62%, 1);
+  --third-color: hsl(183, 96%, 36%);
+
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 102.4rem;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  background-color: rgb(221, 218, 218);
+  height: 50rem;
+}
+
+.perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  flex-direction: column;
+
+  background-color: var(--third-color);
+
+  height: 40rem;
+  width: 20rem;
+  margin-top: 5rem;
+
+  border-radius: 2rem;
+}
+
+.perfil img {
+  width: 15rem;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+
+  padding: 0.2rem;
+  background-color: var(--second-color);
+}
+
+.perfil button {
+  background-color: var(--primary-color);
+  color: white;
+
+  border: none;
+  border-radius: 1rem;
+  width: 13rem;
+
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.perfil button:hover {
+  color: var(--second-color);
+}
+
+.perfil ul {
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.perfil ul li:hover {
+  color: var(--second-color);
+  
+}
+
+.edit {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  background-color: white;
+  width: 30rem;
+  height: 45rem;
+  margin-top: 2.5rem;
+  margin-left: 10rem;
+
+  border-radius: 2rem;
+}
+.edit img {
+  width: 9rem;
+  border-radius: 50%;
+}
+
+.edit img.usuario {
+  padding: 0.2rem;
+  background-color: var(--second-color);
+
+  margin-top: 1rem;
+}
+
+.edit button {
+  background-color: var(--primary-color);
+  color: white;
+
+  border: none;
+  border-radius: 1rem;
+  width: 13rem;
+
+  font-size: 1.5rem;
+  margin: 1rem 0;
+
+  cursor: pointer;
+}
+
+.edit button:hover{
+  color: var(--second-color);
+}
+
+.edit label {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.edit input {
+  background-color: rgb(226, 219, 219);
+  border: none;
+  border-radius: 1rem;
+  width: 25rem;
+}

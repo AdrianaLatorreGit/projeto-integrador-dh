@@ -152,12 +152,15 @@ button {
     position: relative;
     top: 0.6rem;
     font-weight: 200;
+    /* border: 1px solid red; */
 }
 .coluna1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-right: 1px solid black;
+
+   
 
     top: 4rem;
 
@@ -189,11 +192,11 @@ button {
     font-weight: 200;
 
     font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
+    position: relative;
     top: 7rem;
     font-size: 2rem;
 
-    top: 8rem;
+    top:3rem;
 }
 
 p {
@@ -202,6 +205,7 @@ p {
 }
 
 .blocoAside {
+    position: relative;
     /* border: solid darkorange 5px; */
     width: 25vw;
     display: flex;
@@ -249,6 +253,10 @@ p {
     margin-top: 2rem;
 }
 
+.p valoresCarrinho{
+    
+}
+
 .valorFinal {
     font-size: 2.5rem;
     text-align: end;
@@ -284,5 +292,24 @@ button.finalizaPedido {
 }
 
 /* ==========MOBILE======== */
+@media (max-width: 650px){
 
+    .mainCarrinho{
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    div.cardPagamento{
+    width: 400rem;
+    margin-top: 13rem;
+    }
 
+    div.mainCarrinho {
+       
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+    }
+
+ 
+}

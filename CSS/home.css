@@ -9,7 +9,7 @@
 
 /* <<<VARIAVEIS>>> */
 :root {
-    --primary-color: hsl(205, 50%, 20%);
+    --primary-color: hsla(205, 50%, 20%, 1);
     --second-color: hsla(167, 73%, 62%, 1);
     --third-color: hsl(183, 96%, 36%);
 
@@ -27,43 +27,85 @@ body {
 
 /* <<<HEADER>>> */
 
-header {
+/* header {
     background-color: var(--primary-color);
 }
 
 #header {
+    
     display: flex;
     justify-content: space-between;
+
+} */
+
+/* ================== hamburguer========== */
+
+#header {
+    display: flex;
+    background-color: var(--primary-color);
+    align-items: center;
+    height: 10rem;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+#menu a {
+    display: block;
+    padding: 0.5rem;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 0.6rem;
+}
+
+a:hover {
+    background-color: rgb(40, 89, 124);
+}
+
+#btn-mobile {
+    display: none;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    justify-content: center;
+    padding: 2rem;
 }
 
-.logo p {
-    color: var(--second-color);
-    font-size: 2rem;
+a img {
+    width: 8rem;
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 0.6rem;
-    font-size: 1.5rem;
-}
-
-.menu a img {
+li a img {
     width: 2.5rem;
 }
+
+p {
+    color: var(--second-color);
+    font-size: 1.7rem;
+}
+
+/* Botao hamburger */
+#btn-mobile {
+    display: none;
+}
+
+/* .carrinho{
+    width:20px;
+    height:20px;
+    border:1px solid red;
+} */
 
 /* <<<CARROSSEL>>>  */
 
@@ -210,175 +252,80 @@ footer {
     margin-left: 1rem;
 }
 
-/* Botão scroll */
-#backToTopButton {
-    position: fixed;
-    /* posição do botão */
-    bottom: 1rem;
-    right: 2.5rem;
-
-    opacity: 0;
-    visibility: hidden;
+#socialMedia a img{
+    width:3rem;
 }
-
-#backToTopButton.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-/* Hamburguer */
-
-nav .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-body.menu-expended .menu,
-body.menu-expended .close-menu {
-    opacity: 1;
-    visibility: visible;
-}
-
- .wrapper{
-
-    visibility: hidden;
-    border:1px solid red;
-    background-color:var(--primary-color)
- }
-
-
-
- nav #navigation{
-     visibility:hidden;
-     
- }
-
 
 
 /* ========MOBILE========= */
 
-@media (max-width: 650px) {
-    nav {
-        display: flex;
+@media (max-width: 660px) {
+    /* ==========hamburger======= */
 
-        height: var(--nav-height);
+    #menu {
+        display: block;
 
-        position: fixed;
-        top: 0;
-        width: 100vw;
-
-        z-index: 100;
-    }
-
-    nav.scroll {
-        background-color: var(--prymary-color);
-    }
-
-   
-    .menu,
-    .close-menu,
-    body.menu-expended .open-menu {
-        opacity: 0;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: var(--primary-color);
+        height: 0rem;
+        transition: 0.6s;
+        z-index: 1000;
         visibility: hidden;
+        overflow-y: hidden;
     }
 
-    .menu {
-        /* transiçãp do menu */
-        transform: translateY(100%);
-    } 
+    #nav.active #menu {
+        height: calc(100vh - 7rem);
+        margin-top: 3rem;
+        visibility: visible;
+        overflow-y: auto;
+    }
 
-    body.menu-expended .menu {
-        top: 0;
-        left: 0;
-        background: var(--prymary-color);
+    #menu a {
+        padding: 1rem;
+        margin: 0 1rem;
+        border-bottom: 2px solid var(--second-color);
+    }
 
-        width: 100vw;
-        height: 100vh;
-
-        padding-top: var(--nav-height);
-
-        /* transição do menu  */
-         transition: transform 300ms;
-        transform: translateY(0);
-    }  
-
-    .menu ul:nth-child(1) {
+    #btn-mobile {
         display: flex;
-        flex-direction: column;
-        gap: 4.8rem;
-
-        margin-top: 6rem;
-
-        font-weight: 700;
-        font-size: 2.4rem;
-        line-height: 3.1rem;
-    } 
-
-    .menu ul li a {
-        color: #fff;
-        text-decoration: none;
+        padding: 05rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 05rem;
     }
 
-    .menu .button {
-        background: #ffffff;
-        border-radius: 4rem;
-        
-    
-        font-weight: 700;
-        font-size: 1.8rem;
-        line-height: 2.3rem;
-        text-transform: uppercase;
-        /* retira o sublinhado que vem através do link  */
-        text-decoration: none;
-    
-        color: var(--prymary-color);
-    
-        display: inline-block;
-        padding: 1.6rem 3.2rem;
-    
-        margin-top: 4.8rem;
-        margin-bottom: 8rem;
+    #hamburger {
+        border-top: 1px solid var(--second-color);
+        width: 2rem;
+        display: block;
     }
-    
-    .menu .button:hover {
-        background-color: var(--prymary-color);
-        color: #fff;
-    
-        filter: brightness(1.1);
-    }
-    
-    body.menu-expended .logo,
-    body.menu-expended nav button {
+
+    #hamburger::after,
+    #hamburger::before {
+        content: "";
+        display: block;
+        width: 2rem;
+        height: 0.2rem;
+        background: var(--second-color);
+        margin-top: 0.5rem;
+        transition: 0.3s;
         position: relative;
-        z-index: 100;
-    }
-   
-
-    body.menu-expended .logo path {
-        fill: white;
-    }
-    body.menu-expended button path {
-        stroke: white;
-    }
-    .header.logo img {
-        visibility: hidden;
     }
 
-
-
- .wrapper{
-
-    /* visibility: hidden; */
-    
-    background-color:var(--primary-color)
- }
-  
- a{
-
-    visibility:hidden;
-
- }
- 
-   
+    #nav.active #hamburger {
+        border-color: transparent;
+    }
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
 }

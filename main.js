@@ -1,20 +1,22 @@
-// Adicionar e remover header Navigation
+// =======efeito hamburguer=========
+const btnMobile = document.getElementById("btn-mobile");
 
-function showNavOnScrool() {
-    if (scrollY > 0) {
-        navigation.classList.add("scroll");
+function toggleMenu(event) {
+    if (event.type === "touchstart") {
+        event.preventDefault();
+    }
+    const nav = document.getElementById("nav");
+    nav.classList.toggle("active");
+    // para acessibilidade
+    const active = nav.classList.contains("active");
+    event.currentTarget.setAttribute("aria-expanded", "true");
+    // mudar acessibilidade de abrir menu para fechar menu
+    if (active) {
+        event.currentTarget.setAttribute("aria-label", "Fechar Menu");
     } else {
-        navigation.classList.remove("scroll");
+        event.currentTarget.setAttribute("aria-label", "Abrir Menu");
     }
 }
 
-// Ativa botão hamburguer on click (botão openMenu)
-function openMenu() {
-    document.body.classList.add("menu-expended");
-}
-
-// clicar no botão de fechar, dentro do expanded e sumir aquela navegação (botão closeMenu)
-function closeMenu() {
-    document.body.classList.remove("menu-expended");
-}
-
+btnMobile.addEventListener("click", toggleMenu);
+btnMobile.addEventListener("touchstart", toggleMenu);

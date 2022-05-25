@@ -163,14 +163,15 @@ p {
 #planos {
     display: flex;
     justify-content: center;
-
+    flex-wrap: wrap;
     background-color: var(--second-color);
 
-    height: 40rem;
+    height: 50%;
 }
 
 .sub-title {
     display: flex;
+    
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -182,17 +183,17 @@ p {
 .sub-title h2 {
     font-size: 2rem;
     text-transform: uppercase;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .sub-title p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
 }
 #planos img {
-    width: 12rem;
-    margin-bottom: 2rem;
+    width: 10rem;
+    /* margin-bottom: 2rem; */
 }
 
 .alfa,
@@ -208,10 +209,11 @@ p {
     background-color: white;
 
     width: 25rem;
-    height: 35rem;
+    height: 40rem;
     margin-left: 2rem;
     border-radius: 2rem;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 #planos h2 {

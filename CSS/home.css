@@ -69,7 +69,6 @@ header {
 /* <<<CARROSSEL>>>  */
 
 .galery {
-  
     width: 100%;
     height: 70%;
     /* background-color: black; */
@@ -117,18 +116,18 @@ header {
     }
 }
 
-  /* <<<PLANOS>> */
+/* <<<PLANOS>> */
 
 #planos {
     display: flex;
     justify-content: center;
-    
+
     background-color: var(--second-color);
-    
+
     height: 40rem;
 }
 
-.sub-title{
+.sub-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,24 +137,25 @@ header {
     color: white;
 }
 
-.sub-title h2{
+.sub-title h2 {
     font-size: 2rem;
     text-transform: uppercase;
     margin-top: 1rem;
 }
 
-.sub-title p{
+.sub-title p {
     font-size: 1.2rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
-
 }
-#planos img{
+#planos img {
     width: 12rem;
     margin-bottom: 2rem;
 }
 
-.alfa, .beta, .omega{
+.alfa,
+.beta,
+.omega {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -172,7 +172,7 @@ header {
     margin-top: 2.5rem;
 }
 
-#planos h2{
+#planos h2 {
     color: var(--primary-color);
     margin-bottom: 2rem;
     text-transform: uppercase;
@@ -181,7 +181,6 @@ header {
 #planos p {
     color: var(--primary-color);
     margin-bottom: 2rem;
-
 }
 
 #planos a {
@@ -196,21 +195,191 @@ header {
     margin-bottom: 2rem;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: center;
     background-color: var(--primary-color);
-    height:7rem;
-  
+    height: 7rem;
 }
 
 #socialMedia a {
     display: inline-flex;
-    
+
     align-items: center;
     text-align: center;
 
     margin-left: 1rem;
+}
+
+/* Botão scroll */
+#backToTopButton {
+    position: fixed;
+    /* posição do botão */
+    bottom: 1rem;
+    right: 2.5rem;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+#backToTopButton.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hamburguer */
+
+nav .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body.menu-expended .menu,
+body.menu-expended .close-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+ .wrapper{
+
+    visibility: hidden;
+    border:1px solid red;
+    background-color:var(--primary-color)
+ }
+
+
+
+ nav #navigation{
+     visibility:hidden;
+     
+ }
+
+
+
+/* ========MOBILE========= */
+
+@media (max-width: 650px) {
+    nav {
+        display: flex;
+
+        height: var(--nav-height);
+
+        position: fixed;
+        top: 0;
+        width: 100vw;
+
+        z-index: 100;
+    }
+
+    nav.scroll {
+        background-color: var(--prymary-color);
+    }
+
+   
+    .menu,
+    .close-menu,
+    body.menu-expended .open-menu {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .menu {
+        /* transiçãp do menu */
+        transform: translateY(100%);
+    } 
+
+    body.menu-expended .menu {
+        top: 0;
+        left: 0;
+        background: var(--prymary-color);
+
+        width: 100vw;
+        height: 100vh;
+
+        padding-top: var(--nav-height);
+
+        /* transição do menu  */
+         transition: transform 300ms;
+        transform: translateY(0);
+    }  
+
+    .menu ul:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        gap: 4.8rem;
+
+        margin-top: 6rem;
+
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 3.1rem;
+    } 
+
+    .menu ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .menu .button {
+        background: #ffffff;
+        border-radius: 4rem;
+        
     
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+        text-transform: uppercase;
+        /* retira o sublinhado que vem através do link  */
+        text-decoration: none;
     
+        color: var(--prymary-color);
+    
+        display: inline-block;
+        padding: 1.6rem 3.2rem;
+    
+        margin-top: 4.8rem;
+        margin-bottom: 8rem;
+    }
+    
+    .menu .button:hover {
+        background-color: var(--prymary-color);
+        color: #fff;
+    
+        filter: brightness(1.1);
+    }
+    
+    body.menu-expended .logo,
+    body.menu-expended nav button {
+        position: relative;
+        z-index: 100;
+    }
+   
+
+    body.menu-expended .logo path {
+        fill: white;
+    }
+    body.menu-expended button path {
+        stroke: white;
+    }
+    .header.logo img {
+        visibility: hidden;
+    }
+
+
+
+ .wrapper{
+
+    /* visibility: hidden; */
+    
+    background-color:var(--primary-color)
+ }
+  
+ a{
+
+    visibility:hidden;
+
+ }
+ 
+   
 }

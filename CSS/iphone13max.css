@@ -5,8 +5,9 @@
 }
 /* <<<VARIAVEIS>>> */
 :root {
-    --primary-color: hsl(205, 50%, 20%);
+    --primary-color: hsla(205, 50%, 20%, 1);
     --second-color: hsla(167, 73%, 62%, 1);
+    --third-color: hsl(183, 96%, 36%);
     font-size: 62.5%; 
 }
 .li{
@@ -31,7 +32,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-image: linear-gradient(to bottom, hsl(205, 51%, 20%), white); 
+    background: var(--primary-color);
     height: 12vh;
 }
 .nav-list{
@@ -73,6 +74,10 @@ brand h2{
     font-weight: bold;
     padding-top: 2vh
 }
+.description{
+    font-size: 4vh;
+    width: 55vh;
+}
 button{
     color: #fff;
     font-size: 4vh;
@@ -96,7 +101,11 @@ button .fa{
 section{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    height:100vh;
+    margin-right: 20vh;
+    margin-left: 20vh;
+    margin-top: 10vh;
 }
 .celular{
     height: 100%;
@@ -105,9 +114,9 @@ section{
 }
 .content{
     margin-left: 10vh;
+    margin-top: 4 vh;
 }
 .teste{
-    margin-top: 5vh;
     width: 30%;
 }
 @media (max-width:999px){

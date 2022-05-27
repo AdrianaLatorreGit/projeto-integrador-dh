@@ -5,8 +5,10 @@ const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const port = 3000;
 
+// linkando EJS
 const indexRouter = require("./routes/index");
 const carrinhoRouter = require("./routes/carrinho");
+const sobrenosRouter = require("./routes/sobrenos");
 
 var app = express();
 
@@ -20,8 +22,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
+// usando rotas
 app.use("/", indexRouter);
-app.use("/carrinho", carrinhoRouter);
+app.use("/", carrinhoRouter);
+app.use("/", sobrenosRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

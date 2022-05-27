@@ -23,7 +23,7 @@ body {
 .container {
   max-width: 102.4rem;
   margin: 0 auto;
-    justify-content: center;
+  justify-content: center;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -40,11 +40,10 @@ body {
   /* margin: 0 auto; */
   margin: 2rem;
   padding: 1.5rem;
-  
+
   flex-direction: column;
   background-color: rgba(25, 55, 77, 0.151);
   border-radius: 2rem;
- 
 }
 
 #carrinho h1 {
@@ -55,33 +54,31 @@ body {
 
 .produto1,
 .produto2 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-    /* justify-content: space-around; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  /* justify-content: space-around; */
 }
 
 .produtoValor p,
 .produtoValor2 p {
-    display: flex;
-    align-self: flex-end;
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin-top: 3rem;
-    font-weight: bold;
-
+  display: flex;
+  align-self: flex-end;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-top: 3rem;
+  font-weight: bold;
 }
 
 .produtoValor,
 .produtoValor2 {
-   display: flex;
-   justify-content: flex-start;
-   align-items:flex-start;
-   text-align: left; 
-   flex-direction: column;
-   padding: 2rem;
-
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  flex-direction: column;
+  padding: 2rem;
 }
 
 .produto1 h2,
@@ -92,16 +89,15 @@ body {
 
 .produto1 h5,
 .produto2 h5 {
-    font-size: 1.3rem;
-    text-transform: capitalize;
+  font-size: 1.3rem;
+  text-transform: capitalize;
 }
 .produto1 h6,
 .produto2 h6 {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 0.8rem;
-} 
-
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+}
 
 #carrinho img {
   width: 15rem;
@@ -109,66 +105,60 @@ body {
 
 .produto1 img,
 .produto2 img {
-    display: flex;
-    justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .produto1,
 .produto2 {
+  margin-top: 3rem;
 
-    margin-top: 3rem;
-    
-
-    border-top: 2px solid var(--primary-color);
-    padding-top: 2rem;
+  border-top: 2px solid var(--primary-color);
+  padding-top: 2rem;
 }
-
 
 /* <<<RESUMO COMPRA>>> */
 
 #resumo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
 
-    background-color: rgba(25, 55, 77, 0.151);
-    border-radius: 2rem;
-    padding: 1rem;
-    height: 25rem;
-
+  background-color: rgba(25, 55, 77, 0.151);
+  border-radius: 2rem;
+  padding: 1rem;
+  height: 25rem;
 }
 
-#resumo h2{
-    text-transform: uppercase;
-    color: var(--primary-color);
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+#resumo h2 {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 
-#resumo p{
-    text-transform: capitalize;
-    margin-bottom: 1rem;
+#resumo p {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
 }
 
 #resumo h3 {
-    text-transform: capitalize;
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin-bottom: 1.5rem;
-
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
 }
 
 #resumo button {
-    border: none;
-    background-color: var(--primary-color);
-    color: white;
-    border-radius: 1rem;
-    width: 15rem;
-    height: 2.5rem;
-    text-transform: capitalize;
-    cursor: pointer;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 1rem;
+  width: 15rem;
+  height: 2.5rem;
+  text-transform: capitalize;
+  cursor: pointer;
 }
-

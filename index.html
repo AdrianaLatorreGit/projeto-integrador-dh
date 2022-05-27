@@ -1,203 +1,164 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Átomo</title>
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Outfit:wght@200;300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link
-      rel="shortcut icon"
-      href="./img/logo1_543_icon.ico"
-      type="image/x-icon"
-    />
-  </head>
-
-  <body>
-    <header>
-      <div class="gradiente">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="public/stylesheets/index.css" />
+        <link
+            rel="shortcut icon"
+            href="./img/logo1_543_icon.ico"
+            type="image/x-icon"
+        />
+        <title>Átomo</title>
+    </head>
+    <body>
         <div class="container">
-          <section class="menu">
-            <div class="logo">
-              <img src="img/atom-1341364_1920_est_2.svg" />
-              <p>
-                Locadora de <br />
-                Eletrônicos
-              </p>
-            </div>
+            <header id="header">
+                <div class="logo">
+                    <img
+                        src="./img/logo/atom-1341364_1920_est_2.svg"
+                        alt="Logo da empresa Átomo"
+                    />
 
-            <!-- <nav class="navigation"> -->
-            <!-- <button>
-                                    <img
-                                        src="img/Icon.svg"
-                                        alt="icone para abertura de menu"
-                                    />
-                                </button> -->
-            <!-- </nav> -->
-            <div class="button">
-              <a><p>Home</p></a>
+                    <p>
+                        Locadora de <br />
+                        Eletronicos
+                    </p>
+                </div>
 
-              <a><p>Produtos</p></a>
+                <nav id="nav">
+                    <!-- aria para acessibilidade -->
+                    <button
+                        aria-label="Abrir Menu"
+                        id="btn-mobile"
+                        aria-haspopup="true"
+                        aria-controls="menu"
+                        aria-expanded="false"
+                    >
+                        <span id="hamburger"></span>
+                    </button>
+                    <ul id="menu" role="menu">
+                        <li>
+                            <a href="/home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Planos</a>
+                        </li>
+                        <li>
+                            <a href="/sobreNos.html">Sobre nós</a>
+                        </li>
+                        <li>
+                            <a href="#">Login/Cadastro</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><img
+                                    src="./img/icones/WhatsApp_Image_2022-05-20_at_10.47.01_AM.png"
+                                    alt=""
+                            /></a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
 
-              <a href="sobreNos.html">
-                <p>Sobre nós</p>
-              </a>
-
-              <a><p>Contato</p></a>
-
-              <a><p>Carrinho</p></a>
-            </div>
-          </section>
+        <!-- <header>
+      <div class="container">
+        <div id="header">
+          
+          <div class="logo">
+            <img
+              src="./img/logo/atom-1341364_1920_est_2.svg"
+              alt="Logo da empresa Átomo"
+            />
+            <p>
+              Locadora de <br />
+              Eletronicos
+            </p>
+          </div>
+          <nav class="menu">
+            <a href="#">home</a>
+            <a href="#">produtos</a>
+            <a href="#">quem somos</a>
+            <a href="#">contato</a>
+            <a href="#"><img src="./img/icones/WhatsApp_Image_2022-05-20_at_10.47.01_AM.png" alt="" /></a>
+          </nav>
         </div>
       </div>
-    </header>
+    </header> -->
+        <main>
+            <div class="container">
+                <section class="galery">
+                    <div class="fotos">
+                        <img src="img/carrosel/carrosel1.jpeg" alt="" />
+                        <img src="img/carrosel/carrosel2.jpeg" alt="" />
+                        <img src="img/carrosel/carrosel3.jpeg" alt="" />
+                        <img src="img/carrosel/carrosel4.jpeg" alt="" />
+                        <!-- <img src="img/carrosel/carrosel1.jpeg" alt="" /> -->
+                    </div>
+                </section>
+                <div class="sub-title">
+                    <h2>veja os aparelhos disponíveis para da plano</h2>
+                    <p>assinatura mensal . não compromete o seu limite!</p>
+                </div>
+                <section id="planos">
+                    <div class="alfa">
+                        <h2>Plano alfa</h2>
+                        <img
+                            src="./img/aparelhos/relogio Apple watch 7 45mm ALuminio GPS Pulseira Esportiva.png"
+                            alt=""
+                        />
+                        <p>
+                            Equipamentos de primeira linha voltados para pessoas
+                            que atuam em home office e procuram comodidade e
+                            inovação.
+                        </p>
+                        <a href="#">saiba mais</a>
+                    </div>
+                    <div class="beta">
+                        <h2>Plano beta</h2>
+                        <img
+                            src="./img/aparelhos/Ipad pro11 apple M1 256GB cinza.png"
+                            alt=""
+                        />
+                        <p>
+                            Equipamentos de primeira linha voltados para
+                            viajantes, trilheiros, blogueiros e youtubers e
+                            todos aqueles que desejam ter os melhores registros
+                            em alta definição.
+                        </p>
+                        <a href="#">saiba mais</a>
+                    </div>
+                    <div class="omega">
+                        <h2>Plano ômega</h2>
+                        <img
+                            src="./img/aparelhos/Iphone 13 pro Max 128 azul.png"
+                            alt=""
+                        />
+                        <p>
+                            Equipamentos de última geração para aqueles que
+                            desejam ter os modelos de locação que mais se adapte
+                            a sua rotina.
+                        </p>
+                        <a href="#">saiba mais</a>
+                    </div>
+                </section>
 
-    <main>
-      <div class="container">
-        <section class="banner">
-          <img
-            src="./img/banner.png"
-            alt="banner com montagem de diversos dispositivos eletronicos"
-          />
-        </section>
-
-        <section id="saibamais">
-          <div class="tag">
-            <h4>Plano ALFA</h4>
-            <p>
-              Equipamentos de primeira linha voltados para pessoas que atuam em
-              home office e procuram comodidade e inovação.
-            </p>
-            <button class="saibaMais">Saiba mais</button>
-          </div>
-          <div class="tag">
-            <h4>Plano BETA</h4>
-            <p>
-              Equipamentos de primeira linha voltados para viajantes,
-              trilheiros, blogueiros e youtubers e todos aqueles que desejam ter
-              os melhores registros em alta definição.
-            </p>
-            <button class="saibaMais">Saiba mais</button>
-          </div>
-          <div class="tag">
-            <h4>Plano ÔMEGA</h4>
-            <p>
-              Equipamentos de última geração para aqueles que desejam ter os
-              modelos de locação que mais se adapte a sua rotina.
-            </p>
-            <button class="saibaMais">Saiba mais</button>
-          </div>
-        </section>
-
-        <!-- PARA MOBILE -->
-        <!-- <section id="planos"> -->
-        <!-- <h1>Átomo, sua locadora de eletrónicos</h1>
-                        <h3>
-                            Veja mais sobre nossos planos de assinatura e os
-                            aparelhos para o que você precisar!
-                        </h3> -->
-
-        <!-- Slider Home -->
-
-        <!-- <ul class="slider">
-                            <li>
-                                <input
-                                    type="radio"
-                                    name="slide"
-                                    id="slide1"
-                                    checked
-                                />
-                                <label class="slide1" for="slide1"></label>
-                                <img src="./img/Whatch.svg" alt="" />
-                            </li>
-                            <li>
-                                <input
-                                    type="radio"
-                                    name="slide"
-                                    id="slide2"
-                                    checked
-                                />
-                                <label class="slide2" for="slide2"></label>
-                                <img src="./img/iphone.svg" alt="" />
-                            </li>
-                            <li>
-                                <input
-                                    type="radio"
-                                    name="slide"
-                                    id="slide3"
-                                    checked
-                                />
-                                <label class="slide3" for="slide3"></label>
-                                <img src="./img/mac.svg" alt="" />
-                            </li>
-                        </ul> -->
-        <!-- </section> -->
-
-        <section>
-          <div class="aparelhos">
-            <div class="ap">
-              <h1>Plano Alfa</h1>
-              <img
-                src="img/aparelhos/Iphone 12 Pro Max apple preto .png"
-                alt="Imagem de um Iphone 14 pro max preto"
-              />
-              <img
-                src="img/aparelhos/Notebook Vostro 5510.png"
-                alt="iMac Apple 27 de retina"
-              />
-              <img
-                src="img/aparelhos/NikonD3500.png"
-                alt="imagem de um aparelho alexa echo show 10"
-              />
+                <footer id="socialMedia">
+                    <a href="#"
+                        ><img src="./img/icones/whatsapp.svg" alt=""
+                    /></a>
+                    <a href="#"
+                        ><img src="./img/icones/facebook 1.svg" alt=""
+                    /></a>
+                    <a href="#"
+                        ><img src="./img/icones/instagram 1.svg" alt=""
+                    /></a>
+                </footer>
             </div>
-            <div class="ap">
-              <h1>Plano Beta</h1>
-              <img
-                src="img/aparelhos/Hero9 Black.png"
-                alt="Imagem de um galaxy s21 lilás"
-              />
+        </main>
 
-              <img
-                src="img/aparelhos/Tablet Samsung Galaxy S7 com caneta 11'' 4G 256GB android octa cam dupla.png"
-                alt="Imagem de um apple watch verde"
-              />
-              <img
-                src="img/aparelhos/Samsung galaxy s20 fe clound mint.png"
-                alt="Imagem de uma webcam logitech preta"
-              />
-            </div>
-            <div class="ap">
-              <h1>Plano Ômega</h1>
-              <img
-                src="img/aparelhos/Monitor 23.8 Dell S2421HN.png"
-                alt="imagem de um celular Samsung Galaxy S20"
-              />
-
-              <img
-                src="img/aparelhos/relogio Apple watch 7 45mm ALuminio GPS Pulseira Esportiva.png"
-                alt="imagem de um notebook dell"
-              />
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-
-    <footer>
-      <div class="container">
-        <h1>Átomo</h1>
-        <p>&copy;2022 Átomo. Locadora de eletronicos</p>
-
-        <a href=""><img src="./img/icones/facebook 1.svg" alt="" /></a>
-        <a href=""><img src="./img/icones/instagram 1.svg" alt="" /></a>
-        <a href=""><img src="./img/icones/whatsapp.svg" alt="" /></a>
-      </div>
-    </footer>
-    <script src="./main.js"></script>
-  </body>
+        <script src="main.js"></script>
+    </body>
 </html>

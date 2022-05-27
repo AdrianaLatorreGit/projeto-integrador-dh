@@ -1,27 +1,19 @@
 {
   "name": "projeto-integrador-dh",
-  "version": "1.0.0",
-  "description": "Projeto de conclusão de curso da Escola Digital House.",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AdrianaLatorreGit/projeto-integrador-dh.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AdrianaLatorreGit/projeto-integrador-dh/issues"
-  },
-  "homepage": "https://github.com/AdrianaLatorreGit/projeto-integrador-dh#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.16"
+    "start": "nodemon app.js"
   },
   "dependencies": {
-    "express": "^4.18.1"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }

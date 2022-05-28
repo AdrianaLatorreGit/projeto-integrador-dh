@@ -3,14 +3,14 @@ const express = require("express");
 const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // linkando EJS
 const indexRouter = require("./routes/index");
 const carrinhoRouter = require("./routes/carrinho");
 const sobrenosRouter = require("./routes/sobrenos");
 
-var app = express();
+const app = express();
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));

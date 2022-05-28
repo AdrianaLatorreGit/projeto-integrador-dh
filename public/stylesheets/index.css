@@ -69,7 +69,7 @@ a {
 }
 
 a:hover {
-    background-color: rgb(40, 89, 124);
+    text-decoration: underline;
 }
 
 #btn-mobile {
@@ -236,6 +236,10 @@ p {
     text-transform: uppercase;
 
     margin-bottom: 2rem;
+}
+
+#planos a:hover{
+    text-decoration: underline;
 }
 
 footer {

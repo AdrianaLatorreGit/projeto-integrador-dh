@@ -37,47 +37,75 @@ main {
   
 
 }
-.imagemdefundo{
+.inputLogin{
+  /* border: solid red 5px; */
   height: 100vh;
+  width: 50%;
   display: flex;
-  justify-content: center;
-  justify-content: space-around;
   align-items: center;
-  color: var(--second-color);
-  background-image: url(../img/logo/fundo-site-atomo2baixa_copia_1.svg);
-  background-repeat:no-repeat ;
+  justify-content: center;
+  padding-top: 4rem;
+  
+}
+
+.imagemAside{
+  /* border: darkgreen 5px solid; */
+  width: 50%;
+  height: 100vh;
+  background-image: url(../public/images/logo/fundo-site-atomo2baixa_copia_1.svg);
+  background-repeat: no-repeat;
   background-position: center;
-  
-}
-#loginCadastro {
-
-  /* border: solid 5px black; */
-  height: 90%;
-  width: 40%;
-  padding: 3rem;
-  border-radius: 3REM;
-  background-color: hsl(205, 50%, 20%, 0.5) ;
-  
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 
 }
+.titulos{
+  display: flex;
+  justify-content: space-around;
+}
+
 
 h3{
 
-  font-size: 2.5rem;
-  text-align: center;
-
+  font-size: 3rem;
+  text-align: center; 
+  width: 30rem;
+  margin: auto 5rem;
+  
+  padding-bottom: 1rem;
+  
 }
+
+h3:hover{
+  border-bottom: var(--second-color) solid 0.2rem;
+  transition: 100ms;
+  cursor: pointer;
+}
+
+h2{
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  
+  margin: 10rem;
+}
+
  .login input{
 
    display: block;
    margin-top: 2rem;
    height: 4rem;
-   width: 55rem;   
+   width: 70rem;   
    background-color: rgba(0, 0, 0, 0);
    border:transparent;
    border-bottom: var(--second-color) solid 0.2rem;   
    margin-left: 2rem;
    font-weight: 400;
+   font-size: 2.5rem;
    
   }
 

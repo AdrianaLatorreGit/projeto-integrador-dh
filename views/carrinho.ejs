@@ -1,58 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include("./partials/head.ejs") %>
-    <body>
-        <%- include("./partials/header.ejs") %>
+  <%- include("./partials/head.ejs") %>
+  <body>
+    <%- include("./partials/header.ejs") %>
 
-        <div class="container">
-            <div id="carrinho">
-                <h1>conferir carrinho</h1>
+    <div class="container-carrinho">
+      <div id="carrinho">
+        <h1>conferir carrinho</h1>
 
-                <div class="produto1">
-                    <img
-                        src="/images/aparelhos/Hero9 Black.png"
-                        alt="aparelho X"
-                    />
+        <div class="produto1">
+          <img src="/images/aparelhos/Hero9 Black.png" alt="aparelho X" />
 
-                    <div class="produtoValor">
-                        <h2>produto</h2>
-                        <h5>modelo</h5>
-                        <h6>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Facilis ad nisi soluta id excepturi, maxime
-                            amet eius sed. Eaque, minima voluptas!
-                        </h6>
-                        <p>R$ xx.xx</p>
-                    </div>
-                </div>
-
-                <div class="produto2">
-                    <img
-                        src="/images/aparelhos/Canon EOS Rebel Sl3.png"
-                        alt="aparelho y"
-                    />
-                    <div class="produtoValor2">
-                        <h2>produto</h2>
-                        <h5>modelo</h5>
-                        <h6>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Facilis ad nisi soluta id excepturi, maxime
-                            amet eius sed. Eaque, minima voluptas!
-                        </h6>
-                        <p>R$ xx.xx</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="resumo">
-                <h2>resumo da compra</h2>
-                <p>itens:____________R$xx.xx</p>
-                <p>frete:____________R$xx.xx</p>
-
-                <h3>total:________R$xx.xx</h3>
-                <button>confirmar pagamento</button>
-            </div>
+          <div class="produtoValor">
+            <h2>produto</h2>
+            <h5>modelo</h5>
+            <h6>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              ad nisi soluta id excepturi, maxime amet eius sed. Eaque, minima
+              voluptas!
+            </h6>
+            <p>R$ xx.xx</p>
+          </div>
         </div>
-        <%- include("./partials/script.ejs") %>
-    </body>
+
+        <div class="produto2">
+          <img
+            src="/images/aparelhos/Canon EOS Rebel Sl3.png"
+            alt="aparelho y"
+          />
+          <div class="produtoValor2">
+            <h2>produto</h2>
+            <h5>modelo</h5>
+            <h6>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              ad nisi soluta id excepturi, maxime amet eius sed. Eaque, minima
+              voluptas!
+            </h6>
+            <p>R$ xx.xx</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="resumo">
+        <h2>resumo da compra</h2>
+        <p>itens:____________R$xx.xx</p>
+        <p>frete:____________R$xx.xx</p>
+
+        <h3>total:________R$xx.xx</h3>
+        <button>confirmar pagamento</button>
+      </div>
+    </div>
+    <%- include("./partials/script.ejs") %>
+  </body>
 </html>

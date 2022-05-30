@@ -91,7 +91,7 @@ li a img {
     width: 2.5rem;
 }
 
-p {
+.logo p {
     color: var(--second-color);
     font-size: 1.7rem;
 }
@@ -158,7 +158,7 @@ p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: var(--second-color);
+    background-color: var(--third-color);
 
     height: 50%;
 }

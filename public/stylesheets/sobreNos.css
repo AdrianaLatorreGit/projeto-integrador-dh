@@ -93,9 +93,9 @@ body {
     position: absolute;
 
     margin-top: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.65rem;
     width: 25rem;
-    height: 28.5rem;
+    height: 30.5rem;
     padding: 2rem;
     margin-left: 0.5rem;
 
@@ -123,7 +123,7 @@ body {
 }
 
 #about {
-    background-color: var(--second-color);
+    background-color: var(--third-color);
     margin-top: 2rem;
 }
 

@@ -1,19 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sobre nós</title>
-        <link rel="stylesheet" href="/stylesheets/sobreNos.css" />
-        <link
-            rel="shortcut icon"
-            href="./img/logo1_543_icon.ico"
-            type="image/x-icon"
-        />
-    </head>
+
+    <%- include("./partials/head.ejs") %>
+    
     <body>
-        Aqui colocaremos o header por EJS
+        
+        <%- include("./partials/header.ejs") %>
+
+
         <div class="container">
             <div class="title">
                 <h1>Nosso time</h1>
@@ -133,5 +128,7 @@
         </div>
 
         Aqui colocaremos o Footer por EJS
+
+        <%- include("./partials/script.ejs") %>
     </body>
 </html>

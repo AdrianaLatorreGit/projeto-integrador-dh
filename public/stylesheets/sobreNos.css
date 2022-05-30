@@ -25,18 +25,13 @@ body {
 
 .wrapper {
     display: flex;
-}
-
-.container {
+} 
+ .container {
     max-width: 102.4rem;
     margin: 0 auto;
 }
 
-
-
-
 /* =======SOBRE NOS============== */
-
 
 .title {
     display: flex;
@@ -178,4 +173,3 @@ body {
     width: 6rem;
     height: 2rem;
 }
-

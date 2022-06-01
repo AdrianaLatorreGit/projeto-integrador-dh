@@ -101,7 +101,6 @@ li a img {
     display: none;
 }
 
-
 /* <<<CARROSSEL>>>  */
 
 .galery {
@@ -233,7 +232,7 @@ li a img {
     margin-bottom: 2rem;
 }
 
-#planos a:hover{
+#planos a:hover {
     text-decoration: underline;
 }
 
@@ -260,8 +259,8 @@ footer {
 /* ========MOBILE========= */
 
 @media (max-width: 660px) {
-    /* ==========hamburger======= */
-    #menu {
+/* ==========hamburger======= */
+#menu {
         display: block;
 
         position: absolute;
@@ -326,7 +325,5 @@ footer {
     #nav.active #hamburger::after {
         transform: rotate(-135deg);
         top: -7px;
-    }
-
-    /* ==========footer======= */
+    }  
 }

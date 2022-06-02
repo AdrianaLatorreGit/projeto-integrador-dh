@@ -3,7 +3,7 @@ const router = express.Router();
 
 /* GET carrinho. */
 router.get("/carrinho", (req, res, next) => {
-    res.render("carrinho");
+    return res.render("carrinho", { title: "Carrinho" });
 });
 
 module.exports = router;

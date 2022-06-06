@@ -35,16 +35,18 @@ main {
   align-items: center;
   color: var(--second-color);
   
+  
 
 }
-.inputLogin{
-  /* border: solid red 5px; */
+.fazerLogin{
+  border: solid red 5px;
   height: 100vh;
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 4rem;
+  
   
 }
 
@@ -99,7 +101,7 @@ h2{
    display: block;
    margin-top: 2rem;
    height: 4rem;
-   width: 70rem;   
+   width: 90%;   
    background-color: rgba(0, 0, 0, 0);
    border:transparent;
    border-bottom: var(--second-color) solid 0.2rem;   
@@ -111,10 +113,11 @@ h2{
 
 .login label{
 
-  display: block;
+  display: inline-block;
   margin-top: 12rem;
   font-size: 3rem;
   margin-left: 2rem;
+  
 
 }
 

@@ -39,7 +39,7 @@ main {
 
 }
 .fazerLogin{
-  border: solid red 5px;
+  /* border: solid red 5px; */
   height: 100vh;
   width: 50%;
   display: flex;

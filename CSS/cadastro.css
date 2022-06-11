@@ -34,7 +34,7 @@ main {
   justify-content: space-around;
   align-items: center;
   color: var(--second-color);
-  z-index: 2;
+ 
   
 
 }
@@ -69,6 +69,7 @@ main {
   display: flex;
   justify-content: space-around;
   margin-top: 10rem;
+  
 }
 
 .h3{
@@ -81,7 +82,7 @@ h3, .h3{
   text-align: center; 
   width: 30rem;
   margin: auto 5rem;
- 
+  
   
   padding-bottom: 1rem;
  
@@ -94,6 +95,7 @@ h3:hover{
   border-bottom: var(--second-color) solid 0.2rem;
   transition: 100ms;
   cursor: pointer;
+  
 
 }
 
@@ -101,6 +103,7 @@ h3:hover{
   border-bottom: var(--second-color) solid 0.2rem;
   transition: 100ms;
   cursor: pointer;
+  
 
 }
 
@@ -179,32 +182,4 @@ a{
   font-size: 2.5rem;
   outline: none;
   
-}
-
-
-/* CARD DA PARTE DE CADASTRO */
-
-
-.cadastro label{
-  font-size: 1.7rem;
-  display: inline-block;
-  
-  
-}
-
-
-
-.cadastro input{
- height: 2.5rem;
- display: inline-block;
- margin: 1.5rem auto;
-  
-}
-
-.cadastro input:focus{
-  outline: none;
-}
-
-#headcadastro{
-  margin-bottom: 4rem;
 }

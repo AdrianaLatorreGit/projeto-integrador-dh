@@ -1,0 +1,214 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* <<<VARIAVEIS>>> */
+  :root {
+    --primary-color: hsl(205, 50%, 20%);
+    --second-color: hsla(167, 73%, 62%, 1);
+    --third-color: hsl(183, 96%, 36%);
+  
+    font-size: 62.5%; /* 1rem = 10px */
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.4rem;
+}
+
+
+
+/* --------------------------------- estilo para o corpo da pagina ------------------------------- */
+
+body{
+  background-image: linear-gradient(to bottom, #1a394e, #04a8b1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--second-color);
+}
+.fazerLogin{
+  /* border: solid red 5px; */
+  height: 100vh;
+  width: 50%;
+   
+  
+  
+  
+}
+
+.fazerLogin input{
+  display: block;
+  
+}
+
+.imagemAside{
+  /* border: darkgreen 5px solid; */
+  width: 50%;
+  height: 100vh;
+  background-image: url(../public/images/logo/fundo-site-atomo2baixa_copia_1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+h2{
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  
+  margin: 10rem;
+}
+
+
+
+.tabsLabel:hover{
+
+  border-bottom: var(--second-color) solid 0.2rem;
+  transition: 100ms;
+  filter: brightness(120%);
+}
+
+a{
+  text-decoration: none;
+  
+    float: right;
+    color: var(--second-color);
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-right: 3rem;
+    border-bottom: var(--second-color) solid 1px;
+}
+
+
+.tabs{
+  justify-content: space-evenly;
+  margin-top: 5rem;
+
+}
+
+.campo{
+  display: block;
+  margin-top: 10rem;
+  
+
+}
+
+
+
+.login input{
+  height: 4rem;
+   width: 80%;   
+   background-color: rgba(0, 0, 0, 0);
+   border:transparent;
+   border-bottom: var(--second-color) solid 0.2rem;   
+   margin-left: 2rem;
+   font-weight: 400;
+   font-size: 2.5rem;
+}
+
+
+
+input[type=submit]{
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+  border: none;
+  color: var(--second-color);
+  width: 40rem;
+  font-size: 2.5rem;  
+  color: white;
+  cursor: pointer;
+  margin: 15rem auto; 
+  height: 4rem;
+  
+
+}
+
+.login  textarea:focus, .login input:focus{
+
+  font-weight: 550;
+  font-size: 2.5rem;
+  outline: none;
+  
+}
+
+
+.login label{
+  margin-left: 2rem;
+}
+
+#cadastrando label {
+  margin-top: 7rem;
+
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.botaoCadastrar{
+  position: relative;
+  bottom: 5rem;
+}
+
+.login{
+  margin-left: 5rem
+
+}
+
+/* ----------------------------------------------   estilo para o efeito TABS  ---------------------------------------------- */
+
+.tabs{
+
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+  }
+  
+  .tabsLabel{
+  
+  padding: 10px 16px; 
+  cursor: pointer;
+  
+  }
+  
+  .fazerLogin .tabsRadio{
+  
+    display: none;
+  }
+  
+  .conteudoTab{
+     order: 1 ;
+     width: 100%;
+     display: none;
+  }
+  
+  .tabsRadio:checked+.tabsLabel{
+    font-weight: 700;
+    border-bottom: var(--second-color) solid 0.2rem;
+    filter: brightness(120%);
+  }
+  
+  .tabsRadio:checked+.tabsLabel+.conteudoTab{
+  
+    display: initial;
+  
+  }
+  
+ 

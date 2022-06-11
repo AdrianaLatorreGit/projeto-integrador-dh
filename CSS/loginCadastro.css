@@ -34,7 +34,7 @@ main {
   justify-content: space-around;
   align-items: center;
   color: var(--second-color);
-  z-index: 2;
+  
   
 
 }
@@ -80,6 +80,7 @@ h3, .h3{
   text-align: center; 
   width: 30rem;
   margin: auto 5rem;
+  
  
   
   padding-bottom: 1rem;
@@ -127,6 +128,7 @@ h2{
    margin-left: 2rem;
    font-weight: 400;
    font-size: 2.5rem;
+   
    
   }
 
@@ -181,29 +183,5 @@ a{
 }
 
 
-/* CARD DA PARTE DE CADASTRO */
+/*  */
 
-
-.cadastro label{
-  font-size: 1.7rem;
-  display: inline-block;
-  
-  
-}
-
-
-
-.cadastro input{
- height: 2.5rem;
- display: inline-block;
- margin: 1.5rem auto;
-  
-}
-
-.cadastro input:focus{
-  outline: none;
-}
-
-#headcadastro{
-  margin-bottom: 4rem;
-}

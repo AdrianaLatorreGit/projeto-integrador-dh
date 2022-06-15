@@ -1,59 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="./CSS/cadastroComEfeito.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="./CSS/cadastroComEfeito.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>  
-    
+  </head>
+  <body>
+    <div class="container">
+      <div class="fazerLogin">
+        <div class="tabs">
+          <input
+            type="radio"
+            class="tabsRadio"
+            name="tabsLoginCadastro"
+            id="tab1"
+            checked
+          />
+          <label for="tab1" class="tabsLabel"> Login</label>
 
-   <div class="fazerLogin">
+          <div class="conteudoTab">
+            <form action="" method="" class="login">
+              <label for="email" class="campo"> E-MAIL:</label>
+              <input type="email" name="email" />
+              <label for="senha" class="campo">SENHA:</label>
+              <input type="password" name="senha" />
+              <a href="#"> ESQUECI MINHA SENHA</a>
+              <input
+                class="botaoCadastrar"
+                type="submit"
+                name=""
+                id=""
+                value="ENTRAR"
+              />
+            </form>
+          </div>
 
+          <input
+            type="radio"
+            class="tabsRadio"
+            name="tabsLoginCadastro"
+            id="tab2"
+          />
+          <label for="tab2" class="tabsLabel"> Cadastro</label>
 
-       <div class="tabs">
-           <input type="radio" class="tabsRadio" name="tabsLoginCadastro" id="tab1" checked>
-           <label for="tab1" class="tabsLabel"> Login</label>
-          
-           <div class="conteudoTab">
-               <form action="" method="" class="login">
-                   <label for="email" class="campo"> E-MAIL:</label>
-                   <input type="email" name="email" />
-                   <label for="senha" class="campo">SENHA:</label>
-                   <input type="password" name="senha" />
-                   <a href="#"> ESQUECI MINHA SENHA</a>
-                   <input type="submit" name="" id="" value="ENTRAR" />
-                 </form>
-           </div>
-       
-           
-           <input type="radio" class="tabsRadio" name="tabsLoginCadastro" id="tab2" >
-           <label for="tab2" class="tabsLabel"> Cadastro</label>
-           
-           <div class="conteudoTab">
-               <form action="" method="" class="login" id="cadastrando">
-                   <label for="nome" class="campo">NOME COMPLETO:</label>
-                   <input type="text" name="nome">
-                   <label for="cpf" class="campo">CPF:</label>
-                   <input type="number" name="cpf">
-                   <label for="email" class="campo"> E-MAIL:</label>
-                   <input type="email" name="email" />
-                   <label for="senha" class="campo">SENHA:</label>
-                   <input type="password" name="senha" />
-                   
-                   <input class="botaoCadastrar" type="submit" name="" id="" value="Cadastrar-se" />
-                 </form>
-           </div>
-       
+          <div class="conteudoTab">
+            <form action="" method="" class="login">
+              <label for="nome" class="campo">NOME COMPLETO:</label>
+              <input type="text" name="nome" />
+              <label for="cpf" class="campo">CPF:</label>
+              <input type="number" name="cpf" />
+              <label for="email" class="campo"> E-MAIL:</label>
+              <input type="email" name="email" />
+              <label for="senha" class="campo">SENHA:</label>
+              <input type="password" name="senha" />
+
+              <input
+                class="botaoCadastrar"
+                type="submit"
+                name=""
+                id=""
+                value="Cadastrar-se"
+              />
+            </form>
+          </div>
         </div>
-   </div>
-   <div class="imagemAside">
+      </div>
+
+      <!-- <div class="imagemAside">
     <h2>Bem vindo a Átomo,<br>Faça seu login ou cadastre-se.</h2>
     <h2>Locadora de eletrônicos<br> sem burocracia.</h2>
 
-  </div>
-
-</body>
+  </div> -->
+    </div>
+  </body>
 </html>

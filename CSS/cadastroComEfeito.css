@@ -103,7 +103,7 @@ input[type='submit'] {
 }
 
 .conteudoTab {
-  border: solid red 3px;
+  /* border: solid red 3px; */
   margin-top: 4rem;
   order: 1;
   width: 100%;

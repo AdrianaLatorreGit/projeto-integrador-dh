@@ -74,3 +74,7 @@
     border: none;
     border-radius: 1rem;
 }
+
+h4, h6{
+  display: inline;
+}

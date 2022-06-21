@@ -8,8 +8,8 @@ const port = process.env.PORT || 3000;
 // linkando EJS
 const indexRouter = require("./routes/indexRouter");
 const carrinhoRouter = require("./routes/carrinhoRoutes");
-const sobrenosRouter = require("./routes/sobrenos");
 const planosRouter = require("./routes/planosRouter");
+const sobrenosRouter = require("./routes/sobrenosRouter");
 
 const app = express();
 

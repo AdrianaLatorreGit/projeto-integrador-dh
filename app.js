@@ -5,13 +5,13 @@ const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const port = process.env.PORT || 3000;
 
+const app = express();
+
 // linkando EJS
 const indexRouter = require("./routes/indexRouter");
 const carrinhoRouter = require("./routes/carrinhoRoutes");
 const planosRouter = require("./routes/planosRouter");
 const sobrenosRouter = require("./routes/sobrenosRouter");
-
-const app = express();
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -28,7 +28,6 @@ app.use("/", indexRouter);
 app.use("/", carrinhoRouter);
 app.use("/", sobrenosRouter);
 app.use("/", planosRouter);
-
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -50,7 +49,5 @@ app.use(function (err, req, res, next) {
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port} 😆`);
 });
-
-
 
 module.exports = app;

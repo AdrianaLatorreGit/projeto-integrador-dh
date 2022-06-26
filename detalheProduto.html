@@ -1,45 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./CSS/detalheProduto.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/detalheProduto.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
-      <div class="produto">
-        <h3>NOME DO PRODUTO QUE VOCE ESTA ALUGANDO</h3>
-
-        <img
-          src="./public/images/aparelhos/Samsung Galaxy S22 ultra 256GB prato 12GB RAM cam 40MP.png"
-          alt=""
-        />
-
-        <h5>PLANO LOREM</h5>
-
-        <h4>R$ XXXX,XX</h4>
-        <h6>/mês</h6>
-
-        <a href="#"><button>ALUGAR</button></a>
+      <div class="slug">
+        <h1 class="nomeProduto">
+          iPhone 13 256GB Azul, 5G, Tela de 6.1, Câmera Dupla 12MP
+        </h1>
       </div>
-      <div class="descricao">
-        <h3>Detalhes Técnicos</h3>
+      <div id="produto">
+        <div class="imagem">
+          <img
+            class="imgGrande"
+            src="./public/images/aparelhos/Iphone 13 pro Max 128 azul.png"
+            alt="Iphone 13 pro max 128gb azul"
+          />
+          <div class="card">
+            <img
+              class="cardImg"
+              src="./public/images/aparelhos/Iphone 13 pro Max 128 azul.png"
+              alt="Iphone 13 pro max 128gb azul"
+            />
+            <img
+              class="cardImg"
+              src="./public/images/aparelhos/Iphone 13 pro Max 128 azul.png"
+              alt="Iphone 13 pro max 128gb azul"
+            />
+            <img
+              class="cardImg"
+              src="./public/images/aparelhos/Iphone 13 pro Max 128 azul.png"
+              alt="Iphone 13 pro max 128gb azul"
+            />
+          </div>
+        </div>
+
+        <div id="detalhesProdutos">
+          <h3 class="plano">Plano alfa</h3>
+          <h4 class="detalhesNome">
+            iPhone 13 256GB Azul, 5G, Tela de 6.1, Câmera Dupla 12MP
+          </h4>
+          <p class="preco">R$299.99</p>
+          <div class="botaoComprar">
+            <button>Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="descricaoProduto">
+        <h2>descrição do produto</h2>
         <p>
-          - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure
-          dolorem fugiat tempora nostrum non animi harum nemo molestiae nulla
-          voluptatibus.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Voluptatibus, quaerat accusamus. Et, libero aliquam necessitatibus
+          voluptas reiciendis ea rerum non odit, excepturi ipsum expedita
+          ratione delectus quae at, aut eum in voluptatem modi consectetur sunt
+          enim? Eveniet, quidem sit. Quasi praesentium pariatur odio obcaecati
+          sapiente, fuga cumque est molestiae, doloribus impedit unde iusto
+          ratione laudantium asperiores, soluta voluptatibus labore. Assumenda
+          aspernatur dolorem necessitatibus consectetur quidem unde in?
+          Assumenda perferendis, itaque ex, est expedita, fugiat beatae fugit
+          numquam recusandae voluptate neque eveniet ut reiciendis perspiciatis
+          animi eligendi quibusdam ipsum earum officiis? Libero, autem
+          praesentium maxime voluptatum, ex sapiente doloribus unde fugit
+          commodi mollitia ipsam neque earum cumque voluptates quae recusandae
+          ipsum? Consectetur culpa quibusdam voluptatibus, quae dolores soluta?
+          Rerum inventore asperiores amet ipsam harum fuga?
         </p>
-        <p>
-          - Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Temporibus, laborum.
-        </p>
-        <p>- Lorem ipsum dolor sit amet.</p>
-        <p>
-          - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-          quasi labore magni, ab cum eligendi.
-        </p>
+      </div>
+
+      <div class="produtosRelacionados">
+        <h2>Produtos Relacionados</h2>
+        <div class="relacionadosImg">
+          <div class="relacionadosCard">
+            <img
+              src="./public/images/aparelhos/Iphone 12 Pro Max apple preto .png"
+              alt="Iphone Pro max 12 preto"
+            />
+            <p>Iphone 12 Pro Max.</p>
+          </div>
+
+          <div class="relacionadosCard">
+            <img
+              src="./public/images/aparelhos/Samsung Galaxy S22 ultra 256GB prato 12GB RAM cam 40MP.png"
+              alt="Sansung galaxy s22 ultra 256gb"
+            />
+            <p>Sansung galaxy s22 ultra 256gb Prata</p>
+          </div>
+
+          <div class="relacionadosCard">
+            <img
+              src="./public/images/aparelhos/Ipad pro11 apple M1 256GB cinza.png"
+              alt="Ipad pro 11 "
+            />
+            <p>Ipad pro 11 256gb Cinza</p>
+          </div>
+        </div>
       </div>
     </div>
   </body>

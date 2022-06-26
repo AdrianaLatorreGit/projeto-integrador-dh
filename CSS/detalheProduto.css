@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=DM+Sans:wght@400;700&family=Macondo&family=Outfit:wght@200;300;400&family=Poppins:wght@300&family=Roboto+Slab:wght@100&display=swap');
+
+/* Reset */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+/* <<<VARIAVEIS>>> */
 :root {
-  --primary-color: hsl(205, 50%, 20%);
+  --primary-color: hsla(205, 50%, 20%, 1);
   --second-color: hsla(167, 73%, 62%, 1);
   --third-color: hsl(183, 96%, 36%);
 
@@ -11,98 +17,177 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  font-size: 2.4rem;
-  /* background-image: linear-gradient(to bottom, #1a394e, #04a8b1);
-    color: var(--second-color); */
-  background-color: var(--third-color);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-img {
-  width: 40%;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(245, 242, 242);
 }
 
 .container {
-  width: 80%;
-  height: 80%;
-  background-color: white;
-  /* border: solid red 3px; */
-  display: flex;
-  /* flex-wrap: wrap; */
-  align-items: center;
-  border-radius: 2rem;
+  max-width: 102.4rem;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
-.produto {
-  width: 40%;
-  height: 100%;
-  /* border: solid blue 2px; */
+/* <<<<<<<<<<<< PRODUTOS  >>>>>>>>>>>> */
+.nomeProduto {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+}
+
+#produto {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 2rem;
+  flex-wrap: wrap;
+}
+
+.imagem {
+  display: inline;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.imgGrande {
+  width: 30rem;
+  padding: 0.3rem;
+  background-color: white;
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 2rem;
+  flex-wrap: wrap;
+}
+
+.cardImg {
+  width: 7rem;
+  margin: 1rem;
+
+  padding: 0.2rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+/* <<<<<<<<<<<< DETALHES PRODUTOS  >>>>>>>>>>>> */
+
+#detalhesProdutos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 
-.descricao {
-  border-left: solid var(--primary-color) 3px;
-  width: 60%;
-  height: 80%;
-  padding-left: 3rem;
-  font-size: 2rem;
-  
+.plano {
+  font-size: 5rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 
+.detalhesNome {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.preco {
+  font-size: 3rem;
+  color: var(--third-color);
+  margin-bottom: 2rem;
+}
 
-button {
+.botaoComprar button {
   display: flex;
   margin: 0 auto;
-  /* margin-top: 2rem; */
+  margin-top: 2rem;
   width: 10rem;
-  height: 5rem;
+  height: 3rem;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.6rem;
+
   background-color: var(--third-color);
   color: white;
   border: none;
   border-radius: 1rem;
-  margin-top: 2rem;
-  
+  cursor: pointer;
 }
 
-h4,
-h6 {
-  display: inline;
+/* <<<<<<<<<<<<  DESCRIÇÃO PRODUTO  >>>>>>>>>>>> */
+.descricaoProduto h2 {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
 }
-.descricao h3{
+
+.descricaoProduto p {
+  display: flex;
+  justify-content: center;
   text-align: center;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
 }
 
+/* <<<<<<<<<<<< PRODUTOS RELACIONADOS  >>>>>>>>>>>> */
 
-@media (max-width: 700px) {
-  body{
-    height: 100%;
-  }
-  .container {
-    
-    flex-direction: column;
-    
-    height: fit-content;
-    
-    /* height: 100%; */
-  }
+.produtosRelacionados {
+  background-color: white;
+  border-radius: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
 
-  .produto{
-    width: 100%;
-    
-  }
-  .descricao{
-    margin-top: 2rem;
-    width: 90%;
-    border-left: none;
-    border-top: solid var(--primary-color) 2px;
-  }
+.produtosRelacionados h2 {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-size: 2rem;
+  padding: 2rem;
+
+}
+
+.relacionadosCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 10rem;
+  margin-bottom: 3rem;
+}
+.relacionadosImg {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.relacionadosCard img {
+  margin-left: 0.5rem;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 1rem;
+  width: 10rem;
+  height: 12rem;
+  margin-bottom: 1rem;
 }

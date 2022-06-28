@@ -122,10 +122,16 @@ body {
   border: none;
   border-radius: 1rem;
   cursor: pointer;
+  transition: 0.2s;
 }
 
+.botaoComprar button:hover {
+  background-color: hsl(183, 96%, 29%);
+  opacity: 0.9;
+}
 /* <<<<<<<<<<<<  DESCRIÇÃO PRODUTO  >>>>>>>>>>>> */
-.descricaoProduto h2 {
+
+.descricaoProduto summary {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
@@ -133,8 +139,13 @@ body {
   font-size: 2rem;
   margin: 2rem 0;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 
+.descricaoProduto summary:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
 .descricaoProduto p {
   display: flex;
   justify-content: center;
@@ -162,7 +173,6 @@ body {
   color: var(--primary-color);
   font-size: 2rem;
   padding: 2rem;
-
 }
 
 .relacionadosCard {

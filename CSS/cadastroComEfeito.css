@@ -58,7 +58,7 @@ input {
   background-color: rgba(0, 0, 0, 0);
   border: transparent;
   border-bottom: var(--second-color) solid 0.2rem;
-  
+
   font-weight: 400;
   font-size: 2.5rem;
 }

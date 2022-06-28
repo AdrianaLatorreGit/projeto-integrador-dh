@@ -12,6 +12,7 @@ const indexRouter = require("./routes/indexRouter");
 const carrinhoRouter = require("./routes/carrinhoRoutes");
 const planosRouter = require("./routes/planosRouter");
 const sobrenosRouter = require("./routes/sobrenosRouter");
+const detalheProdutoRouter = require("./routes/detalheProduto");
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -28,6 +29,7 @@ app.use("/", indexRouter);
 app.use("/", carrinhoRouter);
 app.use("/", sobrenosRouter);
 app.use("/", planosRouter);
+app.use("/", detalheProdutoRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

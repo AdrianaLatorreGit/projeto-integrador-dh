@@ -48,7 +48,8 @@ body {
   margin-top: 10rem;
 }
 
-.title {
+.titleLogin,
+.titleCadastro {
   background-color: var(--primary-color);
   color: white;
   width: 100%;

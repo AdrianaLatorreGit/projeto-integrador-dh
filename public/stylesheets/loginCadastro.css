@@ -1,151 +1,152 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=DM+Sans:wght@400;700&family=Macondo&family=Outfit:wght@200;300;400&family=Poppins:wght@300&family=Roboto+Slab:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=DM+Sans:wght@400;700&family=Macondo&family=Outfit:wght@200;300;400&family=Poppins:wght@300&family=Roboto+Slab:wght@100&display=swap');
 
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* <<<VARIAVEIS>>> */
 :root {
-    --primary-color: hsla(205, 50%, 20%, 1);
-    --second-color: hsla(167, 73%, 62%, 1);
-    --third-color: hsl(183, 96%, 36%);
+  --primary-color: hsla(205, 50%, 20%, 1);
+  --second-color: hsla(167, 73%, 62%, 1);
+  --third-color: hsl(183, 96%, 36%);
 
-    font-size: 62.5%; /* 1rem = 10px */
+  font-size: 62.5%; /* 1rem = 10px */
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: rgb(245, 242, 242);
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(245, 242, 242);
 }
 
-.container {
-    display: flex;
-    max-width: 102.4rem;
-    /* height: 50vh; */
-    margin: 0 auto;
-    flex-wrap: wrap;
-    /* background-color: white; */
-    /* border-radius: 2rem; */
-    /* align-items: center; */
+.containerLogin {
+  display: flex;
+  max-width: 102.4rem;
+  /* height: 50vh; */
+  margin: 0 auto;
+  flex-wrap: wrap;
+  /* background-color: white; */
+  /* border-radius: 2rem; */
+  /* align-items: center; */
 }
 
 /*  */
 
 #login,
 #cadastro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    border-radius: 1rem;
-    width: 50rem;
-    background-color: white;
-    height: 100%;
-    margin-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 1rem;
+  width: 50rem;
+  background-color: white;
+  height: 100%;
+  margin-top: 10rem;
 }
 
 .title {
-    background-color: var(--primary-color);
-    color: white;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    font-size: 2rem;
-    text-transform: capitalize;
-    border-radius: 1rem 1rem 0 0;
+  background-color: var(--primary-color);
+  color: white;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .socialLogin h3,
 .dadosCadastro h3 {
-    font-size: 1rem;
-    color: var(--primary-color);
-    text-align: center;
-    align-items: center;
-    text-transform: uppercase;
-    margin: 1rem 0;
+  font-size: 1rem;
+  color: var(--primary-color);
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin: 1rem 0;
 }
 
-img {
-    width: 5rem;
+.iconsSocial img,
+.iconsLogin img {
+  width: 5rem;
 }
 
 .orLine {
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    margin: 2rem 0;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 2rem 0;
 }
 
 .loginForm h3 {
-    text-transform: uppercase;
-    text-align: center;
-    align-items: center;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
 }
 
 label {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: var(--primary-color);
-    margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.8rem;
 }
 
 input {
-    width: 100%;
-    margin-bottom: 0.8rem;
+  width: 100%;
+  margin-bottom: 0.8rem;
 }
 
 .loginForm a {
-    display: block;
-    color: var(--third-color);
-    text-align: right;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 1rem 0;
+  display: block;
+  color: var(--third-color);
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0.5rem 0;
 }
 
 button {
-    display: flex;
-    margin: 0 auto;
+  display: flex;
+  margin: 0 auto;
 
-    width: 15rem;
-    height: 3rem;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    font-size: 1.6rem;
+  width: 15rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 1.6rem;
 
-    background-color: var(--third-color);
-    color: white;
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
-    transition: 0.2s;
-    margin-bottom: 2rem;
+  background-color: var(--third-color);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-bottom: 2rem;
 }
 
 button:hover {
-    background-color: hsl(183, 96%, 29%);
-    opacity: 0.9;
+  background-color: hsl(183, 96%, 29%);
+  opacity: 0.9;
 }
 
 .iconsLogin {
-    align-items: center;
-    text-align: center;
+  align-items: center;
+  text-align: center;
 }
 
 #confirmacao {
-    display: flex;
-    font-size: 0.8rem;
-    margin: 0 auto;
-    margin-top: 0.3rem;
+  display: flex;
+  font-size: 0.8rem;
+  margin: 0 auto;
+  margin-top: 0.3rem;
 }
 #confirmacao input {
-    width: 2rem;
+  width: 2rem;
 }

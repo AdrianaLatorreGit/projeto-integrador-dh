@@ -9,10 +9,11 @@ const app = express();
 
 // linkando EJS
 const indexRouter = require("./routes/indexRouter");
-const carrinhoRouter = require("./routes/carrinhoRoutes");
+const carrinhoRouter = require("./routes/carrinhoRouter");
 const planosRouter = require("./routes/planosRouter");
 const sobrenosRouter = require("./routes/sobrenosRouter");
-const detalheProdutoRouter = require("./routes/detalheProduto");
+const detalheProdutoRouter = require("./routes/detalheProdutoRouter");
+const loginCadastroRouter = require("./routes/loginCadastroRouter");
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -30,6 +31,7 @@ app.use("/", carrinhoRouter);
 app.use("/", sobrenosRouter);
 app.use("/", planosRouter);
 app.use("/", detalheProdutoRouter);
+app.use("/", loginCadastroRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

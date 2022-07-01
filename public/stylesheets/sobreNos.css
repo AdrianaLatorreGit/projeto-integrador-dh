@@ -1,175 +1,176 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=DM+Sans:wght@400;700&family=Macondo&family=Outfit:wght@200;300;400&family=Poppins:wght@300&family=Roboto+Slab:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=DM+Sans:wght@400;700&family=Macondo&family=Outfit:wght@200;300;400&family=Poppins:wght@300&family=Roboto+Slab:wght@100&display=swap');
 
 /* Reset */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* <<<VARIAVEIS>>> */
 :root {
-    --primary-color: hsl(205, 50%, 20%);
-    --second-color: hsla(167, 73%, 62%, 1);
-    --third-color: hsl(183, 96%, 36%);
+  --primary-color: hsl(205, 50%, 20%);
+  --second-color: hsla(167, 73%, 62%, 1);
+  --third-color: hsl(183, 96%, 36%);
 
-    font-size: 62.5%; /* 1rem = 10px */
+  font-size: 62.5%; /* 1rem = 10px */
 }
 
 /* =====HEADER===== */
 
 body {
-    font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .wrapper {
-    display: flex;
-} 
- .container {
-    max-width: 102.4rem;
-    margin: 0 auto;
+  display: flex;
+}
+.containerAbout {
+  max-width: 102.4rem;
+  margin: 0 auto;
+  background-color: white;
 }
 
 /* =======SOBRE NOS============== */
 
 .title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 .title h1 {
-    font-weight: 600;
-    font-size: 4rem;
-    text-align: center;
+  font-weight: 600;
+  font-size: 4rem;
+  text-align: center;
 
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .title h4 {
-    font-weight: 100;
-    font-size: 1.5rem;
-    margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
 
-    color: rgb(161, 160, 160);
+  color: rgb(161, 160, 160);
 }
 
 .title p {
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 #integrante {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #integrante img {
-    height: 25rem;
-    margin: 0.5rem 0.5rem;
+  height: 25rem;
+  margin: 0.5rem 0.5rem;
 }
 
 #integrante p {
-    display: flex;
-    text-align: center;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
-    font-size: 0.1rem;
-    background-color: var(--primary-color);
-    width: 25rem;
+  display: flex;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 0.1rem;
+  background-color: var(--primary-color);
+  width: 25rem;
 
-    border: 1px solid var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
 #integrante p:hover {
-    display: flex;
-    justify-content: center;
-    position: absolute;
+  display: flex;
+  justify-content: center;
+  position: absolute;
 
-    margin-top: 0.5rem;
-    font-size: 1.65rem;
-    width: 25rem;
-    height: 30.5rem;
-    padding: 2rem;
-    margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1.65rem;
+  width: 25rem;
+  height: 30.5rem;
+  padding: 2rem;
+  margin-left: 0.5rem;
 
-    background-color: white;
-    visibility: visible;
-    border: 1px solid var(--primary-color);
+  background-color: white;
+  visibility: visible;
+  border: 1px solid var(--primary-color);
 }
 
 .integrantes5 img {
-    width: 25rem;
+  width: 25rem;
 }
 
 #integrante .socialMedia a img {
-    margin: 0;
-    width: 2rem;
-    height: 2rem;
-    background-color: var(--primary-color);
+  margin: 0;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--primary-color);
 }
 
 .socialMedia {
-    display: flex;
-    justify-content: center;
-    background-color: var(--primary-color);
-    margin: 0 0.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+  margin: 0 0.5rem;
 }
 
 #about {
-    background-color: var(--third-color);
-    margin-top: 2rem;
+  background-color: var(--third-color);
+  margin-top: 2rem;
 }
 
 .sobreNos {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .sobreNos h1 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
 
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .sobreNos p {
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
-    color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: var(--primary-color);
 }
 
 #assinatura {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .assine h1 {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 2.5rem;
 
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .assine button {
-    margin: 0;
-    color: white;
-    background-color: var(--primary-color);
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    width: 6rem;
-    height: 2rem;
+  margin: 0;
+  color: white;
+  background-color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  width: 6rem;
+  height: 2rem;
 }

@@ -24,12 +24,9 @@ body {
 .containerLogin {
   display: flex;
   max-width: 102.4rem;
-  /* height: 50vh; */
+
   margin: 0 auto;
   flex-wrap: wrap;
-  /* background-color: white; */
-  /* border-radius: 2rem; */
-  /* align-items: center; */
 }
 
 /*  */

@@ -4,8 +4,13 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const port = process.env.PORT || 3000;
+const dotenv = require("dotenv");
+dotenv.config();
 
 const app = express();
+
+const Usuario = require("./models/Usuario");
+const sequelize = require("./config/database/db");
 
 // linkando EJS
 const indexRouter = require("./routes/indexRouter");
@@ -49,9 +54,21 @@ app.use(function (err, req, res, next) {
     res.render("error");
 });
 
-// chamando servidor
-app.listen(port, () => {
-    console.log(`Servidor rodando na porta ${port} 😆`);
-});
+async function main() {
+    try {
+        await sequelize.authenticate();
+        // await Usuario.sync({ force: true });
+
+        console.log("Conexão com sucesso 😙");
+
+        app.listen(port, () => {
+            console.log(`Porta rodando 😍`);
+        });
+    } catch (err) {
+        console.error(err);
+    }
+}
+
+main();
 
 module.exports = app;

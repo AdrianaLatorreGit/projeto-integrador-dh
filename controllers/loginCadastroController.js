@@ -4,11 +4,6 @@ const loginCadastroController = (req, res, next) => {
     res.render("loginCadastro", { title: "Login-Cadastro" });
 };
 
-// forms
-const form = (req, res) => {
-    return res.render("loginCadastro");
-};
-
 //Cadastrar novo usuário
 const cadastrarNovoUsuario = async (req, res) => {
     const image = req.file.filename;
@@ -26,4 +21,4 @@ const cadastrarNovoUsuario = async (req, res) => {
     return res.redirect("/");
 };
 
-module.exports = { loginCadastroController, form };
+module.exports = { loginCadastroController, cadastrarNovoUsuario };

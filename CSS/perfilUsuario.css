@@ -24,14 +24,18 @@ body {
 .container {
   max-width: 102.4rem;
   margin: 0 auto;
-}
-
-.containerPerfil {
+  height: 100vh;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  margin-top: 25%;
+ 
+}
+
+.containerPerfil {
+  display: flex;
+ 
+  
 }
 #minhaConta,
 #perfil {
@@ -45,17 +49,22 @@ body {
   height: 55rem;
 }
 
+#perfil {
+  width: 50rem;
+}
+
 #minhaConta {
-  width: 30%;
+  width: 25rem;
   margin-right: 4rem;
 }
+
 .imgLogin,
 .imgPerfil {
   width: 10rem;
   padding: 0.1rem;
   border-radius: 50%;
-  position: fixed;
-  top: 28rem;
+  /* position: fixed;
+  top: 28rem; */
 }
 .imgLogin {
   background-color: var(--second-color);
@@ -65,8 +74,8 @@ body {
 }
 
 p {
-  position: fixed;
-  top: 39rem;
+  /* position: fixed;
+  top: 39rem; */
   text-transform: capitalize;
   font-size: 1.4rem;
   counter-reset: var(--primary-color);
@@ -104,6 +113,8 @@ a {
   text-decoration: none;
   color: var(--primary-color);
   font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-top: 0.5rem;
 }
 
 a:hover {
@@ -113,8 +124,8 @@ a:hover {
 
 button {
   display: flex;
-  position: fixed;
-  bottom: 30rem;
+  /* position: fixed; */
+  /* bottom: 30rem; */
   margin: 0 auto;
   width: 10rem;
   height: 3rem;
@@ -132,9 +143,6 @@ button {
   margin-top: 2rem;
 }
 
-#perfil {
-  width: 60%;
-}
 
 form {
   display: flex;
@@ -153,6 +161,6 @@ label {
 
 input {
   text-align: center;
-  width: 45rem;
+  width: 30rem;
   box-shadow: 1px 1px 1px 0 #505050
 }

@@ -47,8 +47,16 @@
         <p>frete:____________R$xx.xx</p>
 
         <h3>total:________R$xx.xx</h3>
-        <button>confirmar pagamento</button>
+        <button onclick="btnCompra()">confirmar pagamento</button>
       </div>
+
+      <div id="compraEfetivada">
+        <h2 class="compra">compra finalizada</h2>
+        <p class="msgCompra">sua compra foi finalizada com sucesso</p>
+        <a class="back" href="/">voltar</a>
+      </div>
+
+
     </div>
     <%- include("./partials/script.ejs") %>
   </body>

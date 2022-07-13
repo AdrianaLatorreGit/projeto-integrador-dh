@@ -174,3 +174,40 @@ body {
   transition: 0.2s;
   margin-bottom: 2rem;
 }
+
+/* <<<<<  CONFIRMAR COMPRA  >>>> */
+
+#compraEfetivada {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 35rem;
+  height: 20rem;
+  background-color: rgb(245, 242, 242);
+  border-radius: 1rem;
+  margin-top: 2rem;
+  border: 1px solid black;
+  visibility: hidden;
+  }
+
+ .compra {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+  
+ .msgCompra{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--third-color);
+  }
+
+.back{
+  color: var(--primary-color);
+  margin-top: 1rem;
+  
+  }

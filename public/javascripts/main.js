@@ -22,3 +22,9 @@ btnMobile.addEventListener("click", toggleMenu);
 btnMobile.addEventListener("touchstart", toggleMenu);
 
 
+// Compra finalizada
+
+function btnCompra() {
+    document.getElementById('compraEfetivada').style.visibility = 'visible'
+  }
+  

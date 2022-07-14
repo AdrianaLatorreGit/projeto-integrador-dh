@@ -58,7 +58,7 @@ async function main() {
     try {
         await sequelize.authenticate();
         // Apagar o banco
-        // await Usuario.sync({ force: true }); 
+        // await Usuario.sync({ force: true });
 
         console.log("Conexão com sucesso 😙");
 

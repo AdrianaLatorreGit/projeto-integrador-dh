@@ -20,7 +20,7 @@ const cadastrarNovoProduto = async (req, res) => {
 
     await Produto.create(produtos);
 
-    return res.redirect("/");
+    return res.redirect("/painelAdmin");
 };
 
 module.exports = { painelAdminController, cadastrarNovoProduto };

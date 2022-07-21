@@ -12,13 +12,13 @@ const Produtos = sequelize.define("produtos", {
         allowNull: false,
     },
     preco: {
-        type: DataTypes.NUMBER,
+        type: DataTypes.INTEGER,
         allowNull: false,
     },
-    categoria: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    },
+    // categoria: {
+    //     type: DataTypes.STRING,
+    //     allowNull: false,
+    // },
     detalhes: {
         type: DataTypes.STRING,
         allowNull: false,

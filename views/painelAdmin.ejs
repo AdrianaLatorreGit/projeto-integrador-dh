@@ -19,12 +19,13 @@
                     method="POST"
                     enctype="multipart/form-data"
                 >
-                    <label for="nome">Produto</label>
+                    <label for="produto">Produto</label>
                     <input
                         type="text"
-                        name="nome"
+                        name="produto"
                         id="nome"
                         placeholder="Produto"
+                        required
                     />
                     <label for="preco">Preço</label>
                     <input
@@ -32,14 +33,15 @@
                         name="preco"
                         id="preco"
                         placeholder="Preço"
+                        required
                     />
-                    <label for="categoria">Categoria</label>
+                    <!-- <label for="categoria">Categoria</label>
                     <select id="categoria">
                         <option value=""></option>
                         <option value="celular">Celular</option>
                         <option value="computador">Computador</option>
                         <option value="camera">Câmera</option>
-                    </select>
+                    </select> -->
                     <label for="detalhes" id="detalhes">Detalhes</label>
                     <input
                         type="text"
@@ -54,8 +56,8 @@
                         id="descricao"
                         placeholder="Descrição do produto"
                     />
-                    <label for="img">Imagem</label>
-                    <input type="file" name="img" id="img" />
+                    <label for="image">Imagem</label>
+                    <input type="file" name="image" id="img" />
 
                     <div class="btn-adicionar">
                         <button class="buttonCadastro" type="submit">

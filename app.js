@@ -63,8 +63,8 @@ async function main() {
         await sequelize.authenticate();
 
         // ===========APAGAR BANCOS==================
-        // await Usuario.sync({ force: true });
-        // await Produto.sync({ force: true });
+        await Usuario.sync({ force: true });
+        await Produto.sync({ force: true });
 
         console.log("Conexão com sucesso 😙");
 

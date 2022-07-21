@@ -9,16 +9,18 @@ dotenv.config();
 
 const app = express();
 
+//Linkando Models
 const Usuario = require("./models/Usuario");
 const sequelize = require("./config/database/db");
 
-// linkando EJS
+// linkando Rotas
 const indexRouter = require("./routes/indexRouter");
 const carrinhoRouter = require("./routes/carrinhoRouter");
 const planosRouter = require("./routes/planosRouter");
 const sobrenosRouter = require("./routes/sobrenosRouter");
 const detalheProdutoRouter = require("./routes/detalheProdutoRouter");
 const loginCadastroRouter = require("./routes/loginCadastroRouter");
+const painelAdminRouter = require("./routes/painelAdminRouter");
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -37,6 +39,7 @@ app.use("/", sobrenosRouter);
 app.use("/", planosRouter);
 app.use("/", detalheProdutoRouter);
 app.use("/", loginCadastroRouter);
+app.use("/", painelAdminRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

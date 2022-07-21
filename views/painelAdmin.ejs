@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../stylesheets/painel.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">
+                <h1>painel admin</h1>
+            </div>
+
+            <div class="formulario">
+                <form action="" method="POST">
+                    <label for="nome">Produto</label>
+                    <input
+                        type="text"
+                        name="nome"
+                        id="nome"
+                        placeholder="Produto"
+                    />
+                    <label for="preco">Preço</label>
+                    <input
+                        type="number"
+                        name="preco"
+                        id="preco"
+                        placeholder="Preço"
+                    />
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria">
+                        <option value=""></option>
+                        <option value="celular">Celular</option>
+                        <option value="computador">Computador</option>
+                        <option value="camera">Câmera</option>
+                    </select>
+                    <label for="detalhes" id="detalhes">Detalhes</label>
+                    <input
+                        type="text"
+                        name="detalhes"
+                        id="detalhes"
+                        placeholder="Detalhes do produto"
+                    />
+                    <label for="descricao">Descrição</label>
+                    <input
+                        type="text"
+                        name="descricao"
+                        id="descricao"
+                        placeholder="Descrição do produto"
+                    />
+                    <label for="img">Imagem</label>
+                    <input type="file" name="img" id="img" />
+                </form>
+            </div>
+            <div class="btn-adicionar">
+                <button>adicionar</button>
+            </div>
+        </div>
+    </body>
+</html>

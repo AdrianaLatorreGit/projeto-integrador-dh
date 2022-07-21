@@ -4,9 +4,9 @@ const {
     loginCadastroController,
     cadastrarNovoUsuario,
 } = require("../controllers/loginCadastroController");
-const upload = require("../middlewares/uploads");
+const upload = require("../middlewares/uploadsUsuarios");
 
-/* GET planos. */
+/* GET login cadastro. */
 router.get("/loginCadastro", loginCadastroController);
 router.post("/loginCadastro", upload.single("image"), cadastrarNovoUsuario);
 

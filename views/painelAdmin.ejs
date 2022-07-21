@@ -14,7 +14,11 @@
             </div>
 
             <div class="formulario">
-                <form action="" method="POST">
+                <form
+                    action="/painelAdmin"
+                    method="POST"
+                    enctype="multipart/form-data"
+                >
                     <label for="nome">Produto</label>
                     <input
                         type="text"
@@ -52,10 +56,13 @@
                     />
                     <label for="img">Imagem</label>
                     <input type="file" name="img" id="img" />
+
+                    <div class="btn-adicionar">
+                        <button class="buttonCadastro" type="submit">
+                            Cadastrar
+                        </button>
+                    </div>
                 </form>
-            </div>
-            <div class="btn-adicionar">
-                <button>adicionar</button>
             </div>
         </div>
     </body>

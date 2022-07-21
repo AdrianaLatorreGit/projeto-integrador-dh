@@ -7,19 +7,23 @@ const Produtos = sequelize.define("produtos", {
         primaryKey: true,
         autoIncrement: true,
     },
-    nome: {
+    produto: {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    // ultimoNome: {
-    //     type: DataTypes.STRING,
-    //     allowNull: false,
-    // },
-    email: {
+    preco: {
+        type: DataTypes.NUMBER,
+        allowNull: false,
+    },
+    categoria: {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    senha: {
+    detalhes: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    descricao: {
         type: DataTypes.STRING,
         allowNull: false,
     },
@@ -28,4 +32,4 @@ const Produtos = sequelize.define("produtos", {
     },
 });
 
-module.exports = Usuario;
+module.exports = Produtos;

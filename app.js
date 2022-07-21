@@ -11,6 +11,7 @@ const app = express();
 
 //Linkando Models
 const Usuario = require("./models/Usuario");
+const Produto = require("./models/Produto");
 const sequelize = require("./config/database/db");
 
 // linkando Rotas
@@ -60,8 +61,10 @@ app.use(function (err, req, res, next) {
 async function main() {
     try {
         await sequelize.authenticate();
-        // Apagar o banco
+
+        // ===========APAGAR BANCOS==================
         // await Usuario.sync({ force: true });
+        // await Produto.sync({ force: true });
 
         console.log("Conexão com sucesso 😙");
 

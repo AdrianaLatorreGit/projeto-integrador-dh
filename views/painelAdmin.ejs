@@ -23,7 +23,7 @@
                     <input
                         type="text"
                         name="produto"
-                        id="nome"
+                        id="nomeDoProduto"
                         placeholder="Produto"
                         required
                     />
@@ -31,21 +31,10 @@
                     <input
                         type="number"
                         name="preco"
-                        id="preco"
+                        id="precoDoProduto"
                         placeholder="Preço"
                         required
                     />
-                    <!-- <label for="categoria">Categoria</label>
-                    <select name="categoria" id="categoria">
-                        <option value=""></option>
-                        <option  value="celular">
-                            Celular
-                        </option>
-                        <option value="computador">
-                            Computador
-                        </option>
-                        <option value="camera">Câmera</option>
-                    </select> -->
 
                     <label for="detalhes" id="detalhes">Detalhes</label>
                     <input
@@ -65,12 +54,25 @@
                     <input type="file" name="image" id="img" />
 
                     <div class="btn-adicionar">
-                        <button class="buttonCadastro" type="submit">
+                        <button id="buttonCadastro" type="submit">
                             Cadastrar
                         </button>
                     </div>
                 </form>
-            </div>
+
+                <div id="tabela">
+
+                   
+                        <!-- <div> 
+                             produtos.forEach(produto=>{%>
+                              produto.produto 
+                              produto.preco 
+                            })
+                        </div>
+                       -->
+
+                </div>
+               
         </div>
     </body>
 </html>

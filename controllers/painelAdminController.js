@@ -23,4 +23,45 @@ const cadastrarNovoProduto = async (req, res) => {
     return res.redirect("/painelAdmin");
 };
 
-module.exports = { painelAdminController, cadastrarNovoProduto };
+// listar os produtos
+
+const renderizarProdutos = async (req, res) => {
+    const produto = await Produto.findAll();
+    return res.render("produtos");
+};
+
+// function renderizarProdutos() {
+//     const tabela = document.getElementById("tabela");
+
+//     tabela.insertAdjacentHTML(
+//         "beforeend",
+//         `
+//         <div class="produtos">
+//         <span>${produtos.produto}</span>
+//         <span>${produtos.preco}</span>
+//         </div>
+//         `
+//     );
+// }
+
+// function pegueOsDados() {
+//     const buttonCadastro = document.getElementById("buttonCadastro");
+
+//     const nomeDoProduto = document.getElementById("nomeDoProduto").value;
+//     const precoDoProduto = Number(
+//         document.getElementById("precoDoProduto").value
+//     );
+
+//     const produto = {
+//         nomeDoProduto,
+//         precoDoProduto,
+//     };
+
+//     buttonCadastro.addEventListener("click", pegueOsDados);
+// }
+
+module.exports = {
+    painelAdminController,
+    cadastrarNovoProduto,
+    renderizarProdutos,
+};

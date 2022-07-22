@@ -25,7 +25,6 @@ body {
   margin: 0 auto;
 }
 
-
 #header {
   display: flex;
   background-color: var(--primary-color);
@@ -45,6 +44,7 @@ body {
   list-style: none;
   /* gap: 0.5rem; */
   margin-left: 1rem;
+  align-items: center;
 }
 
 a {
@@ -217,6 +217,7 @@ li a img {
   text-transform: uppercase;
 
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 #planos a:hover {
@@ -314,8 +315,30 @@ footer {
     top: -7px;
   }
 
-  #header{
+  #header {
     display: flex;
     justify-content: space-between;
   }
+}
+
+/* <<< VALIDAR LOGIN >>> */
+
+.admin {
+  visibility: hidden;
+  position: absolute;
+}
+.login-cadastro {
+  /* position: absolute;
+  visibility: hidden; */
+}
+
+.carrinho {
+  position: relative;
+}
+
+.iconLogin {
+  align-items: center;
+  width: 5rem;
+  visibility: hidden;
+  position: absolute;
 }

@@ -1,4 +1,3 @@
-const { NONE } = require('sequelize')
 
 // =======efeito hamburguer=========
 const btnMobile = document.getElementById('btn-mobile')

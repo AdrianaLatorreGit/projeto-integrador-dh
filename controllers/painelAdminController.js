@@ -25,10 +25,12 @@ const cadastrarNovoProduto = async (req, res) => {
 
 // listar os produtos
 
+
+
 const renderizarProdutos = async (req, res) => {
-    const produto = await Produto.findAll();
-    return res.render("produtos");
-};
+    const produtos = await Produto.findAll();
+    return res.render("produtos", { produtos });
+  };
 
 // function renderizarProdutos() {
 //     const tabela = document.getElementById("tabela");

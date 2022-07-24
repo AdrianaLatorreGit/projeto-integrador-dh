@@ -3,11 +3,13 @@ const router = express.Router();
 const {
     painelAdminController,
     cadastrarNovoProduto,
+    renderizarProdutos,
 } = require("../controllers/painelAdminController");
 const upload = require("../middlewares/uploadsProdutos");
 
 /* GET Painel Admin */
 router.get("/painelAdmin", painelAdminController);
 router.post("/painelAdmin", upload.single("image"), cadastrarNovoProduto);
+router.get("/renderizarProdutos", renderizarProdutos);
 
 module.exports = router;

@@ -17,7 +17,7 @@ const sequelize = require("./config/database/db");
 // linkando Rotas
 const indexRouter = require("./routes/indexRouter");
 const carrinhoRouter = require("./routes/carrinhoRouter");
-const planosRouter = require("./routes/planosRouter");
+const produtosRouter = require("./routes/produtosRouter");
 const sobrenosRouter = require("./routes/sobrenosRouter");
 const detalheProdutoRouter = require("./routes/detalheProdutoRouter");
 const loginCadastroRouter = require("./routes/loginCadastroRouter");
@@ -37,7 +37,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/", carrinhoRouter);
 app.use("/", sobrenosRouter);
-app.use("/", planosRouter);
+app.use("/", produtosRouter);
 app.use("/", detalheProdutoRouter);
 app.use("/", loginCadastroRouter);
 app.use("/", painelAdminRouter);

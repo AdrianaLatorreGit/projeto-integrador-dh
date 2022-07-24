@@ -1,8 +1,12 @@
 const express = require("express");
 const router = express.Router();
-const planosController = require("../controllers/produtosController");
+const {
+    renderizarProdutos,
+    produtosController,
+} = require("../controllers/produtosController");
 
 /* GET planos. */
-router.get("/produtos", planosController);
+router.get("/produtos", produtosController);
+router.get("/produtos", renderizarProdutos);
 
 module.exports = router;

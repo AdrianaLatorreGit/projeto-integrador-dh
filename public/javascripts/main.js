@@ -1,4 +1,3 @@
-
 // =======efeito hamburguer=========
 const btnMobile = document.getElementById('btn-mobile')
 
@@ -34,12 +33,18 @@ function validarLogin() {
   let email = document.getElementById('emailLogin')
   let senha = document.getElementById('senhaLogin')
 
-  if (email.value == 'admin@admin.com' && senha.value == '1234') {
-    document.getElementsByClassName('login-cadastro').style.position =
-      'absolute'
-    document.getElementsByClassName('login-cadastro').style.visibility =
-      'hidden'
-    document.getElementsByClassName('admin').style.position = 'none'
-    document.getElementsByClassName('admin').style.visibility = 'visible'
+  if (email.value == 'admin@admin.com' && senha.value == 1234) {
+    document.getElementById('login-cadastro').style.visibility = 'hidden'
+    document.getElementById('login-cadastro').style.position = 'absolute'
+
+    document.getElementById('admin').style.visibility = 'visible'
+    document.getElementById('admin').style.position = 'none'
+    
+  } else if (email.value == 'user@user.com' && senha.value == 1234) {
+    document.getElementById('login-cadastro').style.visibility = 'hidden'
+    document.getElementById('login-cadastro').style.position = 'absolute'
+
+    document.getElementById('iconLogin').style.visibility = 'visible'
+    document.getElementById('iconLogin').style.position = 'none'
   }
 }

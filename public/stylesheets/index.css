@@ -323,20 +323,20 @@ footer {
 
 /* <<< VALIDAR LOGIN >>> */
 
-.admin {
+#admin {
   visibility: hidden;
   position: absolute;
 }
-.login-cadastro {
+#login-cadastro {
   /* position: absolute;
   visibility: hidden; */
 }
 
-.carrinho {
+#carrinho {
   position: relative;
 }
 
-.iconLogin {
+#iconLogin {
   align-items: center;
   width: 5rem;
   visibility: hidden;

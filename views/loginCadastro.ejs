@@ -1,129 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include("./partials/head.ejs") %>
-    <body>
-        <%- include("./partials/header.ejs") %>
+  <%- include("./partials/head.ejs") %>
+  <body>
+    <%- include("./partials/header.ejs") %>
 
-        <div class="containerLogin">
-            <div id="login">
-                <div class="titleLogin">
-                    <h2>login</h2>
-                </div>
-                <div class="socialLogin">
-                    <h3>conectar com a sua rede social</h3>
-                </div>
-                <div class="iconsSocial">
-                    <a href="#">
-                        <img
-                            src="/images/icones/iconsFacebook.svg"
-                            alt="Icone Facebook"
-                    /></a>
-                    <a href="#">
-                        <img
-                            src="/images/icones/iconsLinkedin.svg"
-                            alt="Icone Linkedin"
-                    /></a>
-                    <a href="#">
-                        <img
-                            src="/images/icones/iconsGithub.svg"
-                            alt="Icone GitHub"
-                    /></a>
-                </div>
-
-                <div class="orLine">
-                    <h4>____________ou____________</h4>
-                </div>
-                <br />
-
-                <div class="loginForm">
-                    <h3>entre com login e senha</h3>
-                    <form action="" method="">
-                        <label for="emailLogin">Email</label>
-                        <input
-                            type="email"
-                            id="emailLogin"
-                            name="email"
-                            placeholder="Digite seu email"
-                            required
-                            value=""
-                        />
-                        <br />
-
-                        <label for="senhaLogin">Senha</label>
-
-                        <input
-                            type="password"
-                            id="senhaLogin"
-                            name="senha"
-                            placeholder="Digite sua senha"
-                            required
-                            value=""
-                        />
-                        <br />
-                        <a href="#">esqueceu a sua senha?</a><br />
-                        <button class="buttonLogin" onclick="validarLogin()">
-                            Login
-                        </button>
-                    </form>
-                </div>
-            </div>
-            <div id="cadastro">
-                <div class="titleCadastro">
-                    <h2>cadastro</h2>
-                </div>
-                <div class="dadosCadastro">
-                    <h3>cadastre para entrar com a sua conta</h3>
-                    <div class="iconsLogin">
-                        <img
-                            src="/images/icones/iconsLogin.svg"
-                            alt="Icone de login"
-                        />
-                    </div>
-                    <form
-                        action="/loginCadastro"
-                        method="POST"
-                        enctype="multipart/form-data"
-                    >
-                        <label for="nome">Nome</label>
-                        <input
-                            type="text"
-                            name="nome"
-                            id="nome"
-                            placeholder="Digite seu primeiro nome"
-                        />
-
-                        <label for="email">Email</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Digite seu email"
-                            required
-                        />
-                        <br />
-                        <label for="senha">Senha</label>
-
-                        <input
-                            type="password"
-                            id="senha"
-                            name="senha"
-                            placeholder="Digite sua senha"
-                            required
-                        />
-                        <br />
-
-                        <div>
-                            <label for="image">Image: </label>
-                            <input type="file" name="image" id="image" />
-                        </div>
-
-                        <button class="buttonCadastro" type="submit">
-                            Criar conta
-                        </button>
-                    </form>
-                </div>
-            </div>
+    <div class="containerLogin">
+      <div id="login">
+        <div class="titleLogin">
+          <h2>login</h2>
         </div>
-        <%- include("./partials/script.ejs") %>
-    </body>
+        <div class="socialLogin">
+          <h3>conectar com a sua rede social</h3>
+        </div>
+        <div class="iconsSocial">
+          <a href="#">
+            <img src="/images/icones/iconsFacebook.svg" alt="Icone Facebook"
+          /></a>
+          <a href="#">
+            <img src="/images/icones/iconsLinkedin.svg" alt="Icone Linkedin"
+          /></a>
+          <a href="#">
+            <img src="/images/icones/iconsGithub.svg" alt="Icone GitHub"
+          /></a>
+        </div>
+
+        <div class="orLine">
+          <h4>____________ou____________</h4>
+        </div>
+        <br />
+
+        <div class="loginForm">
+          <h3>entre com login e senha</h3>
+          <form action="" method="" id="formLogin">
+            <label for="emailLogin">Email</label>
+            <input
+              type="email"
+              id="emailLogin"
+              name="email"
+              placeholder="Digite seu email"
+              required
+              value=""
+            />
+            <br />
+
+            <label for="senhaLogin">Senha</label>
+
+            <input
+              type="password"
+              id="senhaLogin"
+              name="senha"
+              placeholder="Digite sua senha"
+              required
+              value=""
+            />
+            <br />
+            <a href="#">esqueceu a sua senha?</a><br />
+
+            <button type="submit" class="buttonLogin" onclick="validarLogin()">
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+      <div id="cadastro">
+        <div class="titleCadastro">
+          <h2>cadastro</h2>
+        </div>
+        <div class="dadosCadastro">
+          <h3>cadastre para entrar com a sua conta</h3>
+          <div class="iconsLogin">
+            <img src="/images/icones/iconsLogin.svg" alt="Icone de login" />
+          </div>
+          <form
+            action="/loginCadastro"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <label for="nome">Nome</label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Digite seu primeiro nome"
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Digite seu email"
+              required
+            />
+            <br />
+            <label for="senha">Senha</label>
+
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              placeholder="Digite sua senha"
+              required
+            />
+            <br />
+
+            <div>
+              <label for="image">Image: </label>
+              <input type="file" name="image" id="image" />
+            </div>
+
+            <button class="buttonCadastro" type="submit">Criar conta</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <%- include("./partials/script.ejs") %>
+  </body>
 </html>

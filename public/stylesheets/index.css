@@ -327,13 +327,10 @@ footer {
   visibility: hidden;
   position: absolute;
 }
+
 #login-cadastro {
   /* position: absolute;
   visibility: hidden; */
-}
-
-#carrinho {
-  position: relative;
 }
 
 #iconLogin {

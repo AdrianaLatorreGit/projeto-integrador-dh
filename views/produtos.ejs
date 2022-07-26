@@ -19,13 +19,29 @@
             </div>
             <div class="wrapper">
                 <div class="produtos">
-                    <img
-                        src="../images/aparelhos/Iphone 12 Pro Max apple preto .png"
-                        alt=""
-                    />
-                    <h3>iphone 12 pro max</h3>
-                    <h5>R$ 249,00</h5>
-                    <p>/mês</p>
+
+                    
+                        <div id="tabela">
+                            <div>
+                                <% produtos.forEach(produto => {%>
+                                <h3><%=produto.produto %> </h3>
+                                <h5><%=produto.preco %> </h5>
+                                <p>/mês</p>
+                               
+                
+                                <img
+                                    id="imagemProduto"
+                                    src="../uploads/uploads-produtos/<%=produto.image %>"
+                                    alt=""
+                                />
+                
+                                <% })%>
+                            </div>
+                        </div>
+        </div>
+                    
+                    
+                    
 
                     <a href="detalheProduto">
                         <button>detalhe</button>

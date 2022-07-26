@@ -6,9 +6,10 @@ const loginCadastroController = (req, res, next) => {
 
 //Cadastrar novo usuário
 const cadastrarNovoUsuario = async (req, res) => {
-    const image = req.filename;
+    const image = req.file.filename;
     const { nome, email, senha } = req.body;
 
+    console.log(req.file.filename);
     const usuario = {
         nome,
         email,

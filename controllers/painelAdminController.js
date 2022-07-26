@@ -7,16 +7,17 @@ const painelAdminController = (req, res, next) => {
 //Cadastrar novo produto
 const cadastrarNovoProduto = async (req, res) => {
     const image = req.filename;
-    const { produto, preco, categoria, detalhes, descricao } = req.body;
+    const { produto, preco, detalhes, descricao } = req.body;
 
     const produtos = {
         produto,
         preco,
-        categoria,
         detalhes,
         descricao,
         image,
     };
+
+    console.log(produtos);
 
     await Produto.create(produtos);
 
@@ -26,7 +27,6 @@ const cadastrarNovoProduto = async (req, res) => {
 // listar os produtos
 const renderizarProdutos = async (req, res) => {
     const produtos = await Produto.findAll();
-    console.log(produtos);
     return res.render("renderizarProdutos", { produtos });
 };
 

@@ -1,71 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../stylesheets/painelAdmin.css" />
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="title">
-                <h1>painel admin</h1>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../stylesheets/painelAdmin.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>painel admin</h1>
+      </div>
 
-            <div class="formulario">
-                <form
-                    action="/painelAdmin"
-                    method="POST"
-                    enctype="multipart/form-data"
-                >
-                    <label for="produto">Produto</label>
-                    <input
-                        type="text"
-                        name="produto"
-                        id="nomeDoProduto"
-                        placeholder="Produto"
-                        required
-                    />
-                    <label for="preco">Preço</label>
-                    <input
-                        type="number"
-                        name="preco"
-                        id="precoDoProduto"
-                        placeholder="Preço"
-                        required
-                    />
+      <div class="formulario">
+        <form action="/painelAdmin" method="POST" enctype="multipart/form-data">
+          <label for="produto">Produto</label>
+          <input
+            type="text"
+            name="produto"
+            id="nomeDoProduto"
+            placeholder="Produto"
+            required
+          />
+          <label for="preco">Preço</label>
+          <input
+            type="number"
+            name="preco"
+            id="precoDoProduto"
+            placeholder="Preço"
+            required
+          />
 
-                    <label for="detalhes" id="detalhes">Detalhes</label>
-                    <input
-                        type="text"
-                        name="detalhes"
-                        id="detalhes"
-                        placeholder="Detalhes do produto"
-                    />
-                    <label for="descricao">Descrição</label>
-                    <input
-                        type="text"
-                        name="descricao"
-                        id="descricao"
-                        placeholder="Descrição do produto"
-                    />
-                    <label for="image">Imagem</label>
-                    <input type="file" name="image" id="img" />
+          <label for="detalhes" id="detalhes">Detalhes</label>
+          <input
+            type="text"
+            name="detalhes"
+            id="detalhes"
+            placeholder="Detalhes do produto"
+          />
+          <label for="descricao">Descrição</label>
+          <input
+            type="text"
+            name="descricao"
+            id="descricao"
+            placeholder="Descrição do produto"
+          />
+          <label for="image">Imagem</label>
+          <input type="file" name="image" id="img" />
 
-                    <div class="btn-adicionar">
-                        <button id="buttonCadastro" type="submit">
-                            Cadastrar
-                        </button>
-                    </div>
-                </form>
-                
-                <a href="renderizarProdutos">
-                    <button id="buttonCadastro">
-                    Listar produtos
-                </button>
-                   </a> 
-               
+          <div class="btn-adicionar">
+            <button id="buttonCadastro" type="submit">Cadastrar</button>
+          </div>
+        </form>
+
+        <div class="btn-listarProdutos">
+          <button >
+            <a href="renderizarProdutos" id="buttonListar">Listar produtos</a>
+          </button>
+
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>

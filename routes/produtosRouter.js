@@ -1,14 +1,15 @@
 const express = require("express");
 const router = express.Router();
 
-const { renderizarProdutos, painelAdminController } = require("../controllers/painelAdminController");
-const { produtosController } = require("../controllers/produtosController");
-
-
-
+const {
+    produtosController,
+    renderizarProdutos,
+} = require("../controllers/produtosController");
 
 /* GET planos. */
 router.get("/produtos", produtosController);
-router.get("/produtos", renderizarProdutos, painelAdminController);
+router.get("/produtos", renderizarProdutos);
+
+console.log("produtosRouter");
 
 module.exports = router;

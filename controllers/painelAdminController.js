@@ -30,6 +30,8 @@ const renderizarProdutos = async (req, res) => {
     return res.render("renderizarProdutos", { produtos });
 };
 
+console.log("painelAdminController");
+
 module.exports = {
     painelAdminController,
     cadastrarNovoProduto,

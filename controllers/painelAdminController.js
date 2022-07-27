@@ -30,10 +30,19 @@ const renderizarProdutos = async (req, res) => {
     return res.render("renderizarProdutos", { produtos });
 };
 
-console.log("painelAdminController");
+//deletar os produtos
+const deletarProdutos = async (req, res) => {
+    const { id } = req.params;
+    const indexProdutos = produtos.findIndex(
+        (produto) => produto.id === Number(id)
+    );
+    produtos.splice(indexProdutos, 1);
+    return res.status(204).send();
+};
 
 module.exports = {
     painelAdminController,
     cadastrarNovoProduto,
     renderizarProdutos,
+    deletarProdutos,
 };

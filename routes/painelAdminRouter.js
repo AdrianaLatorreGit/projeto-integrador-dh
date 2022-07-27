@@ -4,6 +4,7 @@ const {
     painelAdminController,
     cadastrarNovoProduto,
     renderizarProdutos,
+    deletarProdutos,
 } = require("../controllers/painelAdminController");
 const upload = require("../middlewares/uploadsProdutos");
 
@@ -11,5 +12,6 @@ const upload = require("../middlewares/uploadsProdutos");
 router.get("/painelAdmin", painelAdminController);
 router.post("/painelAdmin", upload.single("image"), cadastrarNovoProduto);
 router.get("/renderizarProdutos", renderizarProdutos);
+router.delete("/renderizarProdutos", deletarProdutos);
 
 module.exports = router;

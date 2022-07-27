@@ -3,7 +3,7 @@
 const Produto = require("../models/Produto");
 
 const produtosController = (req, res, next) => {
-    res.render("produtos", { title: "Produtos" });
+    res.render("produtos", { title: "Produtos" , produto: "renderizarProdutos"});
 };
 
 // listar os produtos

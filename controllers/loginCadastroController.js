@@ -9,6 +9,7 @@ const cadastrarNovoUsuario = async (req, res) => {
     const image = req.file.filename;
     const { nome, email, senha } = req.body;
 
+    console.log(req.file.filename);
     const usuario = {
         nome,
         email,

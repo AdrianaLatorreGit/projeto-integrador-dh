@@ -6,7 +6,7 @@ const painelAdminController = (req, res, next) => {
 
 //Cadastrar novo produto
 const cadastrarNovoProduto = async (req, res) => {
-    const image = req.filename;
+    const image = req.file.filename;
     const { produto, preco, detalhes, descricao } = req.body;
 
     const produtos = {

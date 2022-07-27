@@ -1,195 +1,195 @@
-<!DOCTYPE html>
+li<!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head.ejs') %>
-    <body>
-        <%- include('./partials/header.ejs') %>
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/header.ejs') %>
 
-        <div class="container">
-            <div class="titulo">
-                <h2>produtos</h2>
-                <p>veja os aparelhos disponiveis</p>
-            </div>
+    <div class="container">
+      <div class="titulo">
+        <h2>produtos</h2>
+        <p>veja os aparelhos disponiveis</p>
+      </div>
 
-            <div class="planos" id="celular">
-                <h1>Celulares</h1>
-                <p>
-                    Equipamentos de primeira linha voltados para pessoas que
-                    atuam em home office e procuram comodidade e inovação.
-                </p>
-            </div>
-            <div class="wrapper">
-                <div class="produtos">
-                    <img
-                        src="../images/aparelhos/Iphone 12 Pro Max apple preto .png"
-                        alt=""
-                    />
-                    <h3>iphone 12 pro max</h3>
-                    <h5>R$ 249,00</h5>
-                    <p>/mês</p>
+      <div class="planos" id="celular">
+        <h1>Celulares</h1>
+        <p>
+          Equipamentos de primeira linha voltados para pessoas que atuam em home
+          office e procuram comodidade e inovação.
+        </p>
+      </div>
+      <div class="wrapper">
+        <div class="produtos">
+          <div>
+           
+            <img
+              id="imagemProduto"
+              src="../uploads/uploads-produtos/<%=produto.image %>"
+              alt=""
+            />
+            <h3><%=produto.produto %></h3>
+            <h5><%=produto.preco %></h5>
 
-                    <a href="detalheProduto">
-                        <button>detalhe</button>
-                    </a>
-                </div>
+            <p>/mês</p>
+            
+          </div>
 
-                <div class="produtos">
-                    <img
-                        src="/images/aparelhos/Iphone 13 pro Max 128 azul.png"
-                    />
-                    <h3>iphone 12 pro max</h3>
-                    <h5>R$ 249,00</h5>
-                    <p>/mês</p>
-                    <a href="detalheProduto">
-                        <button>detalhe</button>
-                    </a>
-                </div>
-                <div class="produtos">
-                    <img
-                        src="/images/aparelhos/Tablet Samsung Galaxy S7 com caneta 11'' 4G 256GB android octa cam dupla.png"
-                        alt=""
-                    />
-                    <h3>iphone 12 pro max</h3>
-                    <h5>R$ 249,00</h5>
-                    <p>/mês</p>
-
-                    <a href="detalheProduto">
-                        <button>detalhe</button>
-                    </a>
-                </div>
-                <div class="produtos">
-                    <img
-                        src="/images/aparelhos/Ipad pro11 apple M1 256GB cinza.png"
-                        alt=""
-                    />
-                    <h3>iphone 12 pro max</h3>
-                    <h5>R$ 249,00</h5>
-                    <p>/mês</p>
-
-                    <a href="detalheProduto">
-                        <button>detalhe</button>
-                    </a>
-                </div>
-            </div>
-            <div class="planos" id="computador">
-                <h1>Computadores</h1>
-                <p>
-                    Equipamentos de primeira linha voltados para pessoas que
-                    atuam em home office e procuram comodidade e inovação.
-                </p>
-            </div>
-            <div class="wrapper">
-                <div class="produtos">
-                    <img
-                        src="../images/aparelhos/Iphone 12 Pro Max apple preto .png"
-                        alt=""
-                    />
-                    <h3>iphone 12 pro max</h3>
-                    <h5>R$ 249,00</h5>
-                    <p>/mês</p>
-
-                    <a href="detalheProduto">
-                        <button>detalhe</button>
-                    </a>
-                </div>
-                <div class="produtos">
-                    <img
-                        src="/images/aparelhos/Iphone 13 pro Max 128 azul.png"
-                    />
-                    <h3>iphone 12 pro max</h3>
-                    <h5>R$ 249,00</h5>
-                    <p>/mês</p>
-                    <a href="detalheProduto">
-                        <button>detalhe</button>
-                    </a>
-                </div>
-                <div class="produtos">
-                    <img
-                        src="/images/aparelhos/Tablet Samsung Galaxy S7 com caneta 11'' 4G 256GB android octa cam dupla.png"
-                        alt=""
-                    />
-                    <h3>iphone 12 pro max</h3>
-                    <h5>R$ 249,00</h5>
-                    <p>/mês</p>
-
-                    <a href="detalheProduto">
-                        <button>detalhe</button>
-                    </a>
-                </div>
-                <div class="produtos">
-                    <img
-                        src="/images/aparelhos/Ipad pro11 apple M1 256GB cinza.png"
-                        alt=""
-                    />
-                    <h3>iphone 12 pro max</h3>
-                    <h5>R$ 249,00</h5>
-                    <p>/mês</p>
-
-                    <a href="detalheProduto">
-                        <button>detalhe</button>
-                    </a>
-                </div>
-            </div>
-            <div class="planos" id="camera">
-                <h1>Câmeras</h1>
-                <p>
-                    Equipamentos de primeira linha voltados para pessoas que
-                    atuam em home office e procuram comodidade e inovação.
-                </p>
-            </div>
-            <div class="wrapper">
-                <div class="produtos">
-                    <img
-                        src="../images/aparelhos/Iphone 12 Pro Max apple preto .png"
-                        alt=""
-                    />
-                    <h3>iphone 12 pro max</h3>
-                    <h5>R$ 249,00</h5>
-                    <p>/mês</p>
-
-                    <a href="detalheProduto">
-                        <button>detalhe</button>
-                    </a>
-                </div>
-                <div class="produtos">
-                    <img
-                        src="/images/aparelhos/Iphone 13 pro Max 128 azul.png"
-                    />
-                    <h3>iphone 12 pro max</h3>
-                    <h5>R$ 249,00</h5>
-                    <p>/mês</p>
-                    <a href="detalheProduto">
-                        <button>detalhe</button>
-                    </a>
-                </div>
-                <div class="produtos">
-                    <img
-                        src="/images/aparelhos/Tablet Samsung Galaxy S7 com caneta 11'' 4G 256GB android octa cam dupla.png"
-                        alt=""
-                    />
-                    <h3>iphone 12 pro max</h3>
-                    <h5>R$ 249,00</h5>
-                    <p>/mês</p>
-
-                    <a href="detalheProduto">
-                        <button>detalhe</button>
-                    </a>
-                </div>
-                <div class="produtos">
-                    <img
-                        src="/images/aparelhos/Ipad pro11 apple M1 256GB cinza.png"
-                        alt=""
-                    />
-                    <h3>iphone 12 pro max</h3>
-                    <h5>R$ 249,00</h5>
-                    <p>/mês</p>
-
-                    <a href="detalheProduto">
-                        <button>detalhe</button>
-                    </a>
-                </div>
-            </div>
+          <a href="detalheProduto">
+            <button>detalhe</button>
+          </a>
         </div>
 
-        <%- include('./partials/script.ejs') %>
-    </body>
+        <div class="produtos">
+          <img src="/images/aparelhos/Iphone 13 pro Max 128 azul.png" />
+          <h3>iphone 12 pro max</h3>
+          <h5>R$ 249,00</h5>
+          <p>/mês</p>
+          <a href="detalheProduto">
+            <button>detalhe</button>
+          </a>
+        </div>
+        <div class="produtos">
+          <img
+            src="/images/aparelhos/Tablet Samsung Galaxy S7 com caneta 11'' 4G 256GB android octa cam dupla.png"
+            alt=""
+          />
+          <h3>iphone 12 pro max</h3>
+          <h5>R$ 249,00</h5>
+          <p>/mês</p>
+
+          <a href="detalheProduto">
+            <button>detalhe</button>
+          </a>
+        </div>
+        <div class="produtos">
+          <img
+            src="/images/aparelhos/Ipad pro11 apple M1 256GB cinza.png"
+            alt=""
+          />
+          <h3>iphone 12 pro max</h3>
+          <h5>R$ 249,00</h5>
+          <p>/mês</p>
+
+          <a href="detalheProduto">
+            <button>detalhe</button>
+          </a>
+        </div>
+      </div>
+      <div class="planos" id="computador">
+        <h1>Computadores</h1>
+        <p>
+          Equipamentos de primeira linha voltados para pessoas que atuam em home
+          office e procuram comodidade e inovação.
+        </p>
+      </div>
+      <div class="wrapper">
+        <div class="produtos">
+          <img
+            src="../images/aparelhos/Iphone 12 Pro Max apple preto .png"
+            alt=""
+          />
+          <h3>iphone 12 pro max</h3>
+          <h5>R$ 249,00</h5>
+          <p>/mês</p>
+
+          <a href="detalheProduto">
+            <button>detalhe</button>
+          </a>
+        </div>
+        <div class="produtos">
+          <img src="/images/aparelhos/Iphone 13 pro Max 128 azul.png" />
+          <h3>iphone 12 pro max</h3>
+          <h5>R$ 249,00</h5>
+          <p>/mês</p>
+          <a href="detalheProduto">
+            <button>detalhe</button>
+          </a>
+        </div>
+        <div class="produtos">
+          <img
+            src="/images/aparelhos/Tablet Samsung Galaxy S7 com caneta 11'' 4G 256GB android octa cam dupla.png"
+            alt=""
+          />
+          <h3>iphone 12 pro max</h3>
+          <h5>R$ 249,00</h5>
+          <p>/mês</p>
+
+          <a href="detalheProduto">
+            <button>detalhe</button>
+          </a>
+        </div>
+        <div class="produtos">
+          <img
+            src="/images/aparelhos/Ipad pro11 apple M1 256GB cinza.png"
+            alt=""
+          />
+          <h3>iphone 12 pro max</h3>
+          <h5>R$ 249,00</h5>
+          <p>/mês</p>
+
+          <a href="detalheProduto">
+            <button>detalhe</button>
+          </a>
+        </div>
+      </div>
+      <div class="planos" id="camera">
+        <h1>Câmeras</h1>
+        <p>
+          Equipamentos de primeira linha voltados para pessoas que atuam em home
+          office e procuram comodidade e inovação.
+        </p>
+      </div>
+      <div class="wrapper">
+        <div class="produtos">
+          <img
+            src="../images/aparelhos/Iphone 12 Pro Max apple preto .png"
+            alt=""
+          />
+          <h3>iphone 12 pro max</h3>
+          <h5>R$ 249,00</h5>
+          <p>/mês</p>
+
+          <a href="detalheProduto">
+            <button>detalhe</button>
+          </a>
+        </div>
+        <div class="produtos">
+          <img src="/images/aparelhos/Iphone 13 pro Max 128 azul.png" />
+          <h3>iphone 12 pro max</h3>
+          <h5>R$ 249,00</h5>
+          <p>/mês</p>
+          <a href="detalheProduto">
+            <button>detalhe</button>
+          </a>
+        </div>
+        <div class="produtos">
+          <img
+            src="/images/aparelhos/Tablet Samsung Galaxy S7 com caneta 11'' 4G 256GB android octa cam dupla.png"
+            alt=""
+          />
+          <h3>iphone 12 pro max</h3>
+          <h5>R$ 249,00</h5>
+          <p>/mês</p>
+
+          <a href="detalheProduto">
+            <button>detalhe</button>
+          </a>
+        </div>
+        <div class="produtos">
+          <img
+            src="/images/aparelhos/Ipad pro11 apple M1 256GB cinza.png"
+            alt=""
+          />
+          <h3>iphone 12 pro max</h3>
+          <h5>R$ 249,00</h5>
+          <p>/mês</p>
+
+          <a href="detalheProduto">
+            <button>detalhe</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./partials/script.ejs') %>
+  </body>
 </html>

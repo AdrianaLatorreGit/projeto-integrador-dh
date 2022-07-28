@@ -1,35 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Renderizar produtos</title>
-        <link rel="stylesheet" href="../stylesheets/renderizarProdutos.css" />
-    </head>
-    <body>
-        <div id="tabela">
-            <div id="tabela">
-                <% if(produtos){ %>
-                <div>
-                    <% produtos.forEach(produto => {%> <%= produto.id %> <%=
-                    produto.produto %>
-                    <span>R$</span>
-                    <%=produto.preco %> <%=produto.detalhes %>
-                    <%=produto.descricao %>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renderizar produtos</title>
+    <link rel="stylesheet" href="../stylesheets/renderizarProdutos.css" />
+  </head>
+  <body>
+    <div id="tabela">
+      <% if(produtos){ %> <% produtos.forEach(produto => {%>
+      <div class="rederizarProdutos">
+        <%= produto.id %> <%= produto.produto %>
+        <span>R$</span>
+        <%=produto.preco %> <%=produto.detalhes %> <%=produto.descricao %>
 
-                    <img
-                        id="imagemProduto"
-                        src="../uploads/uploads-produtos/<%=produto.image %>"
-                        alt=""
-                    />
-                    <button id="botaoDeletar" onclick="deletarProdutos()">
-                        Deletar
-                    </button>
-                    <%})} %>
-                     
-                </div>
-            </div>
-        </div>
-    </body>
+        <img
+          id="imagemProduto"
+          src="../uploads/uploads-produtos/<%=produto.image %>"
+          alt=""
+        />
+        <button id="botaoDeletar" onclick="deletarProdutos()">Deletar</button>
+      </div>
+      <%})} %>
+    </div>
+  </body>
 </html>

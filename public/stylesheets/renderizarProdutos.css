@@ -1,8 +1,8 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* body {
@@ -10,6 +10,22 @@
 } */
 
 #imagemProduto {
-    width: 10rem;
-    height: 10rem;
+  width: 10rem;
+  height: 10rem;
+}
+
+#tabela {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rederizarProdutos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 500px;
 }

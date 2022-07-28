@@ -88,6 +88,8 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .produtos span {

@@ -28,6 +28,7 @@ const cadastrarNovoProduto = async (req, res) => {
 const renderizarProdutos = async (req, res) => {
     const produtos = await Produto.findAll();
     return res.render("renderizarProdutos", { produtos });
+    
 };
 
 //deletar os produtos

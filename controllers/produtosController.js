@@ -1,15 +1,19 @@
-
-
 const Produto = require("../models/Produto");
 
-const produtosController = (req, res, next) => {
-    res.render("produtos", { title: "Produtos" , produto: "renderizarProdutos"});
+const produtosController = async (req, res, next) => {
+    const produtos = await Produto.findAll();
+    res.render("produtos", {
+        title: "Produtos",
+        produto: "renderizarProdutos",
+        produtos,
+    });
 };
 
 // listar os produtos
-const renderizarProdutos = async (req, res) => {
-    const produtos = await Produto.findAll();
-    return res.render("produtos", { produtos });
-};
+// const renderizarProdutos = async (req, res) => {
+//     const produtos = await Produto.findAll();
+//     return res.render("produtos", { produtos });
 
-module.exports = { produtosController, renderizarProdutos };
+// };
+
+module.exports = { produtosController };

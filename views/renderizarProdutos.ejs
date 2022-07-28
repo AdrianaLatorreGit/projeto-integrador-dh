@@ -13,8 +13,10 @@
                 <% if(produtos){ %>
                 <div>
                     <% produtos.forEach(produto => {%> <%= produto.id %> <%=
-                    produto.produto %> <%=produto.preco %> <%=produto.detalhes
-                    %> <%=produto.descricao %>
+                    produto.produto %>
+                    <span>R$</span>
+                    <%=produto.preco %> <%=produto.detalhes %>
+                    <%=produto.descricao %>
 
                     <img
                         id="imagemProduto"
@@ -25,6 +27,7 @@
                         Deletar
                     </button>
                     <%})} %>
+                     
                 </div>
             </div>
         </div>

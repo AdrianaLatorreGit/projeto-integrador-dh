@@ -8,7 +8,8 @@ const {
 
 /* GET planos. */
 router.get("/produtos", produtosController);
-router.get("/produtos", renderizarProdutos);
+
+// router.get("/produtos", renderizarProdutos);
 
 console.log("produtosRouter");
 

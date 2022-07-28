@@ -90,7 +90,8 @@ body {
   align-items: center;
 }
 
-.produtos h3 {
+.produtos span {
+  font-family: 'Poppins', sans-serif;
   color: var(--primary-color);
   font-size: 1.3rem;
 }

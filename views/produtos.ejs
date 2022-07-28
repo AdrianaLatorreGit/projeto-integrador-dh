@@ -19,26 +19,17 @@ li<!DOCTYPE html>
             </div>
             <div class="wrapper">
                 <div class="produtos">
+                    <% produtos.forEach(produto => {%>
+                    <h3><%=produto.produto %></h3>
+                    <h5><%=produto.preco %></h5>
+                    <p>/mês</p>
+                    <img
+                        id="imagemProduto"
+                        src="../uploads/uploads-produtos/<%=produto.image %>"
+                        alt=""
+                    />
 
-                   
-
-                    <div>
-
-                        <% produtos.forEach(produto => {%>
-                            <h3><%=produto.produto %></h3>
-                            <h5><%=produto.preco %></h5>
-                             <p>/mês</p>
-                        <img
-                            id="imagemProduto"
-                            src="../uploads/uploads-produtos/<%=produto.image %>"
-                            alt=""
-                        />
-                        
-                        <%}) %>
-
-                       
-                    </div>
-                    
+                    <%}) %>
 
                     <a href="detalheProduto">
                         <button>detalhe</button>

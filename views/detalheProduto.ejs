@@ -23,9 +23,15 @@
               <!-- <h3 class="plano">Plano alfa</h3> -->
               <h4 class="detalhesNome"><%=produto.produto %></h4>
               <p class="preco"><%=produto.preco%></p>
+
+              
+
               <div class="botaoComprar">
-                  <button>alugar</button>
+                <a href="carrinho/<%=produto.id%>">
+                <button>alugar</button>
+            </a>     
               </div>
+
           </div>
 
           <div class="descricaoProduto">

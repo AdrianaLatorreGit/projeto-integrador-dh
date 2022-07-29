@@ -28,12 +28,12 @@ const cadastrarNovoProduto = async (req, res) => {
 const renderizarProdutos = async (req, res) => {
     const produtos = await Produto.findAll();
     return res.render("renderizarProdutos", { produtos });
-    
 };
 
 //deletar os produtos
 const deletarProdutos = async (req, res) => {
     const { id } = req.params;
+    const produtos = await Produto.findAll();
     const indexProdutos = produtos.findIndex(
         (produto) => produto.id === Number(id)
     );

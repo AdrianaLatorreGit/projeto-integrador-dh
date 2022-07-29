@@ -22,13 +22,11 @@ btnMobile.addEventListener("click", toggleMenu);
 btnMobile.addEventListener("touchstart", toggleMenu);
 
 // Compra finalizada
-
 function btnCompra() {
     document.getElementById("compraEfetivada").style.visibility = "visible";
 }
 
 //   Validar login
-
 function validarLogin() {
     let email = document.getElementById("emailLogin");
     let senha = document.getElementById("senhaLogin");
@@ -64,9 +62,6 @@ function preventDefault(event) {
 formLogin.addEventListener("submit", preventDefault);
 
 //Deletar Produtos CRUD
-
-
-
 const deletando = document.getElementById("botaoDeletar");
 
-deletando.addEventListener("delete", deletarProdutos());
+deletando.addEventListener("click", "delete", deletarProdutos());

@@ -4,7 +4,7 @@ const produtosController = async (req, res, next) => {
     const produtos = await Produto.findAll();
     res.render("produtos", {
         title: "Produtos",
-        produto: "renderizarProdutos",
+        // produto: "renderizarProdutos",
         produtos,
     });
 };

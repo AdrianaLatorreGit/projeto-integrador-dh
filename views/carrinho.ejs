@@ -23,31 +23,17 @@
                     </div>
                 </div>
                 <%}) %>
-
-                <!-- <div class="produto2">
-          <img
-            src="/images/aparelhos/Canon EOS Rebel Sl3.png"
-            alt="aparelho y"
-          />
-          <div class="produtoValor2">
-            <h2>produto</h2>
-            <h5>modelo</h5>
-            <h6>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              ad nisi soluta id excepturi, maxime amet eius sed. Eaque, minima
-              voluptas!
-            </h6>
-            <p>R$ xx.xx</p>
-          </div>
-        </div> -->
             </div>
 
             <div id="resumo">
                 <h2>resumo da compra</h2>
-                <p>itens:____________R$xx.xx</p>
-                <p>frete:____________R$xx.xx</p>
+                <% produtos.forEach(produto => {%>
 
-                <h3>total:________R$xx.xx</h3>
+                <p>itens:<%=produto.produto %>R$ <%=produto.preco%></p>
+                <!-- <p>frete:____________R$xx.xx</p> -->
+
+                <%}) %>
+                <h3>total:R$xx.xx</h3>
                 <button onclick="btnCompra()">confirmar pagamento</button>
             </div>
 

@@ -9,11 +9,6 @@ const produtosController = async (req, res, next) => {
     });
 };
 
-// listar os produtos
-// const renderizarProdutos = async (req, res) => {
-//     const produtos = await Produto.findAll();
-//     return res.render("produtos", { produtos });
 
-// };
 
 module.exports = { produtosController };

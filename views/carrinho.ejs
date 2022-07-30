@@ -7,9 +7,13 @@
         <div class="container-carrinho">
             <div id="carrinho">
                 <h1>conferir carrinho</h1>
-
+                <% produtos.forEach(produto => {%>
                 <div class="produto1">
-                    <img src="/images/aparelhos/<%=produto.image %>" alt="" />
+                    <img
+                        class="imageCarrinho"
+                        src="/uploads/uploads-produtos/<%=produto.image %>"
+                        alt=""
+                    />
 
                     <div class="produtoValor">
                         <h2><%=produto.produto %></h2>
@@ -18,6 +22,7 @@
                         <p>R$ <%=produto.preco%></p>
                     </div>
                 </div>
+                <%}) %>
 
                 <!-- <div class="produto2">
           <img

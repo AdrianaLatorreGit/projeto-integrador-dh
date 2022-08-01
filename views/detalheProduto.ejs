@@ -1,73 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head.ejs') %>
-    <body>
-        <%- include("./partials/header.ejs") %>
-
-        <div class="container">
-          
-            
-            <div class="slug">
-                <h1 class="nomeProduto"><%=produto.produto %></h1>
-            </div>
-
-            <div class="imagem">
-                <img
-                    class="imgGrande"
-                    src="/uploads/uploads-produtos/<%=produto.image %>"
-                    alt=""
-                />
-            </div>
-
-            <div id="detalhesProdutos">
-              <!-- <h3 class="plano">Plano alfa</h3> -->
-              <h4 class="detalhesNome"><%=produto.produto %></h4>
-              <p class="preco"><%=produto.preco%></p>
-
-              
-
-              <div class="botaoComprar">
-                <a href="carrinho%>">
-                <button>alugar</button>
-            </a>     
-              </div>
-
-          </div>
-
-          <div class="descricaoProduto">
-            <details>
-                <summary>Detalhes do produto</summary>
-                <p><%=produto.descricao%></p>
-            </details>
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include("./partials/header.ejs") %>
+    <div class="container">
+      <div class="container-detalhes">
+        <div class="slug">
+          <h1 class="nomeProduto"><%=produto.produto %></h1>
         </div>
 
-
-         
-
-            
+        <div class="imagem">
+          <div class="img">
+            <div class="card">
+              <img
+                class="cardImg"
+                src="/uploads/uploads-produtos/<%=produto.image %>"
+                alt="<%=produto.produto %>"
+              />
+              <img
+                class="cardImg"
+                src="/uploads/uploads-produtos/<%=produto.image %>"
+                alt="<%=produto.produto %>"
+              />
+              <img
+                class="cardImg"
+                src="/uploads/uploads-produtos/<%=produto.image %>"
+                alt="<%=produto.produto %>"
+              />
+            </div>
+            <img
+              class="imgGrande"
+              src="/uploads/uploads-produtos/<%=produto.image %>"
+              alt=""
+            />
           </div>
+          <div id="detalhesProdutos">
+            <!-- <h3 class="plano">Plano alfa</h3> -->
+            <h4 class="detalhesNome"><%=produto.produto %></h4>
+            <p class="preco">R$ <%=produto.preco%></p>
 
-                <!-- <div class="card">
-                        <img
-                            class="cardImg"
-                            src="/images/aparelhos/Iphone 13 pro Max 128 azul.png"
-                            alt="Iphone 13 pro max 128gb azul"
-                        />
-                        <img
-                            class="cardImg"
-                            src="/images/aparelhos/Iphone 13 pro Max 128 azul.png"
-                            alt="Iphone 13 pro max 128gb azul"
-                        />
-                        <img
-                            class="cardImg"
-                            src="/images/aparelhos/Iphone 13 pro Max 128 azul.png"
-                            alt="Iphone 13 pro max 128gb azul"
-                        />
-                    </div> -->
+            <div class="botaoComprar">
+              <a href="carrinho%>">
+                <button>alugar</button>
+              </a>
+            </div>
+          </div>
+        </div>
 
-                
+        <div class="descricaoProduto">
+          <details>
+            <summary>Detalhes do produto</summary>
+            <p><%=produto.descricao%></p>
+          </details>
+        </div>
+      </div>
+    </div>
 
-            <!-- <div class="produtosRelacionados">
+    <!-- <div class="produtosRelacionados">
                 <h2>Produtos Relacionados</h2>
                 <div class="relacionadosImg">
                     <div class="relacionadosCard">
@@ -95,6 +84,5 @@
                     </div>
                 </div>
             </div> -->
-        </div>
-    </body>
+  </body>
 </html>

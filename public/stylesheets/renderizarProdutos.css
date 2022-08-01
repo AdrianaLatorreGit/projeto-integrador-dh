@@ -20,7 +20,7 @@
   flex-direction: column;
 }
 
-.rederizarProdutos {
+.renderizarProdutos {
   display: flex;
   justify-content: center;
   text-align: center;

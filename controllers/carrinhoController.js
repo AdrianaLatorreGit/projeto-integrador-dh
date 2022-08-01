@@ -15,3 +15,11 @@ module.exports = carrinhoController;
 //         res.render("carrinho", { title: "Carrihno", produtos });
 //     });
 // };
+
+// const carrinhoController = async (req, res, next) => {
+//     const id = parseInt(req.params.id);
+//     await Produto.findByPk(id).then((produto) => {
+//         if (produto)
+//             return res.render("carrinho", { title: "Carrihno", produtos });
+//     });
+// };

@@ -1,63 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include("./partials/head.ejs") %>
-  <body>
-    <%- include("./partials/header.ejs") %>
+    <%- include("./partials/head.ejs") %>
+    <body>
+        <%- include("./partials/header.ejs") %>
 
-    <div class="container-carrinho">
-      <div id="carrinho">
-        <h1>conferir carrinho</h1>
+        <div class="container-carrinho">
+            <div id="carrinho">
+                <h1>conferir carrinho</h1>
+                <% produtos.forEach(produto => {%>
+                <div class="produto1">
+                    <img
+                        class="imageCarrinho"
+                        src="/uploads/uploads-produtos/<%=produto.image %>"
+                        alt=""
+                    />
 
-        <div class="produto1">
-          <img src="/images/aparelhos/Hero9 Black.png" alt="aparelho X" />
+                    <div class="produtoValor">
+                        <h2><%=produto.produto %></h2>
+                        <h5><%=produto.detalhes%></h5>
+                        <h6><%=produto.descricao%></h6>
+                        <p>R$ <%=produto.preco%></p>
+                    </div>
+                </div>
+                <%}) %>
+            </div>
 
-          <div class="produtoValor">
-            <h2>produto</h2>
-            <h5>modelo</h5>
-            <h6>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              ad nisi soluta id excepturi, maxime amet eius sed. Eaque, minima
-              voluptas!
-            </h6>
-            <p>R$ xx.xx</p>
-          </div>
+            <div id="resumo">
+                <h2>resumo da compra</h2>
+                <% produtos.forEach(produto => {%>
+
+                <p>itens:<%=produto.produto %>R$ <%=produto.preco%></p>
+                <!-- <p>frete:____________R$xx.xx</p> -->
+
+                <%}) %>
+                <h3>total:R$xx.xx</h3>
+                <button onclick="btnCompra()">confirmar pagamento</button>
+            </div>
+
+            <div id="compraEfetivada">
+                <h2 class="compra">compra finalizada</h2>
+                <p class="msgCompra">sua compra foi finalizada com sucesso</p>
+                <a class="back" href="/">voltar</a>
+            </div>
         </div>
-
-        <div class="produto2">
-          <img
-            src="/images/aparelhos/Canon EOS Rebel Sl3.png"
-            alt="aparelho y"
-          />
-          <div class="produtoValor2">
-            <h2>produto</h2>
-            <h5>modelo</h5>
-            <h6>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              ad nisi soluta id excepturi, maxime amet eius sed. Eaque, minima
-              voluptas!
-            </h6>
-            <p>R$ xx.xx</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="resumo">
-        <h2>resumo da compra</h2>
-        <p>itens:____________R$xx.xx</p>
-        <p>frete:____________R$xx.xx</p>
-
-        <h3>total:________R$xx.xx</h3>
-        <button onclick="btnCompra()">confirmar pagamento</button>
-      </div>
-
-      <div id="compraEfetivada">
-        <h2 class="compra">compra finalizada</h2>
-        <p class="msgCompra">sua compra foi finalizada com sucesso</p>
-        <a class="back" href="/">voltar</a>
-      </div>
-
-
-    </div>
-    <%- include("./partials/script.ejs") %>
-  </body>
+        <%- include("./partials/script.ejs") %>
+    </body>
 </html>

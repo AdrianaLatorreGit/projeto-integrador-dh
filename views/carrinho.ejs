@@ -7,7 +7,7 @@
         <div class="container-carrinho">
             <div id="carrinho">
                 <h1>conferir carrinho</h1>
-                <% produtos.forEach(produto => {%>
+
                 <div class="produto1">
                     <img
                         class="imageCarrinho"
@@ -22,17 +22,14 @@
                         <p>R$ <%=produto.preco%></p>
                     </div>
                 </div>
-                <%}) %>
             </div>
 
             <div id="resumo">
                 <h2>resumo da compra</h2>
-                <% produtos.forEach(produto => {%>
 
                 <p>itens:<%=produto.produto %>R$ <%=produto.preco%></p>
                 <!-- <p>frete:____________R$xx.xx</p> -->
 
-                <%}) %>
                 <h3>total:R$xx.xx</h3>
                 <button onclick="btnCompra()">confirmar pagamento</button>
             </div>

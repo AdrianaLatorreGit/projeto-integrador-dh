@@ -64,4 +64,8 @@ formLogin.addEventListener("submit", preventDefault);
 //Deletar Produtos CRUD
 const deletando = document.getElementById("botaoDeletar");
 
-deletando.addEventListener("click", "delete", deletarProdutos());
+function deletarProdutos(event) {
+    event.deletarProdutos();
+}
+
+deletando.addEventListener("delete", deletarProdutos);

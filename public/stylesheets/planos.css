@@ -25,6 +25,9 @@ body {
   margin: 0 auto;
 }
 
+.containerProdutos{
+  padding: 5rem 0;
+}
 .titulo {
   display: flex;
   justify-content: center;

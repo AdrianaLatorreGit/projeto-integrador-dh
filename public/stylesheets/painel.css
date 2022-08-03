@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: rgb(221, 218, 218);
-  height: 50rem;
+  height: 70vh;
 }
 
 .perfil {

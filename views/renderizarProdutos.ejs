@@ -9,7 +9,8 @@
     </head>
     <body>
         <div id="tabela">
-            <% if(produtos){ %> <% produtos.forEach(produto => {%>
+            <% if(produtos){ %> 
+                <% produtos.forEach(produto => {%>
             <div class="renderizarProdutos">
                 <%= produto.id %> <%= produto.produto %>
                 <span>R$</span>

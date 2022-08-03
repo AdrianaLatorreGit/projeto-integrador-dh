@@ -23,6 +23,7 @@ body {
 .container {
   max-width: 102.4rem;
   margin: 0 auto;
+  
 }
 
 #header {
@@ -226,9 +227,13 @@ li a img {
 
 footer {
   display: flex;
+  
   justify-content: center;
   background-color: var(--primary-color);
-  height: 7rem;
+  height: 10rem;
+  margin-top: 1rem;
+  
+  width: 100vw;
 }
 
 #socialMedia a {

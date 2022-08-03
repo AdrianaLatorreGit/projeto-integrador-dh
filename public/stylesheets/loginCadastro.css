@@ -19,14 +19,19 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: rgb(245, 242, 242);
+  
 }
 
 .containerLogin {
   display: flex;
+  justify-content: center;
+  
+  align-items: center;
   max-width: 102.4rem;
-
+  padding: 11rem 0;
   margin: 0 auto;
   flex-wrap: wrap;
+  
 }
 
 /*  */
@@ -42,7 +47,7 @@ body {
   width: 50rem;
   background-color: white;
   height: 100%;
-  margin-top: 10rem;
+  
 }
 
 .titleLogin,
@@ -67,6 +72,22 @@ body {
   margin: 1rem 0;
 }
 
+#formLogin,
+#formCadastro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#emailLogin,
+#senhaLogin,
+#nome,
+#email,
+#senha{
+  margin: 0;
+}
 .iconsSocial img,
 .iconsLogin img {
   width: 5rem;
@@ -148,4 +169,13 @@ button:hover {
 }
 #confirmacao input {
   width: 2rem;
+}
+
+.dadosCadastro,
+.loginForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }

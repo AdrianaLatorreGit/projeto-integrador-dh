@@ -41,7 +41,12 @@
 
                         <div class="botaoComprar">
                             <a href="carrinho?id=<%=produto.id%>">
-                                <button>alugar</button>
+                                <button
+                                    id="localstorage"
+                                    onclick="botaoLocal()"
+                                >
+                                    alugar
+                                </button>
                             </a>
                         </div>
                     </div>

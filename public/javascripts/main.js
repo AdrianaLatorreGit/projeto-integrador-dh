@@ -53,19 +53,34 @@ function validarLogin() {
 }
 
 // prevent Default
-const formLogin = document.getElementById("formLogin");
+// const formLogin = document.getElementById("formLogin");
 
-function preventDefault(event) {
-    event.preventDefault();
-}
+// function preventDefault(event) {
+//     event.preventDefault();
+// }
 
-formLogin.addEventListener("submit", preventDefault);
+// formLogin.addEventListener("submit", preventDefault);
 
 //Deletar Produtos CRUD
-const deletando = document.getElementById("botaoDeletar");
+// const deletando = document.getElementById("botaoDeletar");
 
-function deletarProdutos(event) {
-    event.deletarProdutos();
+// function deletarProdutos(event) {
+//     event.deletarProdutos();
+// }
+
+// deletando.addEventListener("delete", deletarProdutos);
+
+//local Storage
+
+
+function botaoLocal() {
+const localStorage = (req, res, next) => {
+    let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    favorites.push(produto);
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+};
+    const botao = document.getElementById("localstorage");
+    botao.addEventListener("submit", localStorage);
+   
 }
-
-deletando.addEventListener("delete", deletarProdutos);
+ console.log(botaoLocal);

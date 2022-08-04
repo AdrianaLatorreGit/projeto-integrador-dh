@@ -5,6 +5,12 @@ const carrinhoController = async (req, res, next) => {
         if (produto)
             return res.render("carrinho", { title: "Carrinho", produto });
     });
+
+    // const localStorage = (req, res, next) => {
+    //     let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    //     favorites.push(produto);
+    //     res.JSON(localStorage.setItem("favorites", JSON.stringify(favorites)));
+    // };
 };
 
 module.exports = carrinhoController;

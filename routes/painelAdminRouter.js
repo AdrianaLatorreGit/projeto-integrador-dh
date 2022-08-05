@@ -15,6 +15,6 @@ router.post("/painelAdmin", upload.single("image"), cadastrarNovoProduto);
 router.get("/renderizarProdutos", renderizarProdutos);
 
 
-router.delete("/renderizarProdutos", deletarProdutos);
+router.delete("/renderizarProdutos/:id", deletarProdutos);
 
 module.exports = router;

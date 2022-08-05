@@ -9,8 +9,7 @@
     </head>
     <body>
         <div id="tabela">
-            <% if(produtos){ %> 
-                <% produtos.forEach(produto => {%>
+            <% if(produtos){ %> <% produtos.forEach(produto => {%>
             <div class="renderizarProdutos">
                 <%= produto.id %> <%= produto.produto %>
                 <span>R$</span>
@@ -23,15 +22,18 @@
                     alt=""
                 />
                 <button
+                    enctype="multipart/form-data"
+                    action="/renderizarProdutos"
+                    method="DELETE"
                     id="botaoDeletar"
-                    type="delete"
-                    onclick="deletarProdutos()"
+                    onclick="deletando()"
                 >
                     Deletar
                 </button>
             </div>
             <%})} %>
         </div>
-        <%- include("./partials/footer.ejs") %>
+        <%- include("./partials/script.ejs") %> <%-
+        include("./partials/footer.ejs") %>
     </body>
 </html>

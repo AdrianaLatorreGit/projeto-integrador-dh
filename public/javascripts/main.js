@@ -53,34 +53,33 @@ function validarLogin() {
 }
 
 // prevent Default
-// const formLogin = document.getElementById("formLogin");
+const formLogin = document.getElementById("formLogin");
 
-// function preventDefault(event) {
-//     event.preventDefault();
-// }
+function preventDefault(event) {
+    event.preventDefault();
+}
 
-// formLogin.addEventListener("submit", preventDefault);
+formLogin.addEventListener("submit", preventDefault);
 
 //Deletar Produtos CRUD
-// const deletando = document.getElementById("botaoDeletar");
+// const deletando = document.getElementById("botaoDeletar").onclick;
+// deletando.addEventListener("DELETE", deletarProdutos());
+// console.log(deletarProdutos());
 
-// function deletarProdutos(event) {
-//     event.deletarProdutos();
-// }
-
-// deletando.addEventListener("delete", deletarProdutos);
+deletarProdutos();
+function deletando() {
+    const botaoDeletar = document.getElementById("botaoDeletar");
+    botaoDeletar.addEventListener("delete", deletarProdutos());
+}
 
 //local Storage
 
-
-function botaoLocal() {
-const localStorage = (req, res, next) => {
-    let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-    favorites.push(produto);
-    localStorage.setItem("favorites", JSON.stringify(favorites));
-};
-    const botao = document.getElementById("localstorage");
-    botao.addEventListener("submit", localStorage);
-   
-}
- console.log(botaoLocal);
+// function botaoLocal() {
+//     const localStorage = (req, res, next) => {
+//         let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+//         favorites.push(produto);
+//         localStorage.setItem("favorites", JSON.stringify(favorites));
+//     };
+//     const botao = document.getElementById("localstorage");
+//     botao.addEventListener("submit", localStorage);
+// }

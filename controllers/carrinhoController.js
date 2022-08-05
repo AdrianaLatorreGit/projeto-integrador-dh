@@ -7,11 +7,11 @@ const carrinhoController = async (req, res, next) => {
     });
 };
 
-// const localStorage = (req, res, next) => {
-//         let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-//         favorites.push(produto);
-//         res.JSON(localStorage.setItem("favorites", JSON.stringify(favorites)));
-//     };
-//     console.log(localStorage);
+const localStorage = (req, res, next) => {
+    let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    favorites.push(produto);
+    res.JSON(localStorage.setItem("favorites", JSON.stringify(favorites)));
+};
+console.log(localStorage);
 
 module.exports = carrinhoController;

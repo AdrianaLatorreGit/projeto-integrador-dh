@@ -1,36 +1,28 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../config/database/db");
 
-
 const Pedidos = sequelize.define("pedidos", {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
     },
-    produto: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    },
-    preco: {
+
+    UsuarioId: {
         type: DataTypes.INTEGER,
+        references: { model: "usuarios", key: "id" },
+        onDelete: "CASCADE",
         allowNull: false,
     },
-    // categoria: {
-    //     type: DataTypes.STRING,
-    //     allowNull: false,
-    // },
-    detalhes: {
-        type: DataTypes.STRING,
+
+    ProdutosId: {
+        type: DataTypes.INTEGER,
+        references: { model: "produtos", key: "id" },
+        onDelete: "CASCADE",
         allowNull: false,
-    },
-    descricao: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    },
-    image: {
-        type: DataTypes.STRING,
     },
 });
 
-module.exports = Produto;
+await Pedidos.sync();
+
+module.exports = Pedidos;

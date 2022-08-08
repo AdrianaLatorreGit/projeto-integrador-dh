@@ -7,8 +7,6 @@ const port = process.env.PORT || 3000;
 const dotenv = require("dotenv");
 dotenv.config();
 
-
-
 const app = express();
 
 //Linkando Models
@@ -24,6 +22,7 @@ const sobrenosRouter = require("./routes/sobrenosRouter");
 const detalheProdutoRouter = require("./routes/detalheProdutoRouter");
 const loginCadastroRouter = require("./routes/loginCadastroRouter");
 const painelAdminRouter = require("./routes/painelAdminRouter");
+const cadastroRouter = require("./routes/cadastroRouter");
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -43,6 +42,7 @@ app.use("/", produtosRouter);
 app.use("/", detalheProdutoRouter);
 app.use("/", loginCadastroRouter);
 app.use("/", painelAdminRouter);
+app.use("/", cadastroRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

@@ -58,18 +58,19 @@ const loginUsuario = async (req, res) => {
 
     const hashCompare = bcrypt
         .compare(
-            req.body.password,
+            req.body.senha
             //resultado da busca do banco (senha)
             // "$2a$10$RodNSzrxoxhdvrI4WABJ6.AEy1cqKn7IcXfBEVDdxrjXV9ERLocxK"
         )
-        .then(function (result) {});
-
-    if (!hashCompare) {
-        return res.status(400).json({
-            erro: true,
-            mensagem: "Erro: Usuário ou a senha incorreta! Senha incorreta!",
+        .then(function (result) {
+            if (!hashCompare) {
+                return res.status(400).json({
+                    erro: true,
+                    mensagem:
+                        "Erro: Usuário ou a senha incorreta! Senha incorreta!",
+                });
+            }
         });
-    }
 
     // if (!(await bcrypt.compare(req.body.password, usuario.password))) {
     //     return res.status(400).json({
@@ -86,8 +87,7 @@ const loginUsuario = async (req, res) => {
 
     return res.json({
         erro: false,
-        mensagem: "Login realizado com sucesso!"
-        
+        mensagem: "Login realizado com sucesso!",
     });
 };
 

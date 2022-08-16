@@ -98,10 +98,11 @@ li a img {
 }
 
 .galery .fotos {
-    width: 500%;
+    width: 499%;
     animation-name: animacao;
     animation-duration: 15s;
     animation-iteration-count: infinite;
+    margin-top: 1rem;
 }
 
 .galery .fotos img {

@@ -30,6 +30,7 @@ body {
   flex-wrap: wrap;
   text-align: center;
   height: 70vh;
+  position: relative;
   
 }
 
@@ -165,7 +166,7 @@ body {
   border-radius: 1rem;
   cursor: pointer;
   transition: 0.2s;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* <<<<<  CONFIRMAR COMPRA  >>>> */
@@ -202,4 +203,9 @@ body {
 .back {
   color: var(--primary-color);
   margin-top: 1rem;
+}
+
+
+.comprando a{
+  font-size: 1rem;
 }

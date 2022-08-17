@@ -227,7 +227,7 @@ li a img {
 
 footer {
     display: flex;
-
+    
     justify-content: center;
     background-color: var(--primary-color);
     height: 10rem;

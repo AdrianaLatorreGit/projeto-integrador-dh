@@ -1,66 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head.ejs') %>
-    <body>
-        <%- include("./partials/header.ejs") %>
-        <div class="container">
-            <div class="container-detalhes">
-                <div class="slug">
-                    <h1 class="nomeProduto"><%=produto.produto %></h1>
-                </div>
-
-                <div class="imagem">
-                    <div class="img">
-                        <div class="card">
-                            <img
-                                class="cardImg"
-                                src="/uploads/uploads-produtos/<%=produto.image %>"
-                                alt="<%=produto.produto %>"
-                            />
-                            <img
-                                class="cardImg"
-                                src="/uploads/uploads-produtos/<%=produto.image %>"
-                                alt="<%=produto.produto %>"
-                            />
-                            <img
-                                class="cardImg"
-                                src="/uploads/uploads-produtos/<%=produto.image %>"
-                                alt="<%=produto.produto %>"
-                            />
-                        </div>
-                        <img
-                            class="imgGrande"
-                            src="/uploads/uploads-produtos/<%=produto.image %>"
-                            alt=""
-                        />
-                    </div>
-                    <div id="detalhesProdutos">
-                        <!-- <h3 class="plano">Plano alfa</h3> -->
-                        <h4 class="detalhesNome"><%=produto.produto %></h4>
-                        <p class="preco">R$ <%=produto.preco%></p>
-
-                        <div class="botaoComprar">
-                            <a href="carrinho?id=<%=produto.id%>">
-                                <button
-                                    id="localstorage"
-                                    onclick="botaoLocal()"
-                                >
-                                    alugar
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="descricaoProduto">
-                    <details>
-                        <summary>Detalhes do produto</summary>
-                        <p><%=produto.descricao%></p>
-                    </details>
-                </div>
-            </div>
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include("./partials/header.ejs") %>
+    <div class="container">
+      <div class="container-detalhes">
+        <div class="slug">
+          <h1 class="nomeProduto"><%=produto.produto %></h1>
         </div>
-        <%- include("./partials/footer.ejs") %> <%-
-        include("./partials/script.ejs") %>
-    </body>
+
+        <div class="imagem">
+          <div class="img">
+            <div class="card">
+              <img
+                class="cardImg"
+                src="/uploads/uploads-produtos/<%=produto.image %>"
+                alt="<%=produto.produto %>"
+              />
+              <img
+                class="cardImg"
+                src="/uploads/uploads-produtos/<%=produto.image %>"
+                alt="<%=produto.produto %>"
+              />
+              <img
+                class="cardImg"
+                src="/uploads/uploads-produtos/<%=produto.image %>"
+                alt="<%=produto.produto %>"
+              />
+            </div>
+            <img
+              class="imgGrande"
+              src="/uploads/uploads-produtos/<%=produto.image %>"
+              alt=""
+            />
+          </div>
+          <div id="detalhesProdutos">
+            <!-- <h3 class="plano">Plano alfa</h3> -->
+            <h4 class="detalhesNome"><%=produto.detalhes %></h4>
+            <p class="preco">R$ <%=produto.preco%></p>
+
+            <div class="botaoComprar">
+              <a href="carrinho?id=<%=produto.id%>">
+                <button id="localstorage" onclick="botaoLocal()">alugar</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="descricaoProduto">
+          <details>
+            <summary>Detalhes do produto</summary>
+            <p><%=produto.descricao%></p>
+          </details>
+        </div>
+      </div>
+    </div>
+    <%- include("./partials/footer.ejs") %>
+    <%- include("./partials/script.ejs") %>
+  </body>
 </html>

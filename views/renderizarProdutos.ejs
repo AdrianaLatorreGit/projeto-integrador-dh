@@ -9,11 +9,15 @@
     </head>
     <body>
         <div id="tabela">
-            <% if(produtos){ %> <% produtos.forEach(produto => {%>
+            <% if(produtos){ %>
+                 <% produtos.forEach(produto => {%>
             <div class="renderizarProdutos">
-                <%= produto.id %> <%= produto.produto %>
+                <%= produto.id %> 
+                <%= produto.produto %>
                 <span>R$</span>
-                <%=produto.preco %> <%=produto.detalhes %> <%=produto.descricao
+                <%=produto.preco %> 
+                <%=produto.detalhes %> 
+                <%=produto.descricao
                 %>
 
                 <img
@@ -21,7 +25,9 @@
                     src="../uploads/uploads-produtos/<%=produto.image %>"
                     alt=""
                 />
-                <button id="botaoDeletar" onclick="btnDeletar">Deletar</button>
+                <button id="botaoDeletar" onclick="deleteById(produto.id)">
+                    Deletar
+                </button>
             </div>
             <%})} %>
         </div>

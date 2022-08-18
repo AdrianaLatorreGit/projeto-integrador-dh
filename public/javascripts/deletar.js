@@ -1,10 +1,4 @@
-
-const deletarProdutos = require('../../controllers/painelAdminController')
-
-
-const btnDeletar = document.getElementById('botaoDeletar')
-btnDeletar.addEventListener('click', deletarProdutos())
-
+// const deletarProdutos = require('../../controllers/painelAdminController')
 
 // const painelAdminController = require("../../controllers/painelAdminController");
 
@@ -22,10 +16,21 @@ btnDeletar.addEventListener('click', deletarProdutos())
 //     }
 // };
 
-fetch("../../controllers/painelAdminController").then(function () {
-    const btnDeletar = document.getElementById("botaoDeletar");
-    btnDeletar.addEventListener("click", deletarProdutos());
-});
+async function deleteById(id) {
+    fetch(`http://localhost:3000/renderizarProdutos/${id}`, {
+        method: "delete",
+    })
+        .then((response) => console.log(response))
+        .catch((e) => console.log(e));
+}
+
+module.exports = deleteById;
 
 // module.exports = deletarProdutos;
 
+{
+    /* <input type="button" value="anonymous function" onclick="(function(){
+console.log('ok');
+console.log('ok2');
+})()"> */
+}

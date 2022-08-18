@@ -11,9 +11,10 @@ const { eAdmin } = require("../middlewares/auth");
 
 /* GET login cadastro. */
 router.get("/loginCadastro", loginCadastroController);
+
 router.post("/loginCadastro", upload.single("image"), cadastrarNovoUsuario);
 
-router.post("/loginCadastro", loginUsuario);
+router.get("/loginCadastro", loginUsuario);
 // router.get("/", eAdmin, direcionarUsuario);
 
 module.exports = router;

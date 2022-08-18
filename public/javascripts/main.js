@@ -44,6 +44,7 @@ function validarLogin() {
 
         document.getElementById("admin").style.visibility = "visible";
         document.getElementById("admin").style.position = "static";
+        
     } else if (email.value == "user@user.com" && senha.value == 1234) {
         document.getElementById("login-cadastro").style.visibility = "hidden";
         document.getElementById("login-cadastro").style.position = "absolute";
@@ -57,20 +58,18 @@ function validarLogin() {
 }
 
 // prevent Default
-const formLogin = document.getElementById("formLogin");
+// const formLogin = document.getElementById("formLogin");
 
-function preventDefault(event) {
-    event.preventDefault();
-}
+// function preventDefault(event) {
+//     event.preventDefault();
+// }
 
-formLogin.addEventListener("submit", preventDefault);
+// formLogin.addEventListener("submit", preventDefault);
 
 //Deletar Produtos CRUD
 // const deletando = document.getElementById("botaoDeletar").onclick;
 // deletando.addEventListener("DELETE", deletarProdutos());
 // console.log(deletarProdutos());
-
-
 
 //local Storage
 

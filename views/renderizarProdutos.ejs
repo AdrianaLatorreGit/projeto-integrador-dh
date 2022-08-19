@@ -11,24 +11,26 @@
         <div id="tabela">
             <% if(produtos){ %> <% produtos.forEach(produto => {%>
             <div class="renderizarProdutos">
-                <%= produto.id %> <%= produto.produto %>
+                <h1><%= produto.id %></h1>
+                <%= produto.produto %>
                 <span>R$</span>
                 <%=produto.preco %> <%=produto.detalhes %> <%=produto.descricao
                 %>
-
                 <img
                     id="imagemProduto"
                     src="../uploads/uploads-produtos/<%=produto.image %>"
                     alt=""
                 />
-                <button id="botaoDeletar" onclick="deleteById(produto.id)">
+                <button
+                    id="botaoDeletar"
+                    value="<%= produto.id %>"
+                    onclick="deleteById(value)"
+                >
                     Deletar
                 </button>
             </div>
             <%})} %>
         </div>
         <script src="./javascripts/deletar.js"></script>
-
-        <%- include("./partials/footer.ejs") %>
     </body>
 </html>

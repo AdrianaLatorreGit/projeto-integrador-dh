@@ -41,8 +41,6 @@ const renderizarProdutos = async (req, res) => {
 //     return res.status(200).send();
 // };
 
-
-
 const deletarProdutos = async (req, res, nex) => {
     const { id } = req.params;
     try {

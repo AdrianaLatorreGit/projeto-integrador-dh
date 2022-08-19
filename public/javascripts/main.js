@@ -44,11 +44,8 @@ function validarLogin() {
 
         document.getElementById("admin").style.visibility = "visible";
         document.getElementById("admin").style.position = "static";
-<<<<<<< HEAD
 
-=======
->>>>>>> 3d97651d3f83f1d6e6658cc39137feb859b35fa9
-        
+
     } else if (email.value == "user@user.com" && senha.value == 1234) {
         document.getElementById("login-cadastro").style.visibility = "hidden";
         document.getElementById("login-cadastro").style.position = "absolute";

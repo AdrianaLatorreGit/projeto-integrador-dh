@@ -4,16 +4,16 @@ const cadastroController = (req, res, next) => {
 };
 
 const loginUsuario = async (req, res) => {
+    const { email, senha } = req.body;
     const usuarioDataBase = await Usuario.findOne({
         attributes: ["email", "senha"],
         where: {
-            email: req.body.email,
-            senha: req.body.senha,
+            email,
         },
     });
 
     if (!usuarioDataBase) {
-        return res.status(400).json({
+        return res.status(404).json({
             erro: true,
             mensagem:
                 "Erro: Usuário ou a senha incorreta! Nenhum usuário com este e-mail",
@@ -22,8 +22,8 @@ const loginUsuario = async (req, res) => {
 
     const hashCompare = bcrypt
         .compare(
-            req.body.senha,
-            req.body.email
+            req.body.senha
+
             //resultado da busca do banco (senha)
             // "$2a$10$RodNSzrxoxhdvrI4WABJ6.AEy1cqKn7IcXfBEVDdxrjXV9ERLocxK"
         )

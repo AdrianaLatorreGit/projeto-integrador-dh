@@ -1,4 +1,4 @@
-const { application } = require("express");
+const express = require("express");
 const Usuario = require("../models/Usuario");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
@@ -34,34 +34,29 @@ const cadastrarNovoUsuario = async (req, res) => {
 };
 
 const loginUsuario = async (req, res) => {
+    const { email, senha } = req.body;
     const usuarioDataBase = await Usuario.findOne({
         attributes: ["email", "senha"],
         where: {
-            email: req.body.email,
-            senha: req.body.senha,
+            email,
+            // senha: req.body.senha,
         },
     });
 
     if (!usuarioDataBase) {
-        return res.status(400).json({
+        return res.status(404).json({
             erro: true,
-            mensagem: "Erro: Usuário ou a senha incorreta!",
+            mensagem: "Erro: Usuário ou a senha incorreta!!!!",
         });
     }
 
-    const hashCompare = bcrypt.compare(req.body.senha).then(function (result) {
-        if (!hashCompare) {
-            return res.status(400).json({
-                erro: true,
-                mensagem: "Erro: Senha incorreta!",
-            });
-        }
-    });
+    const match = await bcrypt.compare(senha, usuarioDataBase.senha);
 
-    return res.json({
-        erro: false,
-        mensagem: "Login realizado com sucesso!",
-    });
+    if (match) {
+        return res.status(200).json({ token: true, mesage: "Sucesso!" });
+    }
+
+    return res.status(400).json({ token: false, mesage: "Erro!" });
 };
 
 module.exports = {

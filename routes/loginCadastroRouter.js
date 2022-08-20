@@ -15,6 +15,9 @@ router.get("/loginCadastro", loginCadastroController);
 router.post("/loginCadastro", upload.single("image"), cadastrarNovoUsuario);
 
 router.get("/loginCadastro", loginUsuario);
+
+router.post("/login", loginUsuario);
+
 // router.get("/", eAdmin, direcionarUsuario);
 
 module.exports = router;

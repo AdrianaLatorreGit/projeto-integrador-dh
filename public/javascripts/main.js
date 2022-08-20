@@ -31,32 +31,32 @@ function btnCompra() {
 }
 
 //   Validar login
-function validarLogin() {
-    let email = document.getElementById("emailLogin");
-    let senha = document.getElementById("senhaLogin");
+// function validarLogin() {
+//     let email = document.getElementById("emailLogin");
+//     let senha = document.getElementById("senhaLogin");
 
-    if (email.value == "admin@admin.com" && senha.value == 1234) {
-        document.getElementById("login-cadastro").style.visibility = "hidden";
-        document.getElementById("login-cadastro").style.position = "absolute";
+//     if (email.value == "admin@admin.com" && senha.value == 1234) {
+//         document.getElementById("login-cadastro").style.visibility = "hidden";
+//         document.getElementById("login-cadastro").style.position = "absolute";
 
-        document.getElementById("iconLogin").style.visibility = "hidden";
-        document.getElementById("iconLogin").style.position = "absolute";
+//         document.getElementById("iconLogin").style.visibility = "hidden";
+//         document.getElementById("iconLogin").style.position = "absolute";
 
-        document.getElementById("admin").style.visibility = "visible";
-        document.getElementById("admin").style.position = "static";
+//         document.getElementById("admin").style.visibility = "visible";
+//         document.getElementById("admin").style.position = "static";
 
 
-    } else if (email.value == "user@user.com" && senha.value == 1234) {
-        document.getElementById("login-cadastro").style.visibility = "hidden";
-        document.getElementById("login-cadastro").style.position = "absolute";
+//     } else if (email.value == "user@user.com" && senha.value == 1234) {
+//         document.getElementById("login-cadastro").style.visibility = "hidden";
+//         document.getElementById("login-cadastro").style.position = "absolute";
 
-        document.getElementById("admin").style.visibility = "hidden";
-        document.getElementById("admin").style.position = "absolute";
+//         document.getElementById("admin").style.visibility = "hidden";
+//         document.getElementById("admin").style.position = "absolute";
 
-        document.getElementById("iconLogin").style.visibility = "visible";
-        document.getElementById("iconLogin").style.position = "static";
-    }
-}
+//         document.getElementById("iconLogin").style.visibility = "visible";
+//         document.getElementById("iconLogin").style.position = "static";
+//     }
+// }
 
 // prevent Default
 // const formLogin = document.getElementById("formLogin");

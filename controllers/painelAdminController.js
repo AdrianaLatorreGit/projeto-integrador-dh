@@ -30,16 +30,6 @@ const renderizarProdutos = async (req, res) => {
     return res.render("renderizarProdutos", { produtos });
 };
 
-//deletar os produtos
-// const deletarProdutos = async (req, res) => {
-//     const { id } = req.params.id;
-//     const produtos = await Produto.destroy({ where: { id } });
-//     const indexProdutos = produtos.findIndex(
-//         (produto) => produto.id === Number(id)
-//     );
-//     produtos.splice(indexProdutos, 1);
-//     return res.status(200).send();
-// };
 
 const deletarProdutos = async (req, res, nex) => {
     const { id } = req.params;

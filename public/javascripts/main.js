@@ -77,7 +77,7 @@ function btnCompra() {
 // function botaoLocal() {
 //     const localStorage = (req, res, next) => {
 //         let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-//         favorites.push(produto);
+//         --);
 //         localStorage.setItem("favorites", JSON.stringify(favorites));
 //     };
 //     const botao = document.getElementById("localstorage");

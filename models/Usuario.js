@@ -11,10 +11,6 @@ const Usuario = sequelize.define("usuarios", {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    // ultimoNome: {
-    //     type: DataTypes.STRING,
-    //     allowNull: false,
-    // },
     email: {
         type: DataTypes.STRING,
         allowNull: false,

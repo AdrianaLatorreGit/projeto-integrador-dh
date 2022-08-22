@@ -8,7 +8,7 @@
       <div id="carrinho">
         <h1>conferir carrinho</h1>
 
-        <div class="produto1">
+        <div class="produto">
           <img
             class="imageCarrinho"
             src="/uploads/uploads-produtos/<%=produto.image %>"
@@ -18,8 +18,8 @@
           <div class="produtoValor">
             <h2><%=produto.produto %></h2>
             <h5><%=produto.detalhes%></h5>
-            <h6><%=produto.descricao%></h6>
-            <p>R$ <%=produto.preco%></p>
+
+            <p>R$ <%=produto.preco%> /MÊS</p>
           </div>
         </div>
       </div>
@@ -28,9 +28,8 @@
         <h2>resumo da compra</h2>
 
         <p>itens: <%=produto.produto%>_________R$<%=produto.preco%></p>
-        <!-- <p>frete:____________R$xx.xx</p> -->
 
-        <h3>total:R$<%=produto.preco%></h3>
+        <h3>total:R$______<%=produto.preco%>/MÊS</h3>
         <button onclick="btnCompra()">confirmar pagamento</button>
         <button class="comprando">
           <a href="produtos">Continuar comprando</a>
@@ -43,7 +42,7 @@
         <a class="back" href="/">voltar</a>
       </div>
     </div>
-    <%- include("./partials/footer.ejs") %>
-    <%- include("./partials/script.ejs") %>
+    <%- include("./partials/footer.ejs") %> <%- include("./partials/script.ejs")
+    %>
   </body>
 </html>

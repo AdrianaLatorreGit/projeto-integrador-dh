@@ -1,4 +1,4 @@
-const express = require("express");
+const { application } = require("express");
 const Usuario = require("../models/Usuario");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
@@ -48,6 +48,7 @@ const loginUsuario = async (req, res) => {
             erro: true,
             mensagem: "Erro: Usuário ou a senha incorreta!!!!",
         });
+        // return console.log("deu errado");
     }
 
     const match = await bcrypt.compare(senha, usuarioDataBase.senha);

@@ -4,78 +4,10 @@
   <body>
     <%- include("./partials/header.ejs") %>
 
-
     <div class="containerLogin">
       <div id="login">
         <div class="titleLogin">
           <h2>login</h2>
-        <div class="containerLogin">
-            <div id="login">
-                <div class="titleLogin">
-                    <h2>login</h2>
-                </div>
-                <div class="socialLogin">
-                    <h3>conectar com a sua rede social</h3>
-                </div>
-                <div class="iconsSocial">
-                    <a href="#">
-                        <img
-                            src="/images/icones/iconsFacebook.svg"
-                            alt="Icone Facebook"
-                    /></a>
-                    <a href="#">
-                        <img
-                            src="/images/icones/iconsLinkedin.svg"
-                            alt="Icone Linkedin"
-                    /></a>
-                    <a href="#">
-                        <img
-                            src="/images/icones/iconsGithub.svg"
-                            alt="Icone GitHub"
-                    /></a>
-                </div>
-
-                <div class="orLine">
-                    <h4>____________ou____________</h4>
-                </div>
-                <br />
-
-                <div class="loginForm">
-                    <h3>entre com login e senha</h3>
-                    <form action="/login" method="POST" id="formLogin">
-                        <label for="emailLogin">Email</label>
-                        <input
-                            type="email"
-                            id="emailLogin"
-                            name="email"
-                            placeholder="Digite seu email"
-                            required
-                            value=""
-                        />
-                        <br />
-
-                        <label for="senhaLogin">Senha</label>
-
-                        <input
-                            type="password"
-                            id="senhaLogin"
-                            name="senha"
-                            placeholder="Digite sua senha"
-                            required
-                            value=""
-                        />
-                        <br />
-                        <p>não possui cadastro? clique</p>
-                        <a href="cadastro"> <span class="aqui">aqui</span> </a>
-                        <br />
-
-                        <button type="submit" class="buttonLogin" onclick="">
-                            Login
-                        </button>
-                    </form>
-                </div>
-            </div>
-
         </div>
         <div class="socialLogin">
           <h3>conectar com a sua rede social</h3>
@@ -99,16 +31,15 @@
 
         <div class="loginForm">
           <h3>entre com login e senha</h3>
-          <form action="/loginCadastro" method="GET" id="formLogin">
+          <form action="/login" method="POST" id="formLogin">
             <label for="emailLogin">Email</label>
-
             <input
               type="email"
               id="emailLogin"
               name="email"
               placeholder="Digite seu email"
               required
-              value=" "
+              value=""
             />
             <br />
 
@@ -126,16 +57,15 @@
             <p>não possui cadastro? clique</p>
             <a href="cadastro"> <span class="aqui">aqui</span> </a>
             <br />
-
-            <button type="submit" class="buttonLogin" onclick="validarLogin()">
+            <button type="submit" class="buttonLogin" onclick="loginUsuario()">
               Login
             </button>
           </form>
         </div>
       </div>
     </div>
-    <%- include("./partials/footer.ejs") %>
-     <%- include("./partials/script.ejs")
+
+    <%- include("./partials/footer.ejs") %> <%- include("./partials/script.ejs")
     %>
     <script src="../public/javascripts/validarLogin.js"></script>
   </body>

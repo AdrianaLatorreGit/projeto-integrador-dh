@@ -62,11 +62,11 @@ function btnCompra() {
 // prevent Default
 const formLogin = document.getElementById('formLogin')
 
-function preventDefault(event) {
-  event.preventDefault()
-}
+// function preventDefault(event) {
+//   event.preventDefault()
+// }
 
-formLogin.addEventListener('submit', preventDefault)
+// formLogin.addEventListener('submit', preventDefault)
 
 
 // function botaoLocal() {

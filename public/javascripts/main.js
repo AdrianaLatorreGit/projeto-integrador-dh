@@ -66,6 +66,10 @@ function setToken(token) {
 //   event.preventDefault()
 // }
 
+
+// formLogin.addEventListener('submit', preventDefault)
+
+
 // formLogin.addEventListener('submit', preventDefault)
 
 // function botaoLocal() {

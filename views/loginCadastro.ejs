@@ -75,8 +75,56 @@
             </div>
         </div>
 
+<<<<<<< HEAD
+        <div class="orLine">
+          <h4>____________ou____________</h4>
+        </div>
+        <br />
+
+        <div class="loginForm">
+          <h3>entre com login e senha</h3>
+          <form action="/login" method="POST" id="formLogin">
+            <label for="emailLogin">Email</label>
+            <input
+              type="email"
+              id="emailLogin"
+              name="email"
+              placeholder="Digite seu email"
+              required
+              value=""
+            />
+            <br />
+
+            <label for="senhaLogin">Senha</label>
+
+            <input
+              type="password"
+              id="senhaLogin"
+              name="senha"
+              placeholder="Digite sua senha"
+              required
+              value=""
+            />
+            <br />
+            <p>não possui cadastro? clique</p>
+            <a href="cadastro"> <span class="aqui">aqui</span> </a>
+            <br />
+            <button type="submit" class="buttonLogin" onclick="loginUsuario()">
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <%- include("./partials/footer.ejs") %> <%- include("./partials/script.ejs")
+    %>
+    <!-- <script src="../public/javascripts/validarLogin.js"></script> -->
+  </body>
+=======
         <%- include("./partials/footer.ejs") %> <%-
         include("./partials/script.ejs") %>
         <script src="./javascripts/validarLogin.js"></script>
     </body>
+>>>>>>> 848e35cd73db22574f9fcd835cbd9c3e34e0d786
 </html>

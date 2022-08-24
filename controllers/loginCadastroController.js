@@ -54,7 +54,13 @@ const loginUsuario = async (req, res) => {
     const match = await bcrypt.compare(senha, usuarioDataBase.senha);
 
     if (match) {
-        return res.status(200).json({ token: true, mesage: "Sucesso!" });
+        const token = jwt.sign({ foo: "bar" }, "privateKey", {
+            expiresIn: "1h",
+        });
+        // const privateKey = fs.readFileSync('private.key');
+
+        // console.log(token);
+        return res.status(200).render("index", { token, title: "Home logado" });
     }
 
     return res.status(400).json({ token: false, mesage: "Erro!" });

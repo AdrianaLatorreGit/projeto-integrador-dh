@@ -2,6 +2,8 @@
 <html lang="en">
     <%- include("./partials/head.ejs") %>
 
+    <title><%- title %></title>
+
     <body>
         <%- include("./partials/header.ejs") %>
 
@@ -67,5 +69,10 @@
         </main>
 
         <%- include("./partials/script.ejs") %>
+
+        <script>
+            setToken(token);
+            console.log(token);
+        </script>
     </body>
 </html>

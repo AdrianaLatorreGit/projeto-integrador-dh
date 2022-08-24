@@ -26,6 +26,11 @@ function btnCompra() {
     document.getElementById("compraEfetivada").style.visibility = "visible";
 }
 
+function setToken(token) {
+    return localStorage.setItem("token", token);
+    console.log(token);
+}
+
 //   Validar login
 
 // function validarLogin() {

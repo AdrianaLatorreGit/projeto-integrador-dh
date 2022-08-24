@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 // const token = localStorage.getItem("token");
-=======
+
 let token = localStorage.getItem("token");
->>>>>>> 848e35cd73db22574f9fcd835cbd9c3e34e0d786
+
 
 function validarLogin() {
     let email = document.getElementById("emailLogin");

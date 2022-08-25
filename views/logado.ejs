@@ -8,9 +8,9 @@
     </head>
 
     <body onload="setToken()">
-        <h1><%= token %></h1>
-
-        
+        <!-- usuarios.forEach(usuario => {
+        <h1> usuario.nome </h1>
+        })  -->
 
         <script>
             let x = token;
@@ -18,5 +18,8 @@
                 localStorage.setItem("token", "asiyfygqwyUGDQYUWYQ");
             }
         </script>
+
+        <%- include("./partials/footer.ejs") %> <%-
+        include('./partials/script.ejs') %>
     </body>
 </html>

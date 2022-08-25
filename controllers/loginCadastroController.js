@@ -60,8 +60,11 @@ const loginUsuario = async (req, res) => {
         // const privateKey = fs.readFileSync('private.key');
 
         // console.log(token);
-        return res.status(200).render("index", { token, title: "Home logado" });
+        return res.status(200).render("logado", { token });
+        // render("index", { token, title: "Home logado" });
     }
+
+    // retornar uma tela de erro
 
     return res.status(400).json({ token: false, mesage: "Erro!" });
 };

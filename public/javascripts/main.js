@@ -26,10 +26,10 @@ function btnCompra() {
     document.getElementById("compraEfetivada").style.visibility = "visible";
 }
 
-function setToken(token) {
-    return localStorage.setItem("token", token);
-    console.log(token);
-}
+// function setToken(token) {
+//     return localStorage.setItem("token", token);
+//     console.log(token);
+// }
 
 //   Validar login
 
@@ -66,9 +66,7 @@ function setToken(token) {
 //   event.preventDefault()
 // }
 
-
 // formLogin.addEventListener('submit', preventDefault)
-
 
 // formLogin.addEventListener('submit', preventDefault)
 

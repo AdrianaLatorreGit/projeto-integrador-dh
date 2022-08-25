@@ -2,9 +2,7 @@
 <html lang="en">
     <%- include("./partials/head.ejs") %>
 
-    <title><%- title %></title>
-
-    <body>
+    <body onload="setToken(token)">
         <%- include("./partials/header.ejs") %>
 
         <main>
@@ -53,6 +51,7 @@
                     <div class="omega">
                         <h2>Câmeras</h2>
                         <img
+                            onclick="setToken()"
                             src="/images/aparelhos/Iphone 13 pro Max 128 azul.png"
                             alt=""
                         />
@@ -70,9 +69,16 @@
 
         <%- include("./partials/script.ejs") %>
 
-        <script>
+        <!-- <script>
             setToken(token);
             console.log(token);
+        </> -->
+
+        <h1>his is an example of onload.</h1>
+        <script>
+            function setToken(token) {
+                return localStorage.setItem("token", token);
+            }
         </script>
     </body>
 </html>

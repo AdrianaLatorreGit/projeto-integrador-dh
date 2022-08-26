@@ -39,7 +39,7 @@ const loginUsuario = async (req, res) => {
         attributes: ["email", "senha"],
         where: {
             email,
-            // senha: req.body.senha,
+           
         },
     });
 
@@ -48,7 +48,7 @@ const loginUsuario = async (req, res) => {
             erro: true,
             mensagem: "Erro: Usuário ou a senha incorreta!!!!",
         });
-        // return console.log("deu errado");
+       
     }
 
     const match = await bcrypt.compare(senha, usuarioDataBase.senha);
@@ -57,15 +57,13 @@ const loginUsuario = async (req, res) => {
         const token = jwt.sign({ foo: "bar" }, "privateKey", {
             expiresIn: "1h",
         });
-        // const privateKey = fs.readFileSync('private.key');
-
-        // console.log(token);
+    
         return res.status(200).render("logado", { token });
-        // render("index", { token, title: "Home logado" });
+        
     }
 
-    // retornar uma tela de erro
 
+    // retornar uma tela de erro
     return res.status(400).json({ token: false, mesage: "Erro!" });
 };
 

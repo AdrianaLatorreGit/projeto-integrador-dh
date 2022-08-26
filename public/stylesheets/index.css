@@ -334,13 +334,13 @@ footer {
 }
 
 #login-cadastro {
-    position: absolute;
-    visibility: hidden;
+    /* position: absolute;
+    visibility: hidden; */
 }
 
 #iconLogin {
-    /* align-items: center;
+    align-items: center;
     width: 5rem;
     visibility: hidden;
-    position: absolute; */
+    position: absolute;
 }

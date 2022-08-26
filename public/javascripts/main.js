@@ -27,7 +27,8 @@ function btnCompra() {
 }
 
 function iconUser() {
-    let token = true;
+    let token = localStorage.getItem('token');
+    console.log(token)
     if (token) {
         document.getElementById("login-cadastro").style.visibility = "hidden";
         document.getElementById("login-cadastro").style.position = "absolute";

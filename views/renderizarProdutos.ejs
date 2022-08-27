@@ -11,26 +11,33 @@
         <div id="tabela">
             <% if(produtos){ %> <% produtos.forEach(produto => {%>
             <div class="renderizarProdutos">
-                <h1><%= produto.id %></h1>
-                <%= produto.produto %>
-                <span>R$</span>
-                <%=produto.preco %> <%=produto.detalhes %> <%=produto.descricao
-                %>
+                <h1>ID: <%= produto.id %></h1>
+                <p>NOME: <%= produto.produto %></p>
+                <p>R$ <%=produto.preco %></p>
+                <p>DETALHES: <%=produto.detalhes %></p>
+                <p>DESCRIÇÃO: <%=produto.descricao %></p>
+            </div>
+            <div>
                 <img
                     id="imagemProduto"
                     src="../uploads/uploads-produtos/<%=produto.image %>"
                     alt=""
                 />
-                <button
-                    id="botaoDeletar"
-                    value="<%= produto.id %>"
-                    onclick="deleteById(value)"
-                >
-                    Deletar
-                </button>
             </div>
+            <button
+                id="botaoDeletar"
+                value="<%= produto.id %>"
+                onclick="deleteById(value)"
+            >
+                Deletar
+            </button>
             <%})} %>
         </div>
+
+        <a href="painelAdmin"
+            ><button id="botaoVoltarRender">Cadastrar novos produtos</button></a
+        >
+        <a href="/"><button id="botaoVoltarRender">HOME</button></a>
         <script src="./javascripts/deletar.js"></script>
     </body>
 </html>

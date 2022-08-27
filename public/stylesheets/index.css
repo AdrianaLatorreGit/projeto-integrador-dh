@@ -338,5 +338,53 @@ footer {
     position: absolute;
 }
 
+summary {
+    list-style: none;
+}
 
-summary{list-style: none;}
+/* LOGADO */
+
+.containerLogado {
+    background: #fff;
+    min-height: 50vh;
+    max-width: 420px;
+    padding: 2rem;
+    border-radius: 0.35rem;
+    box-shadow: 5px 10px 20px var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5rem auto;
+}
+
+.containerLogado h1 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.btnLogado {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 18rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+
+    background-color: var(--third-color);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.containerLogado img {
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+}

@@ -4,14 +4,23 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../stylesheets/index.css">
+        <link rel="stylesheet" href="../stylesheets/index.css" />
         <title>Document</title>
     </head>
 
     <body onload="setToken()">
         <%- include("./partials/header.ejs") %>
-        <h1>voce esta logado</h1>
-        <a href="/"><button onclick="">Pagina Inicial</button></a>
+
+        <div class="containerLogado">
+            <h1>Parabéns <span>teste</span> você esta logado</h1>
+            <img
+                src="/uploads/uploads-usuarios/1661435598068-perfil.jpg"
+                alt=""
+            />
+            <a href="/"
+                ><button class="btnLogado" onclick="">Pagina Inicial</button></a
+            >
+        </div>
 
         <script>
             let x = token;

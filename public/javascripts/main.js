@@ -41,21 +41,6 @@ function iconUser() {
     }
 }
 
-// localStorage.removeItem('token')
-
-
-// function setToken(token) {
-//     return localStorage.setItem("token", token);
-//     console.log(token);
-// }
-
-// prevent Default
-// const formLogin = document.getElementById("formLogin");
-
-// function preventDefault(event) {
-//     event.preventDefault();
-// }
-
-// formLogin.addEventListener("submit", preventDefault);
-
-// formLogin.addEventListener("submit", preventDefault);
+function removeToken (){
+    localStorage.removeItem('token')
+}

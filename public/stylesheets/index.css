@@ -326,13 +326,6 @@ footer {
     }
 }
 
-/* <<< VALIDAR LOGIN >>> */
-
-#admin {
-    visibility: hidden;
-    position: absolute;
-}
-
 #login-cadastro {
     /* position: absolute;
     visibility: hidden; */
@@ -344,3 +337,6 @@ footer {
     visibility: hidden;
     position: absolute;
 }
+
+
+summary{list-style: none;}

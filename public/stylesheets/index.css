@@ -388,3 +388,9 @@ summary {
     height: 20rem;
     margin: 0 auto;
 }
+
+/* IMG LOGADO */
+
+#iconLogin {
+    border-radius: 50%;
+}

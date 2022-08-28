@@ -15,4 +15,4 @@ Projeto de conclusão de curso da Escola Digital House.
 -   bcrypt
 -   bcryptjs
 -   jsonwebtoken
-- SASS
+

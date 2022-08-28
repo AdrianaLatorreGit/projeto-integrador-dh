@@ -1,6 +1,7 @@
 const Usuario = require("../models/Usuario");
-const cadastroController = (req, res, next) => {
-    res.render("cadastro", { title: "Cdastro" });
+const cadastroController = async (req, res, next) => {
+    const usuarios = await Usuario.findAll();
+    res.render("cadastro", { title: "Cdastro", usuarios });
 };
 
 const loginUsuario = async (req, res) => {
@@ -20,19 +21,15 @@ const loginUsuario = async (req, res) => {
         });
     }
 
-    const hashCompare = bcrypt
-        .compare(
-            req.body.senha
-        )
-        .then(function (result) {
-            if (!hashCompare) {
-                return res.status(400).json({
-                    erro: true,
-                    mensagem:
-                        "Erro: Usuário ou a senha incorreta! Senha incorreta!",
-                });
-            }
-        });
+    const hashCompare = bcrypt.compare(req.body.senha).then(function (result) {
+        if (!hashCompare) {
+            return res.status(400).json({
+                erro: true,
+                mensagem:
+                    "Erro: Usuário ou a senha incorreta! Senha incorreta!",
+            });
+        }
+    });
 
     return res.json({
         erro: false,

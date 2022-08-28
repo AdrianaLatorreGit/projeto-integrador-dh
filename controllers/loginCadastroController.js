@@ -46,7 +46,7 @@ const loginUsuario = async (req, res) => {
     if (!usuarioDataBase) {
         return res.status(404).json({
             erro: true,
-            mensagem: "Erro: Usuário ou a senha incorreta!!!!",
+            mensagem: "Erro: E-mail incorreto",
         });
     }
 
@@ -61,7 +61,7 @@ const loginUsuario = async (req, res) => {
     }
 
     // retornar uma tela de erro
-    return res.status(400).json({ token: false, mesage: "Erro!" });
+    return res.status(400).json({ token: false, mesage: "Senha incorreta" });
 };
 
 module.exports = {

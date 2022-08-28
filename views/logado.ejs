@@ -12,8 +12,9 @@
         <div class="containerLogado">
             <%usuarios.forEach(usuario =>{ %>
             <h1>
-                Parabéns <span id="spanUsuario"><%=usuario.nome %></span> você
-                esta logado.
+                Parabéns
+                <span id="spanUsuario"><%=usuario.nome %></span> você esta
+                logado.
             </h1>
             <img src="/uploads/uploads-usuarios/<%=usuario.image %>" alt="" />
             <% }) %>
@@ -23,11 +24,12 @@
         </div>
 
         <script>
+            
             let x = token;
             function setToken(x) {
                 localStorage.setItem("token", "asiyfygqwyUGDQYUWYQ");
-                // document.location.reload(true);
             }
+            document.location.reload(true);
         </script>
 
         <%- include("./partials/footer.ejs") %> <%-

@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include("./partials/head.ejs") %>
-  <body>
-    <%- include("./partials/header.ejs") %>
+    <%- include("./partials/head.ejs") %>
+    <body>
+        <%- include("./partials/header.ejs") %>
 
-    <div class="container-carrinho">
-      <div id="carrinho">
-        <h1>conferir carrinho</h1>
+        <div class="container-carrinho">
+            <div id="carrinho">
+                <h1>conferir carrinho</h1>
 
-        <div class="produto">
-          <img
-            class="imageCarrinho"
-            src="/uploads/uploads-produtos/<%=produto.image %>"
-            alt=""
-          />
+                <div class="produto">
+                    <img
+                        class="imageCarrinho"
+                        src="/uploads/uploads-produtos/<%=produto.image %>"
+                        alt=""
+                    />
 
-          <div class="produtoValor">
-            <h2><%=produto.produto %></h2>
-            <h5><%=produto.detalhes%></h5>
+                    <div class="produtoValor">
+                        <h2><%=produto.produto %></h2>
+                        <h5><%=produto.detalhes%></h5>
 
-            <p>R$ <%=produto.preco%> /MÊS</p>
-          </div>
-        </div>
-      </div>
+                        <p>R$ <%=produto.preco%> /MÊS</p>
+                    </div>
+                </div>
+            </div>
 
-      <div id="resumo">
-        <h2>resumo da compra</h2>
+            <div id="resumo">
+                <h2>resumo da compra</h2>
 
-        <p>itens: <%=produto.produto%>_________R$<%=produto.preco%></p>
+                <p>itens: <%=produto.produto%>_________R$<%=produto.preco%></p>
 
-        <h3>total:R$______<%=produto.preco%>/MÊS</h3>
-        <button onclick="btnCompra()">confirmar pagamento</button>
-        <button class="comprando">
+                <h3>total:R$______<%=produto.preco%>/MÊS</h3>
+                <button onclick="btnCompra()">confirmar pagamento</button>
+                <!-- <button class="comprando">
           <a href="produtos">Continuar comprando</a>
-        </button>
-      </div>
+        </button> -->
+            </div>
 
-      <div id="compraEfetivada">
-        <h2 class="compra">compra finalizada</h2>
-        <p class="msgCompra">sua compra foi finalizada com sucesso</p>
-        <a class="back" href="/">voltar</a>
-      </div>
-    </div>
-    <%- include("./partials/footer.ejs") %> <%- include("./partials/script.ejs")
-    %>
-  </body>
+            <div id="compraEfetivada">
+                <h2 class="compra">compra finalizada</h2>
+                <p class="msgCompra">sua compra foi finalizada com sucesso</p>
+                <a class="back" href="/">voltar</a>
+            </div>
+        </div>
+        <%- include("./partials/footer.ejs") %> <%-
+        include("./partials/script.ejs") %>
+    </body>
 </html>

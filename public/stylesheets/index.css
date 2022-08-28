@@ -350,7 +350,7 @@ summary {
     max-width: 420px;
     padding: 2rem;
     border-radius: 0.35rem;
-    box-shadow: 5px 10px 20px var(--primary-color);
+    box-shadow: 1px 3px 10px var(--primary-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -393,4 +393,8 @@ summary {
 
 #iconLogin {
     border-radius: 50%;
+}
+
+.containerLogado span {
+    color: var(--third-color);
 }

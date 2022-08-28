@@ -11,7 +11,10 @@
     <body onload="setToken()">
         <div class="containerLogado">
             <%usuarios.forEach(usuario =>{ %>
-            <h1>Parabéns <span>teste</span> você esta logado</h1>
+            <h1>
+                Parabéns <span id="spanUsuario"><%=usuario.nome %></span> você
+                esta logado.
+            </h1>
             <img src="/uploads/uploads-usuarios/<%=usuario.image %>" alt="" />
             <% }) %>
             <a href="/"

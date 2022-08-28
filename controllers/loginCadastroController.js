@@ -4,8 +4,9 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const { hash } = require("bcrypt");
 
-const loginCadastroController = (req, res, next) => {
-    res.render("loginCadastro", { title: "Login-Cadastro" });
+const loginCadastroController = async (req, res, next) => {
+    const usuarios = await Usuario.findAll();
+    res.render("loginCadastro", { title: "Login-Cadastro", usuarios });
 };
 
 //Cadastrar novo usuário
@@ -39,7 +40,6 @@ const loginUsuario = async (req, res) => {
         attributes: ["email", "senha"],
         where: {
             email,
-           
         },
     });
 
@@ -48,7 +48,6 @@ const loginUsuario = async (req, res) => {
             erro: true,
             mensagem: "Erro: Usuário ou a senha incorreta!!!!",
         });
-       
     }
 
     const match = await bcrypt.compare(senha, usuarioDataBase.senha);
@@ -57,11 +56,9 @@ const loginUsuario = async (req, res) => {
         const token = jwt.sign({ foo: "bar" }, "privateKey", {
             expiresIn: "1h",
         });
-    
-        return res.status(200).render("logado", { token });
-        
-    }
 
+        return res.status(200).render("logado", { token });
+    }
 
     // retornar uma tela de erro
     return res.status(400).json({ token: false, mesage: "Erro!" });

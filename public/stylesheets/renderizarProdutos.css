@@ -23,10 +23,9 @@ body {
     margin: 0 auto;
 }
 
-#imagemProduto {
+#imagemProdutoRender {
     width: 30rem;
     height: 30rem;
-    border: 1px solid red;
     margin: 0;
 }
 

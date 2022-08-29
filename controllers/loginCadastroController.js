@@ -37,11 +37,14 @@ const cadastrarNovoUsuario = async (req, res) => {
 const loginUsuario = async (req, res) => {
     const { email, senha } = req.body;
     const usuarioDataBase = await Usuario.findOne({
-        attributes: ["email", "senha"],
+        attributes: ["email", "senha", "nome", "image"],
         where: {
             email,
         },
     });
+
+    const { nome, image } = usuarioDataBase;
+    const usuario = { nome, image };
 
     if (!usuarioDataBase) {
         return res.status(404).json({
@@ -57,7 +60,7 @@ const loginUsuario = async (req, res) => {
             expiresIn: "1h",
         });
 
-        return res.status(200).render("logado", { token });
+        return res.status(200).render("logado", { token, usuario });
     }
 
     // retornar uma tela de erro

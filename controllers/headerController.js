@@ -6,7 +6,7 @@ const headerController = async (req, res, next) => {
         title: "Logado",
         usuarios,
     });
-    // return res.redirect("/logado");
+    
 };
 
 module.exports = headerController;

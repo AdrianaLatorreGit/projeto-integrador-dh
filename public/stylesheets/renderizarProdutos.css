@@ -43,7 +43,7 @@ body {
   width: 100%;
   align-items: center;
   justify-content: space-around;
-  /* margin:2rem 0; */
+  
   border-bottom: 1px solid var(--primary-color);
 }
 

@@ -4,7 +4,7 @@ const { promisify } = require("util");
 module.exports = {
     eAdmin: async function (req, res, next) {
         const authHeader = req.headers.authorization;
-        //console.log(authHeader);
+        
         if (!authHeader) {
             return res.status(400).json({
                 erro: true,
@@ -14,7 +14,7 @@ module.exports = {
         }
 
         const [token] = authHeader.split(" ");
-        //console.log("Token: " + token);
+        
 
         if (!token) {
             return res.status(400).json({

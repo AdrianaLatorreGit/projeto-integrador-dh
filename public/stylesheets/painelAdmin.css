@@ -25,7 +25,17 @@ body {
     max-width: 102.4rem;
     margin: 0 auto;
 }
-
+.container-painelAdmin{
+    display: flex;
+    height: 75vh;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+   
+    align-items: center;
+    
+    
+}
 .title {
     text-align: center;
     text-transform: uppercase;
@@ -52,13 +62,12 @@ label {
     color: var(--primary-color);
     font-size: 1.5rem;
 }
-
+#buttonCadastro,
 button {
     display: flex;
-    /* position: fixed; */
-    /* bottom: 30rem; */
+    
     margin: 0 auto;
-    width: 10rem;
+    width: 20rem;
     height: 3rem;
     align-items: center;
     justify-content: center;
@@ -72,10 +81,8 @@ button {
     cursor: pointer;
     transition: 0.2s;
     margin-top: 2rem;
+    text-decoration: none;
+
 }
 
-#buttonListar {
-    text-decoration: none;
-    color: white;
-    font-size: 1.3rem;
-}
+

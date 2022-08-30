@@ -23,13 +23,14 @@ body {
 
 .container-carrinho {
   max-width: 100%;
+  
   margin: 0 auto;
   justify-content: center;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  height: 70vh;
+  height: 75vh;
   position: relative;
 }
 

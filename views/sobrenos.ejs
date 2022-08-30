@@ -1,169 +1,96 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <%- include("./partials/head.ejs") %>
+  <%- include("./partials/head.ejs") %>
 
-    <body>
-        <%- include("./partials/header.ejs") %>
+  <body>
+    <%- include("./partials/header.ejs") %>
 
-        <div class="container">
-            <div class="containerAbout">
-                <div class="title">
-                    <h1>Nosso time</h1>
-                    <blockquote
-                        cite="https://en.wikipedia.org/wiki/benjamin_Franklin"
-                    >
-                        <h4>'Você pode qualquer coisa que se proponha'</h4>
-                        <p>- Benjamin Franklin</p>
-                    </blockquote>
-                </div>
-                <div id="integrante">
-                    <div class="integrantes1">
-                        <p>
-                            Uma ex-fotógrafa (se é que isso existe), que após
-                            uma série de questões pessoais, resolveu entrar para
-                            esse universo tão desafiador da programação, dando
-                            um novo caminho para a própria vida e sonhando mais
-                            longe.
-                        </p>
-                        <img
-                            src="/images/integrantes/adriana (2).jpeg"
-                            alt="fotografia de uma integrante do grupo"
-                        />
-                        <div class="socialMedia">
-                            <a
-                                href="https://www.linkedin.com/in/adriana-latorre/"
-                                target="_blank"
-                                ><img
-                                    src="/images/icones/iconsLinkedin.svg"
-                                    alt=""
-                            /></a>
-                            <a
-                                href="https://github.com/AdrianaLatorreGit"
-                                target="_blank"
-                                ><img
-                                    src="/images/icones/iconsGithub.svg"
-                                    alt=""
-                            /></a>
-                            <a
-                                href="https://wa.me/5511987654321"
-                                target="_blank"
-                                ><img src="/images/icones/whatsapp.svg" alt=""
-                            /></a>
-                        </div>
-                    </div>
-
-                    <div class="integrantes5">
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Nobis dolor tenetur doloribus rem saepe at
-                            error ducimus nulla. Quidem porro nam laboriosam
-                            dignissimos, assumenda labore nobis! Porro quae
-                            sequi eveniet?
-                        </p>
-                        <img
-                            src="/images/integrantes/felipe (2).jpeg"
-                            alt="fotografia de uma integrante do grupo"
-                        />
-                        <div class="socialMedia">
-                            <a
-                                href="https://www.linkedin.com/in/carlos-felipe-leopoldino"
-                                target="_blank"
-                                ><img
-                                    src="/images/icones/iconsLinkedin.svg"
-                                    alt=""
-                            /></a>
-                            <a
-                                href="https://github.com/FelipeLeopoldino"
-                                target="_blank"
-                                ><img
-                                    src="/images/icones/iconsGithub.svg"
-                                    alt=""
-                            /></a>
-                            <a href="https://wa.link/p3q5tn" target="_blankcl"
-                                ><img src="/images/icones/whatsapp.svg" alt=""
-                            /></a>
-                        </div>
-                    </div>
-
-                    <!-- <div class="integrantes2">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
-              dolor tenetur doloribus rem saepe at error ducimus nulla. Quidem
-              porro nam laboriosam dignissimos, assumenda labore nobis! Porro
-              quae sequi eveniet?
-            </p>
-            <img
-              src="/images/integrantes/diogo (2).jpeg"
-              alt="fotografia de uma integrante do grupo"
-            />
-            <div class="socialMedia">
-              <a><img src="/images/icones/iconsLinkedin.svg" alt="" /></a>
-              <a><img src="/images/icones/iconsGithub.svg" alt="" /></a>
-              <a><img src="/images/icones/whatsapp.svg" alt="" /></a>
-            </div>
-          </div> -->
-                    <!-- <div class="integrantes3">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
-              dolor tenetur doloribus rem saepe at error ducimus nulla. Quidem
-              porro nam laboriosam dignissimos, assumenda labore nobis! Porro
-              quae sequi eveniet?
-            </p>
-            <img
-              src="/images/integrantes/andre (2).jpeg"
-              alt="fotografia de uma integrante do grupo"
-            />
-            <div class="socialMedia">
-              <a><img src="/images/icones/iconsLinkedin.svg" alt="" /></a>
-              <a><img src="/images/icones/iconsGithub.svg" alt="" /></a>
-              <a><img src="/images/icones/whatsapp.svg" alt="" /></a>
-            </div>
-          </div> -->
-
-                    <!-- <div class="integrantes6">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
-              dolor tenetur doloribus rem saepe at error ducimus nulla. Quidem
-              porro nam laboriosam dignissimos, assumenda labore nobis! Porro
-              quae sequi eveniet?
-            </p>
-            <img
-              src="/images/integrantes/daniela.jpeg"
-              alt="fotografia de uma integrante do grupo"
-            />
-            <div class="socialMedia">
-              <a><img src="/images/icones/iconsLinkedin.svg" alt="" /></a>
-              <a><img src="/images/icones/iconsGithub.svg" alt="" /></a>
-              <a><img src="/images/icones/whatsapp.svg" alt="" /></a>
-            </div>
-          </div> -->
-                </div>
-            </div>
-
-            <div id="about">
-                <section class="sobreNos">
-                    <h1>SOBRE NÓS</h1>
-                    <p>
-                        Parceria que se formou a partir do curso de
-                        DESENVOLVIMENTO FUll STACK ministrado pela Digital House
-                        Brasil. Duas pessoas que nunca tiveram contato com
-                        programação se uniram para aprender e realizar o projeto
-                        integrador de conclusão de curso, desenvolvendo o sitema
-                        por completo, tanto Front-end quanto Back-end.
-                        Utilizamos a linguagem JavaScript, e bibliotecas:
-                        <br />
-                        - Nodemon<br />
-                        - Express <br />- Sequelize <br />- Ejs <br />-
-                        Dotenv<br />
-                        - Morgan <br />- Multer (middleware) <br />- Mysql2
-                        <br />- bcrypt <br />- bcryptjs <br />- jsonwebtoken
-                        <br />
-                    </p>
-                </section>
-            </div>
+    <div class="container">
+      <div class="containerAbout">
+        <div class="title">
+          <h1>Nosso time</h1>
+          <blockquote cite="https://en.wikipedia.org/wiki/benjamin_Franklin">
+            <h4>'Você pode qualquer coisa que se proponha'</h4>
+            <p>- Benjamin Franklin</p>
+          </blockquote>
         </div>
-        <%- include("./partials/footer.ejs") %> <%-
-        include("./partials/script.ejs") %>
-    </body>
+        <div id="integrante">
+          <div class="integrantes1">
+            <p>
+              Uma ex-fotógrafa (se é que isso existe), que após uma série de
+              questões pessoais, resolveu entrar para esse universo tão
+              desafiador da programação, dando um novo caminho para a própria
+              vida e sonhando mais longe.
+            </p>
+            <img
+              src="/images/integrantes/adriana (2).jpeg"
+              alt="fotografia de uma integrante do grupo"
+            />
+            <div class="socialMedia">
+              <a
+                href="https://www.linkedin.com/in/adriana-latorre/"
+                target="_blank"
+                ><img src="/images/icones/iconsLinkedin.svg" alt=""
+              /></a>
+              <a href="https://github.com/AdrianaLatorreGit" target="_blank"
+                ><img src="/images/icones/iconsGithub.svg" alt=""
+              /></a>
+              <a href="https://wa.me/5511987654321" target="_blank"
+                ><img src="/images/icones/whatsapp.svg" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="integrantes5">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
+              dolor tenetur doloribus rem saepe at error ducimus nulla. Quidem
+              porro nam laboriosam dignissimos, assumenda labore nobis! Porro
+              quae sequi eveniet?
+            </p>
+            <img
+              src="/images/integrantes/felipe (2).jpeg"
+              alt="fotografia de uma integrante do grupo"
+            />
+            <div class="socialMedia">
+              <a
+                href="https://www.linkedin.com/in/carlos-felipe-leopoldino"
+                target="_blank"
+                ><img src="/images/icones/iconsLinkedin.svg" alt=""
+              /></a>
+              <a href="https://github.com/FelipeLeopoldino" target="_blank"
+                ><img src="/images/icones/iconsGithub.svg" alt=""
+              /></a>
+              <a href="https://wa.link/p3q5tn" target="_blankcl"
+                ><img src="/images/icones/whatsapp.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="about">
+        <section class="sobreNos">
+          <h1>SOBRE NÓS</h1>
+          <p>
+            Parceria que se formou a partir do curso de DESENVOLVIMENTO FUll
+            STACK ministrado pela Digital House Brasil. Duas pessoas que nunca
+            tiveram contato com programação se uniram para aprender e realizar o
+            projeto integrador de conclusão de curso, desenvolvendo o sitema por
+            completo, tanto Front-end quanto Back-end. Utilizamos a linguagem
+            JavaScript, e bibliotecas:
+            <br />
+            - Nodemon<br />
+            - Express <br />- Sequelize <br />- Ejs <br />- Dotenv<br />
+            - Morgan <br />- Multer (middleware) <br />- Mysql2 <br />- bcrypt
+            <br />- bcryptjs <br />- jsonwebtoken
+            <br />
+          </p>
+        </section>
+      </div>
+    </div>
+    <%- include("./partials/footer.ejs") %> <%- include("./partials/script.ejs")
+    %>
+  </body>
 </html>

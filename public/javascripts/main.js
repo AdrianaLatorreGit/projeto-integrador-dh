@@ -41,20 +41,20 @@ function iconUser() {
     }
 }
 
-function admin() {
-    let email = document.getElementById("emailLogin");
-    let senha = document.getElementById("senhaLogin");
-    if (usuarioDataBase == "admin@admin.com") {
-        document.getElementById("login-cadastro").style.visibility = "hidden";
-        document.getElementById("login-cadastro").style.position = "absolute";
+// function admin() {
+//     let email = document.getElementById("adminLogin");
+//     let senha = document.getElementById("senhaAdmin");
+//     if (email.value == "admin@admin.com" && senha.value == 1234) {
+//         document.getElementById("login-cadastro").style.visibility = "hidden";
+//         document.getElementById("login-cadastro").style.position = "absolute";
 
-        document.getElementById("iconLogin").style.visibility = "hidden";
-        document.getElementById("iconLogin").style.position = "absolute";
+//         document.getElementById("iconLogin").style.visibility = "hidden";
+//         document.getElementById("iconLogin").style.position = "absolute";
 
-        document.getElementById("admin").style.visibility = "visible";
-        document.getElementById("admin").style.position = "static";
-    }
-}
+//         document.getElementById("admin").style.visibility = "visible";
+//         document.getElementById("admin").style.position = "static";
+//     }
+// }
 
 function removeToken() {
     localStorage.removeItem("token");

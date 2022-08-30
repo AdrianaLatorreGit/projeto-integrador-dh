@@ -12,4 +12,5 @@ router.get("/loginCadastro", loginCadastroController);
 
 router.post("/loginCadastro", upload.single("image"), cadastrarNovoUsuario);
 
+
 module.exports = router;

@@ -19,7 +19,7 @@
                         <h2><%=produto.produto %></h2>
                         <h5><%=produto.detalhes%></h5>
 
-                        <p>R$ <%=produto.preco%> /MÊS</p>
+                        <p>R$ <%=produto.preco%>,00 /MÊS</p>
                     </div>
                 </div>
             </div>
@@ -29,9 +29,8 @@
 
                 <p>itens: <%=produto.produto%>_________R$<%=produto.preco%></p>
 
-                <h3>total:R$______<%=produto.preco%>/MÊS</h3>
+                <h3>total:R$______<%=produto.preco%>,00/MÊS</h3>
                 <button onclick="btnCompra()">confirmar pagamento</button>
-               
             </div>
 
             <div id="compraEfetivada">

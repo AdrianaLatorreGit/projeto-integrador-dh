@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Renderizar produtos</title>
-    <link rel="stylesheet" href="../stylesheets/renderizarProdutos.css" />
-  </head>
-  <body>
-    <div class="container-tabela">
-        <% if(produtos){ %> <% produtos.forEach(produto => {%>
-      <div id="tabela">
-       
-          <div class="renderizarProdutos">
-          <h1>ID: <%= produto.id %></h1>
-          <h2>NOME: <%= produto.produto %></h2>
-          <h3>R$ <%=produto.preco %></h3>
-          <p>DETALHES: <%=produto.detalhes %></p>
-          <p>DESCRIÇÃO: <%=produto.descricao %></p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Renderizar produtos</title>
+        <link rel="stylesheet" href="../stylesheets/renderizarProdutos.css" />
+    </head>
+    <body>
+        <div class="container-tabela">
+            <% if(produtos){ %> <% produtos.forEach(produto => {%>
+            <div id="tabela">
+                <div class="renderizarProdutos">
+                    <h1>ID: <%= produto.id %></h1>
+                    <h2>NOME: <%= produto.produto %></h2>
+                    <h3>PREÇO: R$ <%=produto.preco %></h3>
+                    <p><b>DETALHES:</b> <%=produto.detalhes %></p>
+                    <p><b>DESCRIÇÃO:</b> <%=produto.descricao %></p>
+                </div>
+                <div>
+                    <img
+                        id="imagemProdutoRender"
+                        src="../uploads/uploads-produtos/<%=produto.image %>"
+                        alt=""
+                    />
+                </div>
+                <button
+                    id="botaoDeletar"
+                    value="<%= produto.id %>"
+                    onclick="deleteById(value)"
+                >
+                    Deletar
+                </button>
+            </div>
+            <%})} %>
         </div>
-        <div>
-          <img
-            id="imagemProdutoRender"
-            src="../uploads/uploads-produtos/<%=produto.image %>"
-            alt=""
-          />
-        </div>
-        <button
-          id="botaoDeletar"
-          value="<%= produto.id %>"
-          onclick="deleteById(value)"
-        >
-          Deletar
-        </button>
-    </div>
-    <%})} %>
-    </div>
 
-    <a href="painelAdmin"
-      ><button id="botaoVoltarRender">Cadastrar novos produtos</button></a
-    >
-    
-    <script src="./javascripts/deletar.js"></script>
-  </body>
+        <a href="painelAdmin"
+            ><button id="botaoVoltarRender">Cadastrar novos produtos</button></a
+        >
+
+        <script src="./javascripts/deletar.js"></script>
+    </body>
 </html>

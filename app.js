@@ -25,7 +25,6 @@ const painelAdminRouter = require("./routes/painelAdminRouter");
 const cadastroRouter = require("./routes/cadastroRouter");
 const loginRouter = require("./routes/loginRouter");
 
-
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
@@ -46,7 +45,6 @@ app.use("/", loginCadastroRouter);
 app.use("/", painelAdminRouter);
 app.use("/", cadastroRouter);
 app.use("/", loginRouter);
-
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

@@ -1,146 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=DM+Sans:wght@400;700&family=Macondo&family=Outfit:wght@200;300;400&family=Poppins:wght@300&family=Roboto+Slab:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=DM+Sans:wght@400;700&family=Macondo&family=Outfit:wght@200;300;400&family=Poppins:wght@300&family=Roboto+Slab:wght@100&display=swap");
 
 /* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* <<<VARIAVEIS>>> */
 :root {
-  --primary-color: hsla(205, 50%, 20%, 1);
-  --second-color: hsla(167, 73%, 62%, 1);
-  --third-color: hsl(183, 96%, 36%);
+    --primary-color: hsla(205, 50%, 20%, 1);
+    --second-color: hsla(167, 73%, 62%, 1);
+    --third-color: hsl(183, 96%, 36%);
 
-  font-size: 62.5%; /* 1rem = 10px */
+    font-size: 62.5%; /* 1rem = 10px */
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
-  max-width: 102.4rem;
-  margin: 0 auto;
+    max-width: 102.4rem;
+    margin: 0 auto;
 }
 
-.containerProdutos{
-  padding: 5rem 0;
+.containerProdutos {
+    padding: 5rem 0;
 }
 .titulo {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
 }
 
 .titulo h2 {
-  color: var(--primary-color);
-  text-transform: uppercase;
-  font-size: 4rem;
-  margin-top: 2rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-top: 2rem;
 }
 
 .titulo p {
-  text-transform: uppercase;
-  font-size: 1.3rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
 }
 
 .planos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 2rem;
 }
 
 .planos h1 {
-  color: var(--third-color);
-  text-transform: uppercase;
-  font-size: 5rem;
-  font-weight: 500;
+    color: var(--third-color);
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 500;
 }
 
 .planos p {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .produtos img {
-  width: 20rem;
-  height: 25rem;
-  margin: 2rem;
-  background-color: white;
-  border-radius: 10% ;
-  border: 0.5rem solid white;
+    width: 20rem;
+    height: 25rem;
+    margin: 2rem;
+    background-color: white;
+    border-radius: 10%;
+    border: 0.5rem solid white;
 }
 
 .wrapper {
-  margin-top: 5rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  gap: 2rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 .produtos {
-  display: inline;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
+    display: inline;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .produtos span {
-  font-family: 'Poppins', sans-serif;
-  color: var(--primary-color);
-  font-size: 1.3rem;
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-color);
+    font-size: 1.3rem;
 }
 
-.produtos h3{
-  text-transform: uppercase;
-  color: var(--primary-color);
+.produtos h3 {
+    text-transform: uppercase;
+    color: var(--primary-color);
 }
 
 .produtos h5,
 .produtos p {
-  display: inline;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .produtos h5 {
-  font-size: 1.3rem;
-  color: var(--third-color);
+    font-size: 1.3rem;
+    color: var(--third-color);
 }
 
 .produtos p {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .produtos button {
-  display: flex;
-  margin: 0 auto;
-  margin-top: 2rem;
-  width: 7rem;
-  height: 3rem;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  font-size: 1.1rem;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 7rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
 
-  background-color: var(--third-color);
-  color: white;
-  border: none;
-  border-radius: 1rem;
-  cursor: pointer;
+    background-color: var(--third-color);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
 }

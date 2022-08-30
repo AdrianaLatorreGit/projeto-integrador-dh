@@ -1,59 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
     <%- include("./partials/head.ejs") %>
-  </head>
-  <body>
-    <div class="container">
-      <div class="title">
-        <h1>painel admin</h1>
-      </div>
 
-      <div class="formulario">
-        <form action="/painelAdmin" method="POST" enctype="multipart/form-data">
-          <label for="produto">Produto</label>
-          <input
-            type="text"
-            name="produto"
-            id="nomeDoProduto"
-            placeholder="Produto"
-            required
-          />
-          <label for="preco">Preço</label>
-          <input
-            type="number"
-            name="preco"
-            id="precoDoProduto"
-            placeholder="Preço"
-            required
-          />
+    <body>
+        <%- include("./partials/header.ejs") %>
+        <div class="container">
+            <div class="title">
+                <h1>painel admin</h1>
+            </div>
 
-          <label for="detalhes" id="detalhes">Detalhes</label>
-          <input
-            type="text"
-            name="detalhes"
-            id="detalhes"
-            placeholder="Detalhes do produto"
-          />
-          <label for="descricao">Descrição</label>
-          <input
-            type="text"
-            name="descricao"
-            id="descricao"
-            placeholder="Descrição do produto"
-          />
-          <label for="image">Imagem</label>
-          <input type="file" name="image" id="img" />
+            <div class="formulario">
+                <form
+                    action="/painelAdmin"
+                    method="POST"
+                    enctype="multipart/form-data"
+                >
+                    <label for="produto">Produto</label>
+                    <input
+                        type="text"
+                        name="produto"
+                        id="nomeDoProduto"
+                        placeholder="Produto"
+                        required
+                    />
+                    <label for="preco">Preço</label>
+                    <input
+                        type="number"
+                        name="preco"
+                        id="precoDoProduto"
+                        placeholder="Preço"
+                        required
+                    />
 
-          <div >
-            <button class="btn-adicionar" id="buttonCadastro" type="submit">Cadastrar</button>
+                    <label for="detalhes" id="detalhes">Detalhes</label>
+                    <input
+                        type="text"
+                        name="detalhes"
+                        id="detalhes"
+                        placeholder="Detalhes do produto"
+                    />
+                    <label for="descricao">Descrição</label>
+                    <input
+                        type="text"
+                        name="descricao"
+                        id="descricao"
+                        placeholder="Descrição do produto"
+                    />
+                    <label for="image">Imagem</label>
+                    <input type="file" name="image" id="img" />
 
-            <button class="btn-listarProdutos">
-              <a href="renderizarProdutos" id="buttonListar">Listar produtos</a>
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </body>
+                    <div>
+                        <button
+                            class="btn-adicionar"
+                            id="buttonCadastro"
+                            type="submit"
+                        >
+                            Cadastrar
+                        </button>
+
+                        <button class="btn-listarProdutos">
+                            <a href="renderizarProdutos" id="buttonListar"
+                                >Listar produtos</a
+                            >
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <%- include("./partials/footer.ejs") %>
+    </body>
 </html>

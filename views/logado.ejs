@@ -10,14 +10,13 @@
 
     <body onload="setToken()">
         <div class="containerLogado">
-            
             <h1>
                 Parabéns
                 <span id="spanUsuario"><%=usuario.nome %></span> você esta
                 logado.
             </h1>
             <img src="/uploads/uploads-usuarios/<%=usuario.image %>" alt="" />
-           
+
             <a href="/"
                 ><button class="btnLogado" onclick="">Pagina Inicial</button></a
             >
@@ -31,7 +30,6 @@
             document.location.reload(true);
         </script>
 
-        <%- include("./partials/footer.ejs") %> <%-
-        include('./partials/script.ejs') %>
+        <%- include('./partials/script.ejs') %>
     </body>
 </html>

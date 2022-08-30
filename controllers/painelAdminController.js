@@ -1,7 +1,9 @@
 const Produto = require("../models/Produto");
+const Usuario = require("../models/Usuario");
 
-const painelAdminController = (req, res, next) => {
-    res.render("painelAdmin", { title: "Painel Admin" });
+const painelAdminController = async (req, res, next) => {
+    const usuarios = await Usuario.findAll();
+    res.render("painelAdmin", { title: "Painel Admin", usuarios });
 };
 
 //Cadastrar novo produto
@@ -29,7 +31,6 @@ const renderizarProdutos = async (req, res) => {
     const produtos = await Produto.findAll();
     return res.render("renderizarProdutos", { produtos });
 };
-
 
 const deletarProdutos = async (req, res, nex) => {
     const { id } = req.params;

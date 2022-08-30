@@ -1,69 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <%- include("./partials/head.ejs") %>
-    </head>
-    <body>
-        <div class="container">
-            <div class="title">
-                <h1>painel admin</h1>
-            </div>
+  <head>
+    <%- include("./partials/head.ejs") %>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>painel admin</h1>
+      </div>
 
-            <div class="formulario">
-                <form
-                    action="/painelAdmin"
-                    method="POST"
-                    enctype="multipart/form-data"
-                >
-                    <label for="produto">Produto</label>
-                    <input
-                        type="text"
-                        name="produto"
-                        id="nomeDoProduto"
-                        placeholder="Produto"
-                        required
-                    />
-                    <label for="preco">Preço</label>
-                    <input
-                        type="number"
-                        name="preco"
-                        id="precoDoProduto"
-                        placeholder="Preço"
-                        required
-                    />
+      <div class="formulario">
+        <form action="/painelAdmin" method="POST" enctype="multipart/form-data">
+          <label for="produto">Produto</label>
+          <input
+            type="text"
+            name="produto"
+            id="nomeDoProduto"
+            placeholder="Produto"
+            required
+          />
+          <label for="preco">Preço</label>
+          <input
+            type="number"
+            name="preco"
+            id="precoDoProduto"
+            placeholder="Preço"
+            required
+          />
 
-                    <label for="detalhes" id="detalhes">Detalhes</label>
-                    <input
-                        type="text"
-                        name="detalhes"
-                        id="detalhes"
-                        placeholder="Detalhes do produto"
-                    />
-                    <label for="descricao">Descrição</label>
-                    <input
-                        type="text"
-                        name="descricao"
-                        id="descricao"
-                        placeholder="Descrição do produto"
-                    />
-                    <label for="image">Imagem</label>
-                    <input type="file" name="image" id="img" />
+          <label for="detalhes" id="detalhes">Detalhes</label>
+          <input
+            type="text"
+            name="detalhes"
+            id="detalhes"
+            placeholder="Detalhes do produto"
+          />
+          <label for="descricao">Descrição</label>
+          <input
+            type="text"
+            name="descricao"
+            id="descricao"
+            placeholder="Descrição do produto"
+          />
+          <label for="image">Imagem</label>
+          <input type="file" name="image" id="img" />
 
-                    <div class="btn-adicionar">
-                        <button id="buttonCadastro" type="submit">
-                            Cadastrar
-                        </button>
-                    </div>
-                </form>
+          <div >
+            <button class="btn-adicionar" id="buttonCadastro" type="submit">Cadastrar</button>
 
-                <div class="btn-listarProdutos">
-                    <button>
-                        <a href="renderizarProdutos" id="buttonListar"
-                            >Listar produtos</a
-                        >
-                    </button>
-                </div>
-            </div>
-        </div>
-    </body>
+            <button class="btn-listarProdutos">
+              <a href="renderizarProdutos" id="buttonListar">Listar produtos</a>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

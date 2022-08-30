@@ -1,98 +1,104 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* <<<VARIAVEIS>>> */
 :root {
-    --primary-color: hsla(205, 50%, 20%, 1);
-    --second-color: hsla(167, 73%, 62%, 1);
-    --third-color: hsl(183, 96%, 36%);
+  --primary-color: hsla(205, 50%, 20%, 1);
+  --second-color: hsla(167, 73%, 62%, 1);
+  --third-color: hsl(183, 96%, 36%);
 
-    font-size: 62.5%; /* 1rem = 10px */
+  font-size: 62.5%; /* 1rem = 10px */
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(245, 242, 242);
 }
 
-.container {
-    max-width: 102.4rem;
-    margin: 0 auto;
+.container-tabela {
+  display: flex;
+  max-width: 102.4rem;
+  margin: 0 auto;
+  border-radius: 0.35rem;
+  box-shadow: 1px 3px 10px var(--primary-color);
+    
+  align-items: center;
+  margin: 2rem auto;
+ background-color: white;
+  flex-direction: column;
 }
 
 #imagemProdutoRender {
-    width: 30rem;
-    height: 30rem;
-    margin: 0;
+  width: 15rem;
+  height: 15rem;
+  margin: 2rem 0;
 }
 
 #tabela {
-    display: flex;
-    width: 50rem;
-    justify-content: space-around;
-    flex-direction: column;
-    padding: 1rem;
-    box-shadow: 1px 2px 5px var(--primary-color);
-    margin: 3rem auto;
-    border-radius: 1.5rem;
-    flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  /* margin:2rem 0; */
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .renderizarProdutos {
-    width: 20rem;
-    height: 5rem;
-    display: flex;
-    text-align: center;
-    align-items: stretch;
-
-    justify-content: space-between;
-    flex-direction: column;
-    margin: 2rem 25rem;
+  max-width: 17rem;
+  padding: 1rem;
+  line-height: 2rem;
 }
 
 .renderizarProdutos p {
-    font-size: 1.5rem;
-    margin: 0.5rem;
+  font-size: 1.5rem;
+  
+  
 }
 
 #botaoDeletar {
-    display: flex;
-    margin: 0 auto;
-    margin-top: 1rem;
-    width: 15rem;
-    height: 3rem;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    font-size: 1.6rem;
+  display: flex;
 
-    background-color: var(--third-color);
-    color: white;
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
-    transition: 0.2s;
+  margin-top: 1rem;
+  width: 15rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+
+  background-color: var(--third-color);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
 }
-#botaoVoltarRender {
-    display: flex;
-    margin: 0 auto;
-    margin-top: 1rem;
-    width: 25rem;
-    height: 5rem;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    font-size: 1.6rem;
 
-    background-color: var(--third-color);
-    color: white;
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
-    transition: 0.2s;
-    text-decoration: none;
-    margin-bottom: 5rem;
+#botaoVoltarRender {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 25rem;
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+
+  background-color: var(--third-color);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+  margin-bottom: 5rem;
+}
+
+a {
+  text-decoration: none;
 }

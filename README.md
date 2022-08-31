@@ -2,7 +2,7 @@
 
 # Plataforma para E-Commerce
 
-Plataforma para e-commerce com CRUD completo, com acessebilidade e 100% responsivo
+Plataforma para e-commerce com CRUD completo, 100% responsivo, com acesso ao banco de dados MySql para cadastro de produtos e usuários.
 <br>
 
 # Preview
